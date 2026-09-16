@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Only truly cross-cutting helpers belong here — component-specific styling
+   goes in the component's own className utilities, not in this file. */
+@layer components {
+  .container-g {
+    @apply mx-auto w-full max-w-container px-3 sm:px-4 lg:px-6;
+  }
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
