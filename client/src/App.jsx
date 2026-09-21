@@ -22,18 +22,17 @@ import Profile from './pages/Profile.jsx';
 import InfoPage from './pages/InfoPages.jsx';
 import { NotFound, ServerError, ServerDown } from './pages/Errors.jsx';
 import ErrorBoundary from './components/ErrorBoundary.jsx';
+import Portfolio from './pages/Portfolio.jsx';
 
 function ScrollTop() {
   const { pathname, search } = useLocation();
-  // block body on purpose: an implicit return would hand scrollTo's return value
-  // (some preview hosts override it) to React as the effect "cleanup" → crash
   useEffect(() => {
     window.scrollTo({ top: 0 });
   }, [pathname, search]);
   return null;
 }
 
-export default function App() {
+function Storefront() {
   return (
     <>
       <ScrollTop />
@@ -41,42 +40,41 @@ export default function App() {
       <SubNav />
       <main className="page">
         <ErrorBoundary>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/products" element={<Listing />} />
-          <Route path="/category/:slug" element={<CategoryPage />} />
-          <Route path="/seller/:slug" element={<SellerPage />} />
-          <Route path="/product/:slug" element={<ProductDetail />} />
-          <Route path="/cart" element={<Cart />} />
-          <Route path="/checkout" element={<RequireAuth><Checkout /></RequireAuth>} />
-          <Route path="/payment" element={<RequireAuth><Payment /></RequireAuth>} />
-          <Route path="/order-success/:orderId" element={<RequireAuth><OrderSuccess /></RequireAuth>} />
-          <Route path="/orders" element={<RequireAuth><Orders /></RequireAuth>} />
-          <Route path="/wishlist" element={<Wishlist />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/register" element={<Register />} />
-          <Route path="/forgot-password" element={<ForgotPassword />} />
-          <Route path="/reset-password/:token" element={<ResetPassword />} />
-          <Route path="/profile" element={<RequireAuth><Profile /></RequireAuth>} />
-          <Route path="/profile/:section" element={<RequireAuth><Profile /></RequireAuth>} />
-          {/* Info / policy / company pages (footer links) */}
-          <Route path="/about" element={<InfoPage page="about" />} />
-          <Route path="/contact" element={<InfoPage page="contact" />} />
-          <Route path="/faq" element={<InfoPage page="faq" />} />
-          <Route path="/returns" element={<InfoPage page="returns" />} />
-          <Route path="/shipping" element={<InfoPage page="shipping" />} />
-          <Route path="/terms" element={<InfoPage page="terms" />} />
-          <Route path="/privacy" element={<InfoPage page="privacy" />} />
-          <Route path="/report" element={<InfoPage page="report" />} />
-          <Route path="/sitemap" element={<InfoPage page="sitemap" />} />
-          <Route path="/404" element={<NotFound />} />
-          <Route path="/500" element={<ServerError />} />
-          <Route path="/502" element={<ServerDown code="502" />} />
-          <Route path="/503" element={<ServerDown code="503" />} />
-          <Route path="/504" element={<ServerDown code="504" />} />
-          <Route path="/505" element={<ServerDown code="505" />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
+          <Routes>
+            <Route path="/shop" element={<Home />} />
+            <Route path="/products" element={<Listing />} />
+            <Route path="/category/:slug" element={<CategoryPage />} />
+            <Route path="/seller/:slug" element={<SellerPage />} />
+            <Route path="/product/:slug" element={<ProductDetail />} />
+            <Route path="/cart" element={<Cart />} />
+            <Route path="/checkout" element={<RequireAuth><Checkout /></RequireAuth>} />
+            <Route path="/payment" element={<RequireAuth><Payment /></RequireAuth>} />
+            <Route path="/order-success/:orderId" element={<RequireAuth><OrderSuccess /></RequireAuth>} />
+            <Route path="/orders" element={<RequireAuth><Orders /></RequireAuth>} />
+            <Route path="/wishlist" element={<Wishlist />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<Register />} />
+            <Route path="/forgot-password" element={<ForgotPassword />} />
+            <Route path="/reset-password/:token" element={<ResetPassword />} />
+            <Route path="/profile" element={<RequireAuth><Profile /></RequireAuth>} />
+            <Route path="/profile/:section" element={<RequireAuth><Profile /></RequireAuth>} />
+            <Route path="/about" element={<InfoPage page="about" />} />
+            <Route path="/contact" element={<InfoPage page="contact" />} />
+            <Route path="/faq" element={<InfoPage page="faq" />} />
+            <Route path="/returns" element={<InfoPage page="returns" />} />
+            <Route path="/shipping" element={<InfoPage page="shipping" />} />
+            <Route path="/terms" element={<InfoPage page="terms" />} />
+            <Route path="/privacy" element={<InfoPage page="privacy" />} />
+            <Route path="/report" element={<InfoPage page="report" />} />
+            <Route path="/sitemap" element={<InfoPage page="sitemap" />} />
+            <Route path="/404" element={<NotFound />} />
+            <Route path="/500" element={<ServerError />} />
+            <Route path="/502" element={<ServerDown code="502" />} />
+            <Route path="/503" element={<ServerDown code="503" />} />
+            <Route path="/504" element={<ServerDown code="504" />} />
+            <Route path="/505" element={<ServerDown code="505" />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
         </ErrorBoundary>
       </main>
       <Footer />
@@ -84,4 +82,13 @@ export default function App() {
       <Toasts />
     </>
   );
+}
+
+export default function App() {
+  const { pathname } = useLocation();
+  // The default experience is a curated project index for the requested
+  // portfolio use case. The original Govaly storefront remains available at
+  // /shop and all of its existing deep links stay intact.
+  if (pathname === '/' || pathname === '/portfolio') return <Portfolio />;
+  return <Storefront />;
 }
