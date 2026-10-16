@@ -158,7 +158,45 @@ Being explicit about what this pass did **not** capture:
    assets still resolve. The Wayback CDX index is the only way to find them; six
    historical sliders were recovered that way and are flagged as such.
 
-## 5. Getting everything
+## 5. Viewing it (browser preview)
+
+The audit sandbox has no outbound egress, so it cannot download the images — but
+your **browser** can, and it can reach the same CDN the store uses. So the
+preview page serves the manifest and lets the browser pull every asset directly
+from Shopify's edge:
+
+```bash
+node cdn-audit/preview/server.mjs --port 5178
+# → http://localhost:5178
+```
+
+No dependencies, Node 18+. What the page gives you:
+
+- **99 image tiles**, each fetched live from `cdn.shopify.com` / `vixenbrand.com`.
+  Every tile that paints is a real byte-level reachability confirmation, and the
+  header tally counts painted vs. blocked as you scroll.
+- **"Fetch as" dropdown** — re-renders the whole set as canonical full-res, as
+  seen on the site, or as a generated `_{width}x` variant (800 / 1600 / 3000, plus
+  `.webp`). This is the transform grammar in §2 running live in front of you.
+- **Variant explorer** on each tile — canonical, observed, five width steps, webp,
+  and a `_crop_center` example, each a clickable link.
+- **Scripts & endpoints table** with a `fetch(path, {mode:'no-cors'})` probe per
+  row, so you can see which third-party hosts still answer. Probe results are
+  intentionally opaque — cross-origin status codes aren't visible.
+- **Verify all** posts the painted/blocked tally to `/api/report`, which writes
+  `preview/load-report.json`. That file is your browser-sourced proof of which
+  URLs resolve — the only verification possible from inside this sandbox.
+
+Every image is requested with `referrerpolicy="no-referrer"`, and any tile that
+fails on the canonical host automatically retries against the storefront
+transform host, so a hotlink block shows up as `retry edge` rather than a dead
+tile.
+
+The server exposes only these files: `preview/index.html`, `manifest.json`,
+`urls.txt`, `scripts.txt`, `endpoints.txt`, `assets.csv`, `download.sh`,
+`harvest.mjs`, `README.md`. Path traversal is rejected.
+
+## 6. Getting everything
 
 From a machine with normal internet access:
 
@@ -182,7 +220,7 @@ catalogue harvest)`, serialises requests with a 350 ms delay, and honours
 `Retry-After` on `429` — matching what `/agents.md` asks for. It works against
 any Shopify store: `--site https://other-store.com`.
 
-## 6. Legal note
+## 7. Legal note
 
 The URL inventory is factual and the store's own `agents.md` sanctions read-only
 browsing of public catalogue data. The **images themselves are Vixen Brand's

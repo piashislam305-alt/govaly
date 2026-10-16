@@ -1,0 +1,460 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Vixen Brand — CDN Asset Audit</title>
+<style>
+  :root{
+    --bg:#0b0b0f; --panel:#14141b; --panel2:#1b1b24; --line:#2a2a36;
+    --fg:#ececf1; --dim:#9a9aae; --dimmer:#6b6b80;
+    --accent:#ff4d8d; --accent2:#7c5cff; --ok:#33d17a; --bad:#ff5c5c;
+    --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{background:var(--bg);color:var(--fg);font:15px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+  a{color:var(--accent);text-decoration:none}
+  a:hover{text-decoration:underline}
+  code,.mono{font-family:var(--mono);font-size:12px}
+  header{padding:28px 24px 20px;border-bottom:1px solid var(--line);background:linear-gradient(180deg,#16161f,#0b0b0f)}
+  h1{margin:0 0 6px;font-size:22px;letter-spacing:-.2px}
+  .sub{color:var(--dim);font-size:13px}
+  .sub b{color:var(--fg);font-weight:600}
+  .wrap{max-width:1580px;margin:0 auto;padding:0 24px}
+  .stats{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+  .stat{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:9px 13px;min-width:96px}
+  .stat .n{font-size:18px;font-weight:650;letter-spacing:-.3px}
+  .stat .l{font-size:11px;color:var(--dimmer);text-transform:uppercase;letter-spacing:.7px;margin-top:1px}
+  .stat.ok .n{color:var(--ok)} .stat.bad .n{color:var(--bad)} .stat.accent .n{color:var(--accent)}
+
+  .bar{position:sticky;top:0;z-index:30;background:rgba(11,11,15,.93);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding:11px 0}
+  .barin{display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+  .tabs{display:flex;gap:6px;flex-wrap:wrap}
+  .tab{background:var(--panel);border:1px solid var(--line);color:var(--dim);padding:6px 12px;border-radius:999px;cursor:pointer;font-size:13px;font-family:inherit}
+  .tab:hover{color:var(--fg);border-color:#3a3a4a}
+  .tab.on{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:600}
+  .tab .c{opacity:.65;margin-left:5px;font-size:11px}
+  .ctl{display:flex;align-items:center;gap:8px;margin-left:auto;flex-wrap:wrap}
+  label.sel{color:var(--dimmer);font-size:12px;text-transform:uppercase;letter-spacing:.6px}
+  select,button.btn{background:var(--panel);border:1px solid var(--line);color:var(--fg);padding:6px 10px;border-radius:8px;font-size:13px;font-family:inherit;cursor:pointer}
+  select:hover,button.btn:hover{border-color:#4a4a5e}
+  button.btn.primary{background:var(--accent2);border-color:var(--accent2);color:#fff;font-weight:600}
+
+  section{padding:26px 0 6px}
+  h2{font-size:15px;margin:0 0 4px;letter-spacing:.2px;display:flex;align-items:baseline;gap:9px}
+  h2 .cnt{color:var(--dimmer);font-weight:400;font-size:13px}
+  .hint{color:var(--dim);font-size:13px;margin:0 0 14px;max-width:100ch}
+
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(215px,1fr));gap:14px;margin-bottom:10px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden;display:flex;flex-direction:column;transition:border-color .15s,transform .15s}
+  .card:hover{border-color:#4a4a5e;transform:translateY(-2px)}
+  .thumb{position:relative;aspect-ratio:4/5;background:
+    linear-gradient(135deg,#1a1a24,#12121a);display:flex;align-items:center;justify-content:center;overflow:hidden}
+  .thumb img{width:100%;height:100%;object-fit:cover;display:block;transition:opacity .3s;opacity:0}
+  .thumb img.on{opacity:1}
+  .thumb.contain img{object-fit:contain;padding:14px}
+  .spin{position:absolute;width:18px;height:18px;border:2px solid #333;border-top-color:var(--accent);border-radius:50%;animation:sp .7s linear infinite}
+  @keyframes sp{to{transform:rotate(360deg)}}
+  .badge{position:absolute;top:7px;left:7px;background:rgba(0,0,0,.72);border:1px solid #333;color:#c8c8d8;font-size:10px;padding:2px 7px;border-radius:999px;font-family:var(--mono);letter-spacing:.3px}
+  .badge.err{background:rgba(120,20,20,.85);border-color:#7a2020;color:#ffc9c9}
+  .badge.win{background:rgba(15,80,40,.85);border-color:#1d6b3a;color:#b6ffd0}
+  .meta{padding:9px 11px 11px;border-top:1px solid var(--line);display:flex;flex-direction:column;gap:3px}
+  .meta .t{font-size:13px;font-weight:600;line-height:1.3;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .meta .u{font-family:var(--mono);font-size:10.5px;color:var(--dimmer);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;cursor:help}
+  .meta .u:hover{color:var(--accent)}
+  .row{display:flex;gap:6px;margin-top:5px}
+  .row button{flex:1;background:var(--panel2);border:1px solid var(--line);color:var(--dim);font-size:11px;padding:4px;border-radius:6px;cursor:pointer;font-family:inherit}
+  .row button:hover{color:var(--fg);border-color:#4a4a5e}
+
+  table{width:100%;border-collapse:collapse;background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+  th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--line);font-size:13px;vertical-align:top}
+  th{background:var(--panel2);color:var(--dim);font-size:11px;text-transform:uppercase;letter-spacing:.7px;font-weight:600}
+  tr:last-child td{border-bottom:none}
+  td.mono{font-family:var(--mono);font-size:11.5px;word-break:break-all;color:#b9b9cc}
+  .pill{display:inline-block;background:var(--panel2);border:1px solid var(--line);color:#c0c0d2;font-size:11px;padding:2px 8px;border-radius:999px;font-family:var(--mono)}
+
+  dialog{background:var(--panel);border:1px solid var(--line);border-radius:14px;color:var(--fg);max-width:900px;width:calc(100vw - 40px);padding:0}
+  dialog::backdrop{background:rgba(0,0,0,.7);backdrop-filter:blur(3px)}
+  .dh{padding:14px 18px;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:12px}
+  .dh h3{margin:0;font-size:15px;flex:1}
+  .db{padding:16px 18px;display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  @media(max-width:720px){.db{grid-template-columns:1fr}}
+  .db img{width:100%;border-radius:9px;background:#0d0d13;border:1px solid var(--line);object-fit:contain;max-height:420px}
+  .varlist{display:flex;flex-direction:column;gap:5px}
+  .varlist a{font-family:var(--mono);font-size:11.5px;color:#b9b9cc;padding:6px 9px;background:var(--panel2);border:1px solid var(--line);border-radius:7px;word-break:break-all;text-decoration:none}
+  .varlist a:hover{color:var(--fg);border-color:var(--accent)}
+  .note{background:#161c26;border:1px solid #24314a;border-radius:10px;padding:12px 15px;color:#a9bcd8;font-size:13px;margin:14px 0 0}
+  .note b{color:#dce8ff}
+  footer{padding:34px 0 60px;color:var(--dimmer);font-size:12px}
+  .hidden{display:none!important}
+  .toast{position:fixed;bottom:22px;left:50%;transform:translateX(-50%) translateY(80px);background:var(--accent2);color:#fff;padding:10px 20px;border-radius:10px;font-size:13px;font-weight:600;transition:transform .25s;z-index:99}
+  .toast.on{transform:translateX(-50%) translateY(0)}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <h1>Vixen Brand — CDN Asset Audit</h1>
+    <div class="sub">
+      <b id="target">vixenbrand.com</b> · Shopify · theme <span id="theme">…</span><br>
+      Images below are loaded <b>by your browser, straight from Shopify's edge</b> — this sandbox has no outbound egress.
+      Every tile that paints is a live reachability confirmation.
+    </div>
+    <div class="stats" id="stats"></div>
+  </div>
+</header>
+
+<div class="bar"><div class="wrap barin">
+  <div class="tabs" id="tabs"></div>
+  <div class="ctl">
+    <label class="sel" for="src">Fetch as</label>
+    <select id="src">
+      <option value="observed">as seen on site (already-sized)</option>
+      <option value="canonical">canonical original (full-res)</option>
+      <option value="800">variant · 800px</option>
+      <option value="1600">variant · 1600px</option>
+      <option value="3000">variant · 3000px</option>
+      <option value="webp800">variant · 800px webp</option>
+    </select>
+    <button class="btn" id="reload">↻ re-render</button>
+    <button class="btn primary" id="reportBtn">Verify all</button>
+  </div>
+</div></div>
+
+<div class="wrap">
+  <div id="sections"></div>
+
+  <section id="codeSection">
+    <h2>Scripts &amp; endpoints <span class="cnt" id="codeCnt"></span></h2>
+    <p class="hint">Non-image CDN resources. Can't be rendered as tiles, but the browser tried a <code>fetch()</code> probe against each — <span class="pill">probe</span> shows whether the host actually answered.</p>
+    <table><thead><tr><th style="width:120px">Kind</th><th>URL</th><th style="width:110px">Probe</th><th style="width:230px">Note</th></tr></thead><tbody id="codeBody"></tbody></table>
+  </section>
+
+  <div class="note">
+    <b>Why "all resources" has no fixed number.</b> Shopify resizes on demand at the edge. Any of these paths accepts
+    <code>_{width}x{height}</code>, <code>_crop_{center|top|bottom|left|right}</code>, a swapped extension (<code>.webp</code>, <code>.avif</code>)
+    and <code>&amp;quality=1-100</code> — 17 observed width steps from 200 to 5000. So there are ~99 real <i>files</i> but effectively
+    unbounded valid <i>URLs</i>. The width dropdown above regenerates every URL live to demonstrate the grammar.
+  </div>
+
+  <footer>
+    Manifest: <a href="/manifest.json">manifest.json</a> ·
+    <a href="/urls.txt">urls.txt</a> ·
+    <a href="/scripts.txt">scripts.txt</a> ·
+    <a href="/endpoints.txt">endpoints.txt</a> ·
+    <a href="/assets.csv">assets.csv</a> ·
+    <a href="/download.sh">download.sh</a> ·
+    <a href="/harvest.mjs">harvest.mjs</a><br><br>
+    Assets are © Vixen Brand. Read-only audit; do not rehost as product imagery.
+  </footer>
+</div>
+
+<dialog id="modal">
+  <div class="dh"><h3 id="mTitle">—</h3><button class="btn" id="mClose">close</button></div>
+  <div class="db">
+    <div><img id="mImg" alt=""></div>
+    <div>
+      <div class="hint" style="margin:0 0 9px" id="mInfo"></div>
+      <div class="varlist" id="mVars"></div>
+    </div>
+  </div>
+</dialog>
+
+<div class="toast" id="toast"></div>
+
+<script>
+const HOST_PREFIX = 'https://cdn.shopify.com/s/files/1/0251/8217/5331/';
+const EDGE_PREFIX = 'https://vixenbrand.com/cdn/shop/';
+const LADDER = [200,400,410,600,800,1000,1200,1400,1600,1800,2000,2500,3000,3500,4000,4500,5000];
+
+let M = null;
+const state = { tab: 'all', src: 'observed', results: new Map() };
+
+const $ = (s) => document.querySelector(s);
+const el = (t, cls, txt) => { const e = document.createElement(t); if (cls) e.className = cls; if (txt != null) e.textContent = txt; return e; };
+
+/* ---- transform grammar: mirrors build-manifest.mjs variant() ---- */
+function variant(canonical, width, fmt) {
+  if (!canonical || !canonical.startsWith(HOST_PREFIX)) return canonical;
+  const rest = canonical.slice(HOST_PREFIX.length);            // files/x.jpg?v=1
+  const [pathPart, query] = rest.split('?');
+  const slash = pathPart.lastIndexOf('/');
+  const dir = pathPart.slice(0, slash + 1);
+  const file = pathPart.slice(slash + 1);
+  const dot = file.lastIndexOf('.');
+  const stem = dot === -1 ? file : file.slice(0, dot);
+  const ext = dot === -1 ? '' : file.slice(dot);
+  const outExt = fmt || ext;
+  const suffix = width ? `_${width}x` : '';
+  return `${EDGE_PREFIX}${dir}${stem}${suffix}${outExt}${query ? '?' + query : ''}`;
+}
+
+function displayUrl(asset) {
+  const canonical = asset.canonical || asset.primary;
+  switch (state.src) {
+    case 'canonical': return canonical;
+    case '800':    return variant(canonical, 800);
+    case '1600':   return variant(canonical, 1600);
+    case '3000':   return variant(canonical, 3000);
+    case 'webp800':return variant(canonical, 800, '.webp');
+    default:       return asset.observed || asset.primary_800x || asset.display || variant(canonical, 800);
+  }
+}
+
+/* ---- flatten manifest into uniform asset records ---- */
+function flatten(m) {
+  const out = [];
+  const seen = new Set();
+  const push = (group, rec) => {
+    const canonical = rec.canonical || rec.primary || rec.url || null;
+    if (!canonical || seen.has(canonical)) return;
+    seen.add(canonical);
+    out.push({
+      group,
+      id: rec.id || rec.handle || rec.for_handle || canonical.split('/').pop(),
+      title: rec.title || rec.id || rec.for_handle || canonical.split('/').pop(),
+      vendor: rec.vendor || null,
+      link: rec.product_url || null,
+      note: rec.note || (rec.width ? `gallery position ${rec.position} · ${rec.width}×${rec.height}` : null),
+      canonical,
+      observed: rec.observed || rec.primary_800x || null,
+    });
+  };
+  m.images.products.forEach((p) => {
+    push('products', p);
+    (p.gallery || []).slice(1).forEach((g) => push('gallery', {
+      ...g, title: `${p.title} — shot ${g.position}`, product_url: p.product_url, vendor: p.vendor,
+    }));
+  });
+  (m.images.gallery_second_shots || []).forEach((p) => push('second', { ...p, title: p.for_handle }));
+  (m.images.branding || []).forEach((p) => push('brand', p));
+  (m.images.hero_and_banners || []).forEach((p) => push('hero', p));
+  (m.images.historical_banners || []).forEach((p) => push('history', p));
+  return out;
+}
+
+/* ---- stats ---- */
+function tally() {
+  let ok = 0, bad = 0, pend = 0;
+  for (const v of state.results.values()) v === 'ok' ? ok++ : v === 'bad' ? bad++ : pend++;
+  return { ok, bad, pend, done: ok + bad };
+}
+
+function renderStats(counts) {
+  const t = state.results ? tally() : { ok: 0, bad: 0, pend: 0 };
+  const s = $('#stats');
+  s.innerHTML = '';
+  const add = (n, l, cls) => {
+    const d = el('div', 'stat' + (cls ? ' ' + cls : ''));
+    d.append(el('div', 'n', String(n)), el('div', 'l', l));
+    s.append(d);
+  };
+  add(counts.media_assets, 'media URLs', 'accent');
+  add(counts.code_resources, 'scripts');
+  add(counts.api_endpoints, 'endpoints');
+  add(counts.products, 'products');
+  add(t.ok, 'painted ✓', 'ok');
+  add(t.bad, 'failed ✕', 'bad');
+}
+
+/* ---- tiles ---- */
+function buildCard(asset) {
+  const card = el('div', 'card');
+  const thumb = el('div', 'thumb' + (asset.group === 'brand' ? ' contain' : ''));
+  const spin = el('div', 'spin');
+  const badge = el('div', 'badge', asset.group);
+  const img = el('img');
+  img.loading = 'lazy';
+  img.decoding = 'async';
+  img.referrerPolicy = 'no-referrer';
+  img.alt = asset.title;
+
+  const src = displayUrl(asset);
+  img.addEventListener('load', () => {
+    img.classList.add('on'); spin.remove();
+    state.results.set(asset.canonical, 'ok');
+    badge.className = 'badge win'; badge.textContent = 'ok';
+  });
+  img.addEventListener('error', () => {
+    // fall back: canonical -> storefront variant, and vice versa
+    const alt = src.includes('cdn.shopify.com') ? variant(asset.canonical, 800) : asset.canonical;
+    if (img.dataset.fellback !== '1' && alt && alt !== src) {
+      img.dataset.fellback = '1';
+      badge.className = 'badge err'; badge.textContent = 'retry edge';
+      img.src = alt;
+      return;
+    }
+    spin.remove();
+    state.results.set(asset.canonical, 'bad');
+    badge.className = 'badge err'; badge.textContent = 'blocked';
+    thumb.style.opacity = .45;
+  });
+  img.src = src;
+
+  thumb.append(spin, badge, img);
+  const meta = el('div', 'meta');
+  const t = el('div', 't', asset.title); t.title = asset.title;
+  const tail = src.replace(/^https:\/\//, '');
+  const shortLabel = tail.length > 42 ? '…' + tail.slice(-40) : tail;
+  const short = el('div', 'u', shortLabel);
+  short.title = src;
+  meta.append(t, short);
+  const row = el('div', 'row');
+  const b1 = el('button', null, 'variants');
+  b1.onclick = () => openModal(asset);
+  const b2 = el('button', null, 'copy URL');
+  b2.onclick = () => copy(src);
+  const b3 = el('button', null, 'open ↗');
+  b3.onclick = () => window.open(src, '_blank', 'noopener');
+  row.append(b1, b2, b3);
+  meta.append(row);
+
+  if (asset.link) { t.style.cursor = 'pointer'; t.onclick = () => window.open(asset.link, '_blank', 'noopener'); }
+
+  card.append(thumb, meta);
+  return card;
+}
+
+const GROUPS = [
+  ['all', 'Everything'],
+  ['products', 'Product photos'],
+  ['second', 'Second shots'],
+  ['gallery', 'Gallery'],
+  ['brand', 'Branding'],
+  ['hero', 'Hero / banners'],
+  ['history', 'Historical'],
+];
+
+function render() {
+  const all = flatten(M);
+  const counts = {};
+  all.forEach((a) => counts[a.group] = (counts[a.group] || 0) + 1);
+
+  const tabs = $('#tabs'); tabs.innerHTML = '';
+  GROUPS.forEach(([key, label]) => {
+    const n = key === 'all' ? all.length : (counts[key] || 0);
+    if (key !== 'all' && !n) return;
+    const b = el('button', 'tab' + (state.tab === key ? ' on' : ''));
+    b.append(document.createTextNode(label), el('span', 'c', String(n)));
+    b.onclick = () => { state.tab = key; render(); };
+    tabs.append(b);
+  });
+
+  const shown = state.tab === 'all' ? all : all.filter((a) => a.group === state.tab);
+  const sections = $('#sections');
+  sections.innerHTML = '';
+  const grid = el('div', 'grid');
+  const frag = document.createDocumentFragment();
+  shown.forEach((a) => frag.append(buildCard(a)));
+  grid.append(frag);
+  sections.append(grid);
+
+  renderStats(M.counts);
+}
+
+/* ---- modal: variant explorer ---- */
+function openModal(asset) {
+  $('#mTitle').textContent = asset.title;
+  const can = asset.canonical;
+  const rel = can.startsWith(HOST_PREFIX) ? can.slice(HOST_PREFIX.length).split('?')[0] : can;
+  $('#mInfo').innerHTML =
+    `<code>${rel}</code><br>` +
+    (asset.vendor ? `vendor ${asset.vendor} · ` : '') +
+    `group ${asset.group}` + (asset.note ? `<br>${asset.note}` : '');
+
+  const list = $('#mVars'); list.innerHTML = '';
+  const add = (label, u) => {
+    const a = el('a', null, `${label.padEnd(12, ' ')}  ${u.replace('https://', '')}`);
+    a.href = u; a.target = '_blank'; a.rel = 'noopener noopener';
+    a.style.whiteSpace = 'pre';
+    list.append(a);
+  };
+  add('canonical', can);
+  if (asset.observed) add('observed', asset.observed);
+  [200, 800, 1600, 3000, 5000].forEach((w) => add(`${w}px`, variant(can, w)));
+  add('800 webp', variant(can, 800, '.webp'));
+  add('800 crop', can.startsWith(HOST_PREFIX)
+    ? `${EDGE_PREFIX}${can.slice(HOST_PREFIX.length).replace(/\?.*$/, '').replace(/\.(\w+)$/, '_800x800_crop_center.$1')}`
+    : can);
+  $('#mImg').src = displayUrl(asset);
+  $('#modal').showModal();
+}
+$('#mClose').onclick = () => $('#modal').close();
+
+/* ---- non-image resources ---- */
+async function renderCode() {
+  const body = $('#codeBody'); body.innerHTML = '';
+  const rows = [];
+  const cats = M.scripts || {};
+  for (const [cat, list] of Object.entries(cats)) {
+    (list || []).forEach((s) => rows.push({
+      kind: s.kind || cat, url: s.url, note: s.purpose || '', cat,
+      templated: /[<>{}]/.test(s.url),
+    }));
+  }
+  (M.endpoints || []).forEach((e) => rows.push({ kind: e.kind || 'endpoint', url: e.url, note: e.note || '', cat: 'endpoint' }));
+  $('#codeCnt').textContent = `${rows.length} resources · ${Object.keys(cats).length} script groups + ${(M.endpoints || []).length} endpoints`;
+
+  for (const r of rows) {
+    const tr = el('tr');
+    const td1 = el('td'); td1.append(el('span', 'pill', r.kind)); td1.title = r.cat;
+    const td2 = el('td', 'mono');
+    const a = el('a', null, r.url); a.href = r.templated ? '#' : r.url; a.target = '_blank'; a.rel = 'noopener'; td2.append(a);
+    const td3 = el('td', null, '…'); td3.className = 'probe';
+    const td4 = el('td', null, r.note); td4.style.color = '#8f8fa6'; td4.style.fontSize = '12px';
+    tr.append(td1, td2, td3, td4); body.append(tr);
+
+    if (r.templated) {
+      td3.textContent = 'template (n/a)'; td3.style.color = 'var(--dimmer)';
+      continue;
+    }
+    // opaque no-cors probe: resolves if the host answered at all, rejects on DNS/TLS/network failure.
+    fetch(r.url, { method: 'GET', mode: 'no-cors', credentials: 'omit' })
+      .then(() => { td3.textContent = 'reachable ✓'; td3.title = 'opaque response - HTTP status not visible cross-origin'; td3.style.color = 'var(--ok)'; })
+      .catch(() => { td3.textContent = 'unreachable ✕'; td3.title = 'network/DNS/TLS failure'; td3.style.color = 'var(--bad)'; });
+  }
+}
+
+/* ---- misc ---- */
+function toast(msg) {
+  const t = $('#toast'); t.textContent = msg; t.classList.add('on');
+  clearTimeout(t._h); t._h = setTimeout(() => t.classList.remove('on'), 1800);
+}
+async function copy(text) {
+  try { await navigator.clipboard.writeText(text); toast('copied ' + text.slice(0, 46) + '…'); }
+  catch { toast('clipboard blocked'); }
+}
+
+$('#src').onchange = (e) => { state.src = e.target.value; state.results.clear(); render(); };
+$('#reload').onclick = () => { state.results.clear(); render(); };
+
+$('#reportBtn').onclick = async () => {
+  const t = tally();
+  const report = {
+    generated_at: M.generated_at,
+    source_mode: state.src,
+    checked: t.done,
+    painted: t.ok,
+    blocked: t.bad,
+    pending: t.pend,
+    failed_urls: [...state.results.entries()].filter(([, v]) => v === 'bad').map(([u]) => u),
+  };
+  try {
+    const r = await fetch('/api/report', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify(report) });
+    toast((await r.json()).ok ? `saved: ${t.ok} painted / ${t.bad} blocked` : 'save failed');
+  } catch { toast('save failed'); }
+};
+
+/* ---- boot ---- */
+(async () => {
+  M = await (await fetch('/manifest.json')).json();
+  $('#target').textContent = M.target;
+  $('#theme').textContent = `${M.theme.name} · Turbo ${M.theme.schema_version}`;
+  render();
+  renderCode();
+  setInterval(renderStats.bind(null, M.counts), 1500);
+})();
+</script>
+</body>
+</html>

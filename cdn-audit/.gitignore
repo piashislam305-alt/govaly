@@ -2,3 +2,6 @@
 mirror/
 harvested/
 *.tmp
+
+# Written at runtime by the preview server when you click "Verify all".
+preview/load-report.json
