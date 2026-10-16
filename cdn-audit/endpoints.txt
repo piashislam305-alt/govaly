@@ -1,0 +1,15 @@
+https://monorail-edge.shopifysvc.com/v1/produce
+https://vixenbrand.com/.well-known/ucp
+https://vixenbrand.com/agents.md
+https://vixenbrand.com/api/mcp
+https://vixenbrand.com/api/ucp/mcp
+https://vixenbrand.com/buy
+https://vixenbrand.com/collections.json?limit=250
+https://vixenbrand.com/products.json?limit=250
+https://vixenbrand.com/sitemap.xml
+https://vixenbrand.com/sitemap_agentic_discovery.xml
+https://vixenbrand.com/sitemap_articles_1.xml
+https://vixenbrand.com/sitemap_blogs_1.xml
+https://vixenbrand.com/sitemap_collections_1.xml?from=158945050723&to=544635060500
+https://vixenbrand.com/sitemap_pages_1.xml?from=40366932067&to=129462927636
+https://vixenbrand.com/sitemap_products_1.xml?from=4485405376611&to=15400246935828

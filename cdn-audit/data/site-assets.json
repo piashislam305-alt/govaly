@@ -1,0 +1,173 @@
+{
+  "_meta": {
+    "target": "https://vixenbrand.com/",
+    "captured_at": "2026-10-16",
+    "platform": "Shopify",
+    "shop": {
+      "shop_id": 25182175331,
+      "myshopify_domain": "vixenlive.myshopify.com",
+      "cdn_host": "vixenbrand.com/cdn",
+      "shop_files_cdn_base": "https://cdn.shopify.com/s/files/1/0251/8217/5331/",
+      "currency": "USD",
+      "country": "US",
+      "locale": "en"
+    },
+    "theme": {
+      "name": "2026 - EDAN",
+      "id": 143021539604,
+      "schema_name": "Turbo",
+      "schema_version": "4.1.5.pre",
+      "role": "main",
+      "asset_base": "https://vixenbrand.com/cdn/shop/t/143021539604/assets/"
+    }
+  },
+
+  "branding": [
+    { "id": "logo-primary", "path": "files/VXNLOGO.png", "v": 1614312654, "observed_variant": "410x", "note": "Header logo, rendered as https://vixenbrand.com/cdn/shop/files/VXNLOGO_410x.png?v=1614312654" }
+  ],
+
+  "hero_and_banners": [
+    { "id": "hero-black-vixen-set", "path": "files/lana.jpg", "v": 1613781425, "observed_variant": "5000x", "links_to": "/collections/vixen-season-1" },
+    { "id": "hero-white-vixen-set", "path": "files/AMIAMILEY2.jpg", "v": 1613781428, "observed_variant": "5000x", "links_to": "/collections/vixen-season-1" },
+    { "id": "slider-classics-restock", "path": "files/01_VIXEN_BRAND_CLASSICS_RESTOCK_SLIDER.jpg", "v": 1791495558, "observed_variant": "5000x" },
+    { "id": "banner-shop-blacked-square", "path": "files/VIXEN_BRAND_SQUARE_01.jpg", "v": 1709675746, "observed_variant": "5000x", "links_to": "/collections/blacked" },
+    { "id": "collection-tile-intimates", "path": "files/INTIMATES_LIFESTYLE.jpg", "v": 1776798945, "observed_variant": "5000x", "links_to": "/collections/vixen-intimates" },
+    { "id": "collection-tile-swim", "path": "files/VIXEN_SWIM_LIFESTYLE.jpg", "v": 1776799003, "observed_variant": "5000x", "links_to": "/collections/vixen-swim" }
+  ],
+
+  "historical_banners_from_wayback_cdx": {
+    "_source": "https://web.archive.org/cdx/search/cdx?url=vixenbrand.com/cdn/shop/files/&matchType=prefix&fl=original&collapse=urlkey",
+    "_note": "Promotional sliders that were live in previous seasons. Still resolvable on the CDN because Shopify never deletes uploaded files - only unlinks them.",
+    "items": [
+      { "id": "slider-4th-july", "path": "files/01_4TH_JULY_SLIDER.jpg", "v": 1688007848 },
+      { "id": "slider-4th-of-july-apparel", "path": "files/01_4TH_OF_JULY-VIXEN_APPAREL_SLIDER.jpg", "v": 1782780987, "observed_variant": "2000x" },
+      { "id": "slider-ashby-winter", "path": "files/01_ASHBY_WINTER_SLIDERS.jpg", "v": 1737492119 },
+      { "id": "slider-blacked-angie-faith", "path": "files/01_BLACKED_ANGIE_FAITH_SLIDER.jpg", "v": 1771384103 },
+      { "id": "slider-blacked-hh", "path": "files/01_BLACKED_HH_SLIDER.jpg", "v": 1686871948 },
+      { "id": "slider-blacked-jason-luv", "path": "files/01_BLACKED_JASON_LUV_SLIDERS_02336a3e-069e-42ef-b761-0c7f1b9c0728.jpg", "v": 1682544733 }
+    ]
+  },
+
+  "homepage_product_gallery_second_shots": {
+    "_note": "Hover/second images served on the homepage grid at 800x. These are additional angles that do NOT appear in the sitemap, so the sitemap alone under-counts the catalogue imagery.",
+    "items": [
+      { "for_handle": "vixen-icon-bralette-white", "path": "files/vixen-icon-bralette-lingerie-vixen-643286.jpg", "v": 1791492925, "observed_variant": "800x" },
+      { "for_handle": "vixen-icon-thong-panty-white", "path": "files/vixen-icon-thong-panty-lingerie-vixen-376020.jpg", "v": 1791492950, "observed_variant": "800x" },
+      { "for_handle": "vixen-icon-bralette-black", "path": "files/vixen-icon-bralette-lingerie-vixen-652865.jpg", "v": 1791513913, "observed_variant": "800x" },
+      { "for_handle": "vixen-icon-thong-panty-black", "path": "files/vixen-icon-thong-panty-lingerie-vixen-483153.jpg", "v": 1791513902, "observed_variant": "800x" },
+      { "for_handle": "vixen-icon-bralette-noir-white", "path": "products/vixen-icon-bralette-noir-lingerie-vixen-450937.jpg", "v": 1625617079, "observed_variant": "800x" },
+      { "for_handle": "vixen-icon-thong-panty-noir-white", "path": "products/vixen-icon-thong-panty-noir-lingerie-vixen-359058.jpg", "v": 1625617034, "observed_variant": "800x" },
+      { "for_handle": "vixen-icon-bralette-red", "path": "products/vixen-icon-bralette-lingerie-vixen-728630.jpg", "v": 1676754671, "observed_variant": "800x" },
+      { "for_handle": "vixen-icon-thong-panty-red", "path": "products/vixen-icon-thong-panty-lingerie-vixen-989710.jpg", "v": 1676754688, "observed_variant": "800x" },
+      { "for_handle": "blacked-bralette-red", "path": "files/blacked-10th-anniversary-sports-bra-lingerie-blacked-978721.jpg", "v": 1715904732, "observed_variant": "800x" },
+      { "for_handle": "blacked-thong-panty-red", "path": "files/blacked-10th-anniversary-thong-panty-lingerie-blacked-952464.jpg", "v": 1715904758, "observed_variant": "800x" },
+      { "for_handle": "blacked-swim-top-black", "path": "files/blacked-bikini-top-swimwear-blacked-657438.jpg", "v": 1758837622, "observed_variant": "800x" },
+      { "for_handle": "blacked-swim-bottom-black", "path": "files/blacked-bikini-bottom-swimwear-blacked-834083.jpg", "v": 1758837490, "observed_variant": "800x" },
+      { "for_handle": "blacked-bralette-1", "path": "files/blacked-sports-bra-blacked-807708.jpg", "v": 1756955846, "observed_variant": "800x" },
+      { "for_handle": "blacked-thong-panty", "path": "files/blacked-thong-panty-blacked-121081.jpg", "v": 1756955883, "observed_variant": "800x" }
+    ]
+  },
+
+  "shopify_platform_cdn": [
+    { "kind": "module", "url": "https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/loader.init-shop-cart-sync.en.esm.js", "purpose": "Shop cart sync loader (eagerly imported in head)" },
+    { "kind": "module-set", "url": "https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/loader.<feature>.en.esm.js", "purpose": "window.Shopify.featureAssets['shop-js'] - 22 lazy loaders: avatar, checkout-modal, init-customer-accounts-sign-up, init-customer-accounts, init-fed-cm, init-shop-cart-sync, init-shop-email-lookup-coordinator, init-shop-for-new-customer-accounts, init-shop-user-recognition, init-windoid, lead-capture, listener, pay-button, payment-terms, shop-button, shop-cart-sync, shop-cash-offers, shop-follow-button, shop-login-button, shop-login, shop-toast-manager, shop-user-recognition" },
+    { "kind": "script", "url": "https://vixenbrand.com/cdn/shopifycloud/storefront/assets/storefront/autosizes-84416378.js", "purpose": "sizes attribute polyfill, conditionally loaded for Chrome <126 / Firefox <150 / Safari <27" },
+    { "kind": "module", "url": "https://vixenbrand.com/cdn/shopifycloud/storefront/assets/storefront/webmcp-f427de6a.js", "purpose": "WebMCP adapter", "integrity": "sha256-ypGF+5vIq4Psw4WG7nsVtdd/TCfsJWnrNuACdqLCElY=" },
+    { "kind": "module", "url": "https://vixenbrand.com/cdn/shopifycloud/portable-wallets/latest/portable-wallets.en.js", "purpose": "Shopify PaymentButton / accelerated checkouts" },
+    { "kind": "script", "url": "https://cdn.shopify.com/shopifycloud/storefront-forms-hcaptcha/ce_storefront_forms_captcha_hcaptcha.v1.5.3.iife.js", "purpose": "hCaptcha for storefront forms", "config": { "sitekey": "f06e6c50-85a8-45c8-87d0-21a2b65856fe" } },
+    { "kind": "beacon", "url": "https://monorail-edge.shopifysvc.com/v1/produce", "purpose": "Shopify analytics / web pixels / abandonment beacon" },
+    { "kind": "inline", "url": "lazysizes v4.1.4 + v4.1.5 (aspectratio, bgset, riase plugins)", "purpose": "Lazy image loading, inlined in head rather than served from CDN" }
+  ],
+
+  "installed_app_cdn": [
+    { "app": "Booster: EU Cookie Bar", "url": "https://cdn.shopify.com/s/files/1/0277/0019/9517/t/1/assets/booster_eu_cookie_25182175331.js?10952&shop=vixenlive.myshopify.com", "host": "cdn.shopify.com" },
+    { "app": "Snapchat SCE pixel", "url": "https://intg.snapchat.com/shopify/shopify-scevent-init.js?id=c153fc4d-6c7c-4836-b9c9-6864665d9425&shop=vixenlive.myshopify.com", "host": "intg.snapchat.com" },
+    { "app": "Route shipping protection widget", "url": "https://shopify-widget.route.com/shopify.widget.js?shop=vixenlive.myshopify.com", "host": "shopify-widget.route.com" },
+    { "app": "Hextom Free Shipping Bar", "url": "https://cdn.hextom.com/js/freeshippingbar.js?shop=vixenlive.myshopify.com", "host": "cdn.hextom.com" },
+    { "app": "Omnisend email/SMS", "url": "https://omnisnippet1.com/platforms/shopify.js?source=scriptTag&v=2025-05-15T12&shop=vixenlive.myshopify.com", "host": "omnisnippet1.com" },
+    { "app": "Klarna On-Site Messaging", "url": "https://s3.eu-west-1.amazonaws.com/production-klarna-il-shopify-osm/0b7fe7c4a98ef8166eeafee767bc667686567a25/vixenlive.myshopify.com-1764703053987.js?shop=vixenlive.myshopify.com", "host": "s3.eu-west-1.amazonaws.com" },
+    { "app": "Pinterest tag", "url": "https://s.pinimg.com/ct/core.js", "host": "s.pinimg.com", "config": { "tag_id": "2613542739109" } },
+    { "app": "Pinterest noscript pixel", "url": "https://ct.pinterest.com/v3/?event=init&tid=2613542739109&pd[em]=<hashed_email_address>&noscript=1", "host": "ct.pinterest.com" }
+  ],
+
+  "commerce_api_endpoints": [
+    { "kind": "agent-manifest", "url": "https://vixenbrand.com/agents.md", "note": "Store's own agent instructions; explicitly permits read-only browsing of public HTML and /sitemap.xml discovery." },
+    { "kind": "ucp-profile", "url": "https://vixenbrand.com/.well-known/ucp", "note": "Universal Commerce Protocol v2026-08-25 profile (also 2026-04-08 and 2026-01-23)." },
+    { "kind": "mcp", "url": "https://vixenbrand.com/api/ucp/mcp", "note": "UCP shopping MCP endpoint on vixenlive.myshopify.com." },
+    { "kind": "webmcp", "url": "https://vixenbrand.com/api/mcp", "note": "window.Shopify.MCP.mcpEndpoint; exposes search_shop_policies_and_faqs." },
+    { "kind": "catalog-json", "url": "https://vixenbrand.com/products.json?limit=250", "note": "FULL catalogue incl. every image, variant, SKU, price, inventory flag. ~63 pages of JSON - the authoritative source for all gallery images." },
+    { "kind": "catalog-json", "url": "https://vixenbrand.com/collections.json?limit=250", "note": "26 collections with product counts." },
+    { "kind": "catalog-json", "url": "https://vixenbrand.com/collections/{handle}/products.json?limit=250", "note": "Per-collection product + image listing." },
+    { "kind": "product-json", "url": "https://vixenbrand.com/products/{handle}.js", "note": "Single product, all images + variants." },
+    { "kind": "search", "url": "https://vixenbrand.com/search/suggest.json?q={term}&resources[type]=product&resources[limit]=10", "note": "Predictive search; supports resources[options][fields] to return only image fields." },
+    { "kind": "permalink", "url": "https://vixenbrand.com/buy", "note": "UCP permalink capability endpoint." }
+  ],
+
+  "sitemaps": [
+    "https://vixenbrand.com/sitemap.xml",
+    "https://vixenbrand.com/sitemap_agentic_discovery.xml",
+    "https://vixenbrand.com/sitemap_products_1.xml?from=4485405376611&to=15400246935828",
+    "https://vixenbrand.com/sitemap_pages_1.xml?from=40366932067&to=129462927636",
+    "https://vixenbrand.com/sitemap_collections_1.xml?from=158945050723&to=544635060500",
+    "https://vixenbrand.com/sitemap_blogs_1.xml",
+    "https://vixenbrand.com/sitemap_articles_1.xml"
+  ],
+
+  "collections": [
+    { "handle": "2023-avn-photo-tees", "title": "2023 AVN Photo Tees", "products_count": 10 },
+    { "handle": "accessories", "title": "Accessories", "products_count": 5 },
+    { "handle": "apparel", "title": "Apparel", "products_count": 24 },
+    { "handle": "blacked", "title": "Blacked", "products_count": 17 },
+    { "handle": "icon", "title": "Icons", "products_count": 10 },
+    { "handle": "labor-day-sale", "title": "LABOR DAY SALE 2024", "products_count": 60 },
+    { "handle": "new-arrivals", "title": "New Arrivals", "products_count": 16 },
+    { "handle": "new-season", "title": "NEW SEASON", "products_count": 12 },
+    { "handle": "noir", "title": "NOIR", "products_count": 4 },
+    { "handle": "restock", "title": "Restock", "products_count": 7 },
+    { "handle": "shop-all", "title": "SHOP ALL", "products_count": 82 },
+    { "handle": "shop-all-bfcm-2025", "title": "SHOP ALL BFCM 2025", "products_count": 95 },
+    { "handle": "shop-all-vixen", "title": "Shop All Vixen", "products_count": 46 },
+    { "handle": "shop-violet", "title": "Shop Violet", "products_count": 4 },
+    { "handle": "sunset-sorbet", "title": "Sunset Sorbet", "products_count": 4 },
+    { "handle": "v-print", "title": "V Print", "products_count": 5 },
+    { "handle": "valentines-day", "title": "VALENTINES DAY", "products_count": 5 },
+    { "handle": "vixen-basics", "title": "Vixen Basics", "products_count": 10 },
+    { "handle": "vixen-core", "title": "Vixen Core", "products_count": 21 },
+    { "handle": "vixen-intimates", "title": "Vixen Intimates", "products_count": 10 },
+    { "handle": "vixen-one-piece", "title": "vixen one piece swimsuits", "products_count": 3 },
+    { "handle": "vixen-red-set-restock", "title": "Vixen Red Set Restock", "products_count": 2 },
+    { "handle": "vixen-sport", "title": "Vixen Sport", "products_count": 3 },
+    { "handle": "vixen-summer-drop-1", "title": "Vixen Summer Drop 1", "products_count": 15 },
+    { "handle": "vixen-swim", "title": "Vixen Swim", "products_count": 19 },
+    { "handle": "vixen-v-cut", "title": "Vixen V-Cut", "products_count": 4 }
+  ],
+
+  "pages": [
+    "https://vixenbrand.com/pages/contact-us",
+    "https://vixenbrand.com/pages/privacy-policy",
+    "https://vixenbrand.com/pages/shipping",
+    "https://vixenbrand.com/pages/terms-conditions",
+    "https://vixenbrand.com/pages/about-vixen",
+    "https://vixenbrand.com/pages/geazy",
+    "https://vixenbrand.com/pages/pipeda-privacy-policy",
+    "https://vixenbrand.com/pages/ccpa-privacy-policy",
+    "https://vixenbrand.com/pages/gdpr-privacy-policy",
+    "https://vixenbrand.com/pages/appi-privacy-policy",
+    "https://vixenbrand.com/pages/lgpd-privacy-policy"
+  ],
+
+  "cdn_image_transform_rules": {
+    "canonical_full_resolution": "https://cdn.shopify.com/s/files/1/0251/8217/5331/{path}?v={v}",
+    "storefront_variant": "https://vixenbrand.com/cdn/shop/{path}_{width}x{height}.{jpg|png|webp}?v={v}",
+    "observed_width_ladder": [200, 400, 410, 600, 800, 1000, 1200, 1400, 1600, 1800, 2000, 2500, 3000, 3500, 4000, 4500, 5000],
+    "supported_params": {
+      "width": "crop/resize to a pixel width, e.g. _800x",
+      "height": "e.g. _800x1200",
+      "crop": "center | top | bottom | left | right, e.g. _800x800_crop_center",
+      "format": "jpg | png | webp | avif - append .webp to any path to force a format",
+      "quality": "1-100, e.g. &quality=75",
+      "v": "cache-busting upload timestamp (unix seconds)"
+    },
+    "important": "Shopify generates these variants on demand and caches them at the edge. The set of 'available' CDN resources is therefore effectively unbounded: any width/height/format combination of any uploaded file is a valid, live URL. The 17-width ladder above is what the Turbo theme actually requests; the underlying uploads are the canonical cdn.shopify.com URLs."
+  }
+}

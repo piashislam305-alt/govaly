@@ -1,0 +1,1170 @@
+{
+  "generated_at": "2026-10-16T16:18:28.700Z",
+  "target": "https://vixenbrand.com/",
+  "platform": "Shopify",
+  "shop": {
+    "shop_id": 25182175331,
+    "myshopify_domain": "vixenlive.myshopify.com",
+    "cdn_host": "vixenbrand.com/cdn",
+    "shop_files_cdn_base": "https://cdn.shopify.com/s/files/1/0251/8217/5331/",
+    "currency": "USD",
+    "country": "US",
+    "locale": "en"
+  },
+  "theme": {
+    "name": "2026 - EDAN",
+    "id": 143021539604,
+    "schema_name": "Turbo",
+    "schema_version": "4.1.5.pre",
+    "role": "main",
+    "asset_base": "https://vixenbrand.com/cdn/shop/t/143021539604/assets/"
+  },
+  "counts": {
+    "products": 66,
+    "product_primary_images": 66,
+    "product_gallery_images": 7,
+    "product_secondary_images": 14,
+    "branding_images": 1,
+    "hero_and_banner_images": 6,
+    "historical_banner_images": 6,
+    "shopify_platform_scripts": 8,
+    "installed_app_scripts": 8,
+    "collections": 26,
+    "pages": 11,
+    "unique_urls": 131,
+    "csv_rows": 132,
+    "url_templates": 5,
+    "media_assets": 99,
+    "code_resources": 12,
+    "api_endpoints": 15
+  },
+  "images": {
+    "products": [
+      {
+        "handle": "vixen-logo-dad-hat-black",
+        "title": "Vixen Logo Dad Hat",
+        "vendor": "VIXEN",
+        "product_url": "https://vixenbrand.com/products/vixen-logo-dad-hat-black",
+        "primary": "https://cdn.shopify.com/s/files/1/0251/8217/5331/products/vixen-logo-dad-hat-headwear-vixen-412710.jpg?v=1584741252",
+        "primary_800x": "https://vixenbrand.com/cdn/shop/products/vixen-logo-dad-hat-headwear-vixen-412710_800x.jpg?v=1584741252",
+        "gallery": []
+      },
+      {
+        "handle": "vixen-icon-bralette-black",
+        "title": "Vixen Icon Bralette",
+        "vendor": "VIXEN",
+        "product_url": "https://vixenbrand.com/products/vixen-icon-bralette-black",
+        "primary": "https://cdn.shopify.com/s/files/1/0251/8217/5331/products/vixen-icon-bralette-lingerie-vixen-993369.jpg?v=1625609797",
+        "primary_800x": "https://vixenbrand.com/cdn/shop/products/vixen-icon-bralette-lingerie-vixen-993369_800x.jpg?v=1625609797",
+        "gallery": []
+      },
+      {
+        "handle": "vixen-icon-thong-panty-black",
+        "title": "Vixen Icon Thong Panty",
+        "vendor": "VIXEN",
+        "product_url": "https://vixenbrand.com/products/vixen-icon-thong-panty-black",
+        "primary": "https://cdn.shopify.com/s/files/1/0251/8217/5331/products/vixen-icon-thong-panty-lingerie-vixen-660719.jpg?v=1625612033",
+        "primary_800x": "https://vixenbrand.com/cdn/shop/products/vixen-icon-thong-panty-lingerie-vixen-660719_800x.jpg?v=1625612033",
+        "gallery": []
+      },
+      {
+        "handle": "vixen-icon-bralette-white",
+        "title": "Vixen Icon Bralette",
+        "vendor": "VIXEN",
+        "product_url": "https://vixenbrand.com/products/vixen-icon-bralette-white",
+        "primary": "https://cdn.shopify.com/s/files/1/0251/8217/5331/products/vixen-icon-bralette-lingerie-vixen-363634.jpg?v=1625613215",
+        "primary_800x": "https://vixenbrand.com/cdn/shop/products/vixen-icon-bralette-lingerie-vixen-363634_800x.jpg?v=1625613215",
+        "gallery": []
+      },
+      {
+        "handle": "vixen-icon-thong-panty-white",
+        "title": "Vixen Icon Thong Panty",
+        "vendor": "VIXEN",
+        "product_url": "https://vixenbrand.com/products/vixen-icon-thong-panty-white",
+        "primary": "https://cdn.shopify.com/s/files/1/0251/8217/5331/products/vixen-icon-thong-panty-lingerie-vixen-471871.jpg?v=1625613494",
+        "primary_800x": "https://vixenbrand.com/cdn/shop/products/vixen-icon-thong-panty-lingerie-vixen-471871_800x.jpg?v=1625613494",
+        "gallery": []
+      },
+      {
+        "handle": "gift-card",
+        "title": "Gift Card",
+        "vendor": "Vixen Brand",
+        "product_url": "https://vixenbrand.com/products/gift-card",
+        "primary": "https://cdn.shopify.com/s/files/1/0251/8217/5331/products/gift-card-gift-card-vixen-brand-792931.png?v=1584741367",
+        "primary_800x": "https://vixenbrand.com/cdn/shop/products/gift-card-gift-card-vixen-brand-792931_800x.png?v=1584741367",
+        "gallery": []
+      },
+      {
+        "handle": "cropped-loungewear-sweatshirt-black",
+        "title": "Vixen Cropped Loungewear Sweatshirt",
+        "vendor": "VIXEN",
+        "product_url": "https://vixenbrand.com/products/cropped-loungewear-sweatshirt-black",
+        "primary": "https://cdn.shopify.com/s/files/1/0251/8217/5331/products/vixen-cropped-loungewear-sweatshirt-sweatshirts-vixen-130787.jpg?v=1625613688",
+        "primary_800x": "https://vixenbrand.com/cdn/shop/products/vixen-cropped-loungewear-sweatshirt-sweatshirts-vixen-130787_800x.jpg?v=1625613688",
+        "gallery": []
+      },
+      {
+        "handle": "cropped-loungewear-sweatshirt-white",
+        "title": "Vixen Cropped Loungewear Sweatshirt",
+        "vendor": "VIXEN",
+        "product_url": "https://vixenbrand.com/products/cropped-loungewear-sweatshirt-white",
+        "primary": "https://cdn.shopify.com/s/files/1/0251/8217/5331/products/vixen-cropped-loungewear-sweatshirt-sweatshirts-vixen-379763.jpg?v=1625613615",
+        "primary_800x": "https://vixenbrand.com/cdn/shop/products/vixen-cropped-loungewear-sweatshirt-sweatshirts-vixen-379763_800x.jpg?v=1625613615",
+        "gallery": []
+      },
+      {
+        "handle": "loungewear-joggers-white",
+        "title": "Vixen Loungewear Joggers",
+        "vendor": "VIXEN",
+        "product_url": "https://vixenbrand.com/products/loungewear-joggers-white",
+        "primary": "https://cdn.shopify.com/s/files/1/0251/8217/5331/products/vixen-loungewear-joggers-pants-vixen-193010.jpg?v=1625613784",
+        "primary_800x": "https://vixenbrand.com/cdn/shop/products/vixen-loungewear-joggers-pants-vixen-193010_800x.jpg?v=1625613784",
+        "gallery": []
+      },
+      {
+        "handle": "vixen-tee-black",
+        "title": "Vixen Tee",
+        "vendor": "VIXEN",
+        "product_url": "https://vixenbrand.com/products/vixen-tee-black",
+        "primary": "https://cdn.shopify.com/s/files/1/0251/8217/5331/products/vixen-tee-tees-vixen-628750.jpg?v=1625617357",
+        "primary_800x": "https://vixenbrand.com/cdn/shop/products/vixen-tee-tees-vixen-628750_800x.jpg?v=1625617357",
+        "gallery": []
+      },
+      {
+        "handle": "vixen-tee-white",
+        "title": "Vixen Tee",
+        "vendor": "VIXEN",
+        "product_url": "https://vixenbrand.com/products/vixen-tee-white",
+        "primary": "https://cdn.shopify.com/s/files/1/0251/8217/5331/products/vixen-logo-tee-tees-vixen-258365.jpg?v=1625698344",
+        "primary_800x": "https://vixenbrand.com/cdn/shop/products/vixen-logo-tee-tees-vixen-258365_800x.jpg?v=1625698344",
+        "gallery": []
+      },
+      {
+        "handle": "biker-shorts-black",
+        "title": "Vixen Biker Shorts",
+        "vendor": "VIXEN",
+        "product_url": "https://vixenbrand.com/products/biker-shorts-black",
+        "primary": "https://cdn.shopify.com/s/files/1/0251/8217/5331/products/vixen-biker-shorts-activewear-vixen-874909.jpg?v=1625614290",
+        "primary_800x": "https://vixenbrand.com/cdn/shop/products/vixen-biker-shorts-activewear-vixen-874909_800x.jpg?v=1625614290",
+        "gallery": []
+      },
+      {
+        "handle": "sports-bra-black",
+        "title": "Vixen Sports Bra",
+        "vendor": "VIXEN",
+        "product_url": "https://vixenbrand.com/products/sports-bra-black",
+        "primary": "https://cdn.shopify.com/s/files/1/0251/8217/5331/products/vixen-sports-bra-activewear-vixen-556836.jpg?v=1625614025",
+        "primary_800x": "https://vixenbrand.com/cdn/shop/products/vixen-sports-bra-activewear-vixen-556836_800x.jpg?v=1625614025",
+        "gallery": []
+      },
+      {
+        "handle": "one-piece-swimsuit-black",
+        "title": "Vixen One Piece Swimsuit",
+        "vendor": "VIXEN",
+        "product_url": "https://vixenbrand.com/products/one-piece-swimsuit-black",
+        "primary": "https://cdn.shopify.com/s/files/1/0251/8217/5331/products/vixen-one-piece-swimsuit-swimwear-vixen-538038.jpg?v=1627092042",
+        "primary_800x": "https://vixenbrand.com/cdn/shop/products/vixen-one-piece-swimsuit-swimwear-vixen-538038_800x.jpg?v=1627092042",
+        "gallery": []
+      },
+      {
+        "handle": "one-piece-swimsuit-white",
+        "title": "Vixen One Piece Swimsuit",
+        "vendor": "VIXEN",
+        "product_url": "https://vixenbrand.com/products/one-piece-swimsuit-white",
+        "primary": "https://cdn.shopify.com/s/files/1/0251/8217/5331/products/vixen-one-piece-swimsuit-swimwear-vixen-408972.jpg?v=1625606862",
+        "primary_800x": "https://vixenbrand.com/cdn/shop/products/vixen-one-piece-swimsuit-swimwear-vixen-408972_800x.jpg?v=1625606862",
+        "gallery": []
+      },
+      {
+        "handle": "vixen-icon-bralette-red",
+        "title": "Vixen Icon Bralette",
+        "vendor": "VIXEN",
+        "product_url": "https://vixenbrand.com/products/vixen-icon-bralette-red",
+        "primary": "https://cdn.shopify.com/s/files/1/0251/8217/5331/products/vixen-icon-bralette-lingerie-vixen-846118.jpg?v=1676754666",
+        "primary_800x": "https://vixenbrand.com/cdn/shop/products/vixen-icon-bralette-lingerie-vixen-846118_800x.jpg?v=1676754666",
+        "gallery": []
+      },
+      {
+        "handle": "v-print-bikini-top-multi",
+        "title": "Vixen V Print Bikini Top",
+        "vendor": "VIXEN",
+        "product_url": "https://vixenbrand.com/products/v-print-bikini-top-multi",
+        "primary": "https://cdn.shopify.com/s/files/1/0251/8217/5331/products/vixen-v-print-bikini-top-swimwear-vixen-459921.jpg?v=1625608938",
+        "primary_800x": "https://vixenbrand.com/cdn/shop/products/vixen-v-print-bikini-top-swimwear-vixen-459921_800x.jpg?v=1625608938",
+        "gallery": []
+      },
+      {
+        "handle": "logo-tank-dress-black",
+        "title": "Vixen Logo Tank Dress",
+        "vendor": "VIXEN",
+        "product_url": "https://vixenbrand.com/products/logo-tank-dress-black",
+        "primary": "https://cdn.shopify.com/s/files/1/0251/8217/5331/products/vixen-logo-tank-dress-dresses-vixen-426722.jpg?v=1602644513",
+        "primary_800x": "https://vixenbrand.com/cdn/shop/products/vixen-logo-tank-dress-dresses-vixen-426722_800x.jpg?v=1602644513",
+        "gallery": []
+      },
+      {
+        "handle": "baby-tee-black",
+        "title": "Vixen Baby Tee",
+        "vendor": "VIXEN",
+        "product_url": "https://vixenbrand.com/products/baby-tee-black",
+        "primary": "https://cdn.shopify.com/s/files/1/0251/8217/5331/products/vixen-baby-tee-tees-vixen-941422.jpg?v=1625618287",
+        "primary_800x": "https://vixenbrand.com/cdn/shop/products/vixen-baby-tee-tees-vixen-941422_800x.jpg?v=1625618287",
+        "gallery": []
+      },
+      {
+        "handle": "baby-tee-white",
+        "title": "Vixen Baby Tee",
+        "vendor": "VIXEN",
+        "product_url": "https://vixenbrand.com/products/baby-tee-white",
+        "primary": "https://cdn.shopify.com/s/files/1/0251/8217/5331/products/vixen-baby-tee-tees-vixen-646695.jpg?v=1625618263",
+        "primary_800x": "https://vixenbrand.com/cdn/shop/products/vixen-baby-tee-tees-vixen-646695_800x.jpg?v=1625618263",
+        "gallery": []
+      },
+      {
+        "handle": "jacquard-woven-logo-skirt-black",
+        "title": "Vixen Jacquard Woven Logo Skirt",
+        "vendor": "VIXEN",
+        "product_url": "https://vixenbrand.com/products/jacquard-woven-logo-skirt-black",
+        "primary": "https://cdn.shopify.com/s/files/1/0251/8217/5331/products/vixen-jacquard-woven-logo-skirt-skirts-vixen-313369.jpg?v=1625618658",
+        "primary_800x": "https://vixenbrand.com/cdn/shop/products/vixen-jacquard-woven-logo-skirt-skirts-vixen-313369_800x.jpg?v=1625618658",
+        "gallery": []
+      },
+      {
+        "handle": "vixen-icon-thong-panty-noir-black",
+        "title": "Vixen Icon Thong Panty (Noir)",
+        "vendor": "VIXEN",
+        "product_url": "https://vixenbrand.com/products/vixen-icon-thong-panty-noir-black",
+        "primary": "https://cdn.shopify.com/s/files/1/0251/8217/5331/products/vixen-icon-thong-panty-noir-lingerie-vixen-831753.jpg?v=1625614832",
+        "primary_800x": "https://vixenbrand.com/cdn/shop/products/vixen-icon-thong-panty-noir-lingerie-vixen-831753_800x.jpg?v=1625614832",
+        "gallery": []
+      },
+      {
+        "handle": "vixen-icon-bralette-noir-white",
+        "title": "Vixen Icon Bralette (Noir)",
+        "vendor": "VIXEN",
+        "product_url": "https://vixenbrand.com/products/vixen-icon-bralette-noir-white",
+        "primary": "https://cdn.shopify.com/s/files/1/0251/8217/5331/products/vixen-icon-bralette-noir-lingerie-vixen-570296.jpg?v=1625616883",
+        "primary_800x": "https://vixenbrand.com/cdn/shop/products/vixen-icon-bralette-noir-lingerie-vixen-570296_800x.jpg?v=1625616883",
+        "gallery": []
+      },
+      {
+        "handle": "vixen-icon-thong-panty-noir-white",
+        "title": "Vixen Icon Thong Panty (Noir)",
+        "vendor": "VIXEN",
+        "product_url": "https://vixenbrand.com/products/vixen-icon-thong-panty-noir-white",
+        "primary": "https://cdn.shopify.com/s/files/1/0251/8217/5331/products/vixen-icon-thong-panty-noir-lingerie-vixen-503614.jpg?v=1625616923",
+        "primary_800x": "https://vixenbrand.com/cdn/shop/products/vixen-icon-thong-panty-noir-lingerie-vixen-503614_800x.jpg?v=1625616923",
+        "gallery": []
+      },
+      {
+        "handle": "vixen-icon-bralette-noir-black",
+        "title": "Vixen Icon Bralette (Noir)",
+        "vendor": "VIXEN",
+        "product_url": "https://vixenbrand.com/products/vixen-icon-bralette-noir-black",
+        "primary": "https://cdn.shopify.com/s/files/1/0251/8217/5331/products/vixen-icon-bralette-noir-lingerie-vixen-934075.jpg?v=1625614780",
+        "primary_800x": "https://vixenbrand.com/cdn/shop/products/vixen-icon-bralette-noir-lingerie-vixen-934075_800x.jpg?v=1625614780",
+        "gallery": []
+      },
+      {
+        "handle": "vixen-logo-t-shirt-black",
+        "title": "Vixen Legs Tee",
+        "vendor": "VIXEN",
+        "product_url": "https://vixenbrand.com/products/vixen-logo-t-shirt-black",
+        "primary": "https://cdn.shopify.com/s/files/1/0251/8217/5331/products/vixen-legs-tee-tees-vixen-206946.png?v=1626993408",
+        "primary_800x": "https://vixenbrand.com/cdn/shop/products/vixen-legs-tee-tees-vixen-206946_800x.png?v=1626993408",
+        "gallery": []
+      },
+      {
+        "handle": "vixen-logo-t-shirt-white",
+        "title": "Vixen Legs Tee",
+        "vendor": "VIXEN",
+        "product_url": "https://vixenbrand.com/products/vixen-logo-t-shirt-white",
+        "primary": "https://cdn.shopify.com/s/files/1/0251/8217/5331/products/vixen-legs-tee-tees-vixen-273675.png?v=1627084919",
+        "primary_800x": "https://vixenbrand.com/cdn/shop/products/vixen-legs-tee-tees-vixen-273675_800x.png?v=1627084919",
+        "gallery": []
+      },
+      {
+        "handle": "vixen-hotline-t-shirt-black",
+        "title": "Vixen Hotline T-Shirt",
+        "vendor": "VIXEN",
+        "product_url": "https://vixenbrand.com/products/vixen-hotline-t-shirt-black",
+        "primary": "https://cdn.shopify.com/s/files/1/0251/8217/5331/products/vixen-hotline-t-shirt-tees-vixen-994962.png?v=1677860094",
+        "primary_800x": "https://vixenbrand.com/cdn/shop/products/vixen-hotline-t-shirt-tees-vixen-994962_800x.png?v=1677860094",
+        "gallery": []
+      },
+      {
+        "handle": "vixen-who-do-you-love-t-shirt-white",
+        "title": "Vixen Love Tee",
+        "vendor": "VIXEN",
+        "product_url": "https://vixenbrand.com/products/vixen-who-do-you-love-t-shirt-white",
+        "primary": "https://cdn.shopify.com/s/files/1/0251/8217/5331/products/vixen-love-tee-tees-vixen-968914.png?v=1627098953",
+        "primary_800x": "https://vixenbrand.com/cdn/shop/products/vixen-love-tee-tees-vixen-968914_800x.png?v=1627098953",
+        "gallery": []
+      },
+      {
+        "handle": "vixen-og-swim-top-black",
+        "title": "Vixen OG Swim Top",
+        "vendor": "VIXEN",
+        "product_url": "https://vixenbrand.com/products/vixen-og-swim-top-black",
+        "primary": "https://cdn.shopify.com/s/files/1/0251/8217/5331/products/vixen-og-swim-top-swimwear-vixen-107830.jpg?v=1627428470",
+        "primary_800x": "https://vixenbrand.com/cdn/shop/products/vixen-og-swim-top-swimwear-vixen-107830_800x.jpg?v=1627428470",
+        "gallery": []
+      },
+      {
+        "handle": "vixen-jacquard-swim-top-black",
+        "title": "Vixen Jacquard Swim Top",
+        "vendor": "VIXEN",
+        "product_url": "https://vixenbrand.com/products/vixen-jacquard-swim-top-black",
+        "primary": "https://cdn.shopify.com/s/files/1/0251/8217/5331/products/vixen-jacquard-swim-top-swimwear-vixen-901945.jpg?v=1627428290",
+        "primary_800x": "https://vixenbrand.com/cdn/shop/products/vixen-jacquard-swim-top-swimwear-vixen-901945_800x.jpg?v=1627428290",
+        "gallery": []
+      },
+      {
+        "handle": "vixen-jacquard-swim-bottom-black",
+        "title": "Vixen Jacquard Swim Bottom",
+        "vendor": "VIXEN",
+        "product_url": "https://vixenbrand.com/products/vixen-jacquard-swim-bottom-black",
+        "primary": "https://cdn.shopify.com/s/files/1/0251/8217/5331/products/vixen-jacquard-swim-bottom-swimwear-vixen-624789.jpg?v=1627428423",
+        "primary_800x": "https://vixenbrand.com/cdn/shop/products/vixen-jacquard-swim-bottom-swimwear-vixen-624789_800x.jpg?v=1627428423",
+        "gallery": []
+      },
+      {
+        "handle": "vixen-jacquard-swim-onepiece-black",
+        "title": "Vixen Jacquard Swim Onepiece",
+        "vendor": "VIXEN",
+        "product_url": "https://vixenbrand.com/products/vixen-jacquard-swim-onepiece-black",
+        "primary": "https://cdn.shopify.com/s/files/1/0251/8217/5331/products/vixen-jacquard-swim-onepiece-swimwear-vixen-505016.jpg?v=1627415668",
+        "primary_800x": "https://vixenbrand.com/cdn/shop/products/vixen-jacquard-swim-onepiece-swimwear-vixen-505016_800x.jpg?v=1627415668",
+        "gallery": []
+      },
+      {
+        "handle": "vixen-gradient-bikini-top-multi",
+        "title": "Vixen Sunset Sorbet Bikini Top",
+        "vendor": "VIXEN",
+        "product_url": "https://vixenbrand.com/products/vixen-gradient-bikini-top-multi",
+        "primary": "https://cdn.shopify.com/s/files/1/0251/8217/5331/products/vixen-sunset-sorbet-bikini-top-swimwear-vixen-649478.jpg?v=1657764918",
+        "primary_800x": "https://vixenbrand.com/cdn/shop/products/vixen-sunset-sorbet-bikini-top-swimwear-vixen-649478_800x.jpg?v=1657764918",
+        "gallery": []
+      },
+      {
+        "handle": "vixen-gradient-sarong-multi",
+        "title": "Vixen Sunset Sorbet Sarong",
+        "vendor": "VIXEN",
+        "product_url": "https://vixenbrand.com/products/vixen-gradient-sarong-multi",
+        "primary": "https://cdn.shopify.com/s/files/1/0251/8217/5331/products/vixen-sunset-sorbet-sarong-swimwear-vixen-811132.jpg?v=1657765000",
+        "primary_800x": "https://vixenbrand.com/cdn/shop/products/vixen-sunset-sorbet-sarong-swimwear-vixen-811132_800x.jpg?v=1657765000",
+        "gallery": []
+      },
+      {
+        "handle": "logo-bucket-hat",
+        "title": "Vixen Logo Bucket Hat",
+        "vendor": "VIXEN",
+        "product_url": "https://vixenbrand.com/products/logo-bucket-hat",
+        "primary": "https://cdn.shopify.com/s/files/1/0251/8217/5331/products/vixen-logo-bucket-hat-hats-vixen-174209.jpg?v=1675462063",
+        "primary_800x": "https://vixenbrand.com/cdn/shop/products/vixen-logo-bucket-hat-hats-vixen-174209_800x.jpg?v=1675462063",
+        "gallery": []
+      },
+      {
+        "handle": "coach-jacket",
+        "title": "Vixen Coach Jacket",
+        "vendor": "VIXEN",
+        "product_url": "https://vixenbrand.com/products/coach-jacket",
+        "primary": "https://cdn.shopify.com/s/files/1/0251/8217/5331/products/vixen-coach-jacket-outerwear-vixen-981391.jpg?v=1678498957",
+        "primary_800x": "https://vixenbrand.com/cdn/shop/products/vixen-coach-jacket-outerwear-vixen-981391_800x.jpg?v=1678498957",
+        "gallery": []
+      },
+      {
+        "handle": "hotline-hoodie",
+        "title": "Hotline Hoodie",
+        "vendor": "VIXEN",
+        "product_url": "https://vixenbrand.com/products/hotline-hoodie",
+        "primary": "https://cdn.shopify.com/s/files/1/0251/8217/5331/products/hotline-hoodie-sweatshirts-vixen-428743.jpg?v=1677709747",
+        "primary_800x": "https://vixenbrand.com/cdn/shop/products/hotline-hoodie-sweatshirts-vixen-428743_800x.jpg?v=1677709747",
+        "gallery": []
+      },
+      {
+        "handle": "blacked-snap-back",
+        "title": "Blacked Snap Back",
+        "vendor": "Blacked",
+        "product_url": "https://vixenbrand.com/products/blacked-snap-back",
+        "primary": "https://cdn.shopify.com/s/files/1/0251/8217/5331/products/blacked-snap-back-hats-blacked-196172.jpg?v=1680123804",
+        "primary_800x": "https://vixenbrand.com/cdn/shop/products/blacked-snap-back-hats-blacked-196172_800x.jpg?v=1680123804",
+        "gallery": []
+      },
+      {
+        "handle": "photo-tee-allie-nicole",
+        "title": "Photo Tee - Allie Nicole",
+        "vendor": "VIXEN",
+        "product_url": "https://vixenbrand.com/products/photo-tee-allie-nicole",
+        "primary": "https://cdn.shopify.com/s/files/1/0251/8217/5331/products/photo-tee-allie-nicole-shirts-vixen-222866.jpg?v=1688693769",
+        "primary_800x": "https://vixenbrand.com/cdn/shop/products/photo-tee-allie-nicole-shirts-vixen-222866_800x.jpg?v=1688693769",
+        "gallery": []
+      },
+      {
+        "handle": "photo-tee-avery-cristy",
+        "title": "Photo Tee - Avery Cristy",
+        "vendor": "VIXEN",
+        "product_url": "https://vixenbrand.com/products/photo-tee-avery-cristy",
+        "primary": "https://cdn.shopify.com/s/files/1/0251/8217/5331/products/photo-tee-avery-cristy-shirts-vixen-814095.jpg?v=1688693757",
+        "primary_800x": "https://vixenbrand.com/cdn/shop/products/photo-tee-avery-cristy-shirts-vixen-814095_800x.jpg?v=1688693757",
+        "gallery": []
+      },
+      {
+        "handle": "photo-tee-gianna-dior",
+        "title": "Photo Tee - Gianna Dior",
+        "vendor": "VIXEN",
+        "product_url": "https://vixenbrand.com/products/photo-tee-gianna-dior",
+        "primary": "https://cdn.shopify.com/s/files/1/0251/8217/5331/products/photo-tee-gianna-dior-shirts-vixen-374892.jpg?v=1688693738",
+        "primary_800x": "https://vixenbrand.com/cdn/shop/products/photo-tee-gianna-dior-shirts-vixen-374892_800x.jpg?v=1688693738",
+        "gallery": []
+      },
+      {
+        "handle": "photo-tee-kazumi",
+        "title": "Photo Tee - Kazumi",
+        "vendor": "VIXEN",
+        "product_url": "https://vixenbrand.com/products/photo-tee-kazumi",
+        "primary": "https://cdn.shopify.com/s/files/1/0251/8217/5331/products/photo-tee-kazumi-shirts-vixen-625570.jpg?v=1688693765",
+        "primary_800x": "https://vixenbrand.com/cdn/shop/products/photo-tee-kazumi-shirts-vixen-625570_800x.jpg?v=1688693765",
+        "gallery": []
+      },
+      {
+        "handle": "photo-tee-maitland-ward",
+        "title": "Photo Tee - Maitland Ward",
+        "vendor": "VIXEN",
+        "product_url": "https://vixenbrand.com/products/photo-tee-maitland-ward",
+        "primary": "https://cdn.shopify.com/s/files/1/0251/8217/5331/products/photo-tee-maitland-ward-shirts-vixen-641689.jpg?v=1688693752",
+        "primary_800x": "https://vixenbrand.com/cdn/shop/products/photo-tee-maitland-ward-shirts-vixen-641689_800x.jpg?v=1688693752",
+        "gallery": []
+      },
+      {
+        "handle": "photo-tee-teanna-trump",
+        "title": "Photo Tee - Teanna Trump",
+        "vendor": "VIXEN",
+        "product_url": "https://vixenbrand.com/products/photo-tee-teanna-trump",
+        "primary": "https://cdn.shopify.com/s/files/1/0251/8217/5331/products/photo-tee-teanna-trump-shirts-vixen-315730.jpg?v=1688693782",
+        "primary_800x": "https://vixenbrand.com/cdn/shop/products/photo-tee-teanna-trump-shirts-vixen-315730_800x.jpg?v=1688693782",
+        "gallery": []
+      },
+      {
+        "handle": "photo-tee-vanna-bardot",
+        "title": "Photo Tee - Vanna Bardot",
+        "vendor": "VIXEN",
+        "product_url": "https://vixenbrand.com/products/photo-tee-vanna-bardot",
+        "primary": "https://cdn.shopify.com/s/files/1/0251/8217/5331/products/photo-tee-vanna-bardot-shirts-vixen-737380.jpg?v=1688693786",
+        "primary_800x": "https://vixenbrand.com/cdn/shop/products/photo-tee-vanna-bardot-shirts-vixen-737380_800x.jpg?v=1688693786",
+        "gallery": []
+      },
+      {
+        "handle": "photo-tee-vicki-chase",
+        "title": "Photo Tee - Vicki Chase",
+        "vendor": "VIXEN",
+        "product_url": "https://vixenbrand.com/products/photo-tee-vicki-chase",
+        "primary": "https://cdn.shopify.com/s/files/1/0251/8217/5331/products/photo-tee-vicki-chase-shirts-vixen-271991.jpg?v=1688693761",
+        "primary_800x": "https://vixenbrand.com/cdn/shop/products/photo-tee-vicki-chase-shirts-vixen-271991_800x.jpg?v=1688693761",
+        "gallery": []
+      },
+      {
+        "handle": "photo-tee-jia-lissa",
+        "title": "Photo Tee - Jia Lissa",
+        "vendor": "VIXEN",
+        "product_url": "https://vixenbrand.com/products/photo-tee-jia-lissa",
+        "primary": "https://cdn.shopify.com/s/files/1/0251/8217/5331/products/photo-tee-jia-lissa-shirts-vixen-738480.jpg?v=1688693747",
+        "primary_800x": "https://vixenbrand.com/cdn/shop/products/photo-tee-jia-lissa-shirts-vixen-738480_800x.jpg?v=1688693747",
+        "gallery": []
+      },
+      {
+        "handle": "blacked-bralette",
+        "title": "Blacked Sports Bra",
+        "vendor": "Blacked",
+        "product_url": "https://vixenbrand.com/products/blacked-bralette",
+        "primary": "https://cdn.shopify.com/s/files/1/0251/8217/5331/products/blacked-sports-bra-lingerie-blacked-499002.jpg?v=1686858181",
+        "primary_800x": "https://vixenbrand.com/cdn/shop/products/blacked-sports-bra-lingerie-blacked-499002_800x.jpg?v=1686858181",
+        "gallery": []
+      },
+      {
+        "handle": "blacked-icon-thong-panty",
+        "title": "Blacked Thong Panty",
+        "vendor": "Blacked",
+        "product_url": "https://vixenbrand.com/products/blacked-icon-thong-panty",
+        "primary": "https://cdn.shopify.com/s/files/1/0251/8217/5331/products/blacked-thong-panty-lingerie-blacked-944889.jpg?v=1686858259",
+        "primary_800x": "https://vixenbrand.com/cdn/shop/products/blacked-thong-panty-lingerie-blacked-944889_800x.jpg?v=1686858259",
+        "gallery": []
+      },
+      {
+        "handle": "vixen-logo-slide",
+        "title": "Vixen Logo Slides",
+        "vendor": "Vixen Brand",
+        "product_url": "https://vixenbrand.com/products/vixen-logo-slide",
+        "primary": "https://cdn.shopify.com/s/files/1/0251/8217/5331/products/vixen-logo-slides-vixen-brand-762925.jpg?v=1688693777",
+        "primary_800x": "https://vixenbrand.com/cdn/shop/products/vixen-logo-slides-vixen-brand-762925_800x.jpg?v=1688693777",
+        "gallery": []
+      },
+      {
+        "handle": "blacked-sock",
+        "title": "Blacked Socks",
+        "vendor": "Blacked",
+        "product_url": "https://vixenbrand.com/products/blacked-sock",
+        "primary": "https://cdn.shopify.com/s/files/1/0251/8217/5331/products/blacked-socks-misc-blacked-458137.jpg?v=1680123793",
+        "primary_800x": "https://vixenbrand.com/cdn/shop/products/blacked-socks-misc-blacked-458137_800x.jpg?v=1680123793",
+        "gallery": []
+      },
+      {
+        "handle": "vixen-icon-thong-panty-red",
+        "title": "Vixen Icon Thong Panty",
+        "vendor": "VIXEN",
+        "product_url": "https://vixenbrand.com/products/vixen-icon-thong-panty-red",
+        "primary": "https://cdn.shopify.com/s/files/1/0251/8217/5331/products/vixen-icon-thong-panty-lingerie-vixen-151084.jpg?v=1676754679",
+        "primary_800x": "https://vixenbrand.com/cdn/shop/products/vixen-icon-thong-panty-lingerie-vixen-151084_800x.jpg?v=1676754679",
+        "gallery": []
+      },
+      {
+        "handle": "blacked-mens-boxer-briefs-black",
+        "title": "Blacked Boxer Briefs",
+        "vendor": "Blacked",
+        "product_url": "https://vixenbrand.com/products/blacked-mens-boxer-briefs-black",
+        "primary": "https://cdn.shopify.com/s/files/1/0251/8217/5331/products/blacked-boxer-briefs-activewear-blacked-115161.jpg?v=1686858197",
+        "primary_800x": "https://vixenbrand.com/cdn/shop/products/blacked-boxer-briefs-activewear-blacked-115161_800x.jpg?v=1686858197",
+        "gallery": []
+      },
+      {
+        "handle": "blacked-bralette-red",
+        "title": "Blacked 10th Anniversary Sports Bra",
+        "vendor": "Blacked",
+        "product_url": "https://vixenbrand.com/products/blacked-bralette-red",
+        "primary": "https://cdn.shopify.com/s/files/1/0251/8217/5331/files/blacked-10th-anniversary-sports-bra-lingerie-blacked-235909.jpg?v=1715904736",
+        "primary_800x": "https://vixenbrand.com/cdn/shop/files/blacked-10th-anniversary-sports-bra-lingerie-blacked-235909_800x.jpg?v=1715904736",
+        "gallery": []
+      },
+      {
+        "handle": "blacked-thong-panty-red",
+        "title": "Blacked 10th Anniversary Thong Panty",
+        "vendor": "Blacked",
+        "product_url": "https://vixenbrand.com/products/blacked-thong-panty-red",
+        "primary": "https://cdn.shopify.com/s/files/1/0251/8217/5331/files/blacked-10th-anniversary-thong-panty-lingerie-blacked-807706.jpg?v=1715904770",
+        "primary_800x": "https://vixenbrand.com/cdn/shop/files/blacked-10th-anniversary-thong-panty-lingerie-blacked-807706_800x.jpg?v=1715904770",
+        "gallery": []
+      },
+      {
+        "handle": "vixen-v-cut-bikini-top-black",
+        "title": "Vixen V-Cut Bikini Top",
+        "vendor": "VIXEN",
+        "product_url": "https://vixenbrand.com/products/vixen-v-cut-bikini-top-black",
+        "primary": "https://cdn.shopify.com/s/files/1/0251/8217/5331/files/vixen-v-cut-bikini-top-swimwear-vixen-654782.jpg?v=1758837541",
+        "primary_800x": "https://vixenbrand.com/cdn/shop/files/vixen-v-cut-bikini-top-swimwear-vixen-654782_800x.jpg?v=1758837541",
+        "gallery": []
+      },
+      {
+        "handle": "vixen-v-cut-bikini-bottom-black",
+        "title": "Vixen V-Cut Bikini Bottom",
+        "vendor": "VIXEN",
+        "product_url": "https://vixenbrand.com/products/vixen-v-cut-bikini-bottom-black",
+        "primary": "https://cdn.shopify.com/s/files/1/0251/8217/5331/files/vixen-v-cut-bikini-bottom-swimwear-vixen-348805.jpg?v=1758837501",
+        "primary_800x": "https://vixenbrand.com/cdn/shop/files/vixen-v-cut-bikini-bottom-swimwear-vixen-348805_800x.jpg?v=1758837501",
+        "gallery": []
+      },
+      {
+        "handle": "vixen-v-cut-bikini-top-white",
+        "title": "Vixen V-Cut Bikini Top",
+        "vendor": "VIXEN",
+        "product_url": "https://vixenbrand.com/products/vixen-v-cut-bikini-top-white",
+        "primary": "https://cdn.shopify.com/s/files/1/0251/8217/5331/files/vixen-v-cut-bikini-top-swimwear-vixen-975102.jpg?v=1758837442",
+        "primary_800x": "https://vixenbrand.com/cdn/shop/files/vixen-v-cut-bikini-top-swimwear-vixen-975102_800x.jpg?v=1758837442",
+        "gallery": []
+      },
+      {
+        "handle": "vixen-v-cut-bikini-bottom-white",
+        "title": "Vixen V-Cut Bikini Bottom",
+        "vendor": "VIXEN",
+        "product_url": "https://vixenbrand.com/products/vixen-v-cut-bikini-bottom-white",
+        "primary": "https://cdn.shopify.com/s/files/1/0251/8217/5331/files/vixen-v-cut-bikini-bottom-swimwear-vixen-164054.jpg?v=1758837614",
+        "primary_800x": "https://vixenbrand.com/cdn/shop/files/vixen-v-cut-bikini-bottom-swimwear-vixen-164054_800x.jpg?v=1758837614",
+        "gallery": []
+      },
+      {
+        "handle": "blacked-bralette-1",
+        "title": "Blacked Sports Bra",
+        "vendor": "Blacked",
+        "product_url": "https://vixenbrand.com/products/blacked-bralette-1",
+        "primary": "https://cdn.shopify.com/s/files/1/0251/8217/5331/files/blacked-sports-bra-blacked-197276.jpg?v=1756955858",
+        "primary_800x": "https://vixenbrand.com/cdn/shop/files/blacked-sports-bra-blacked-197276_800x.jpg?v=1756955858",
+        "gallery": []
+      },
+      {
+        "handle": "blacked-thong-panty",
+        "title": "Blacked Thong Panty",
+        "vendor": "Blacked",
+        "product_url": "https://vixenbrand.com/products/blacked-thong-panty",
+        "primary": "https://cdn.shopify.com/s/files/1/0251/8217/5331/files/blacked-thong-panty-blacked-842637.jpg?v=1756955864",
+        "primary_800x": "https://vixenbrand.com/cdn/shop/files/blacked-thong-panty-blacked-842637_800x.jpg?v=1756955864",
+        "gallery": []
+      },
+      {
+        "handle": "blacked-one-piece-swimsuit-black",
+        "title": "Blacked One Piece Swimsuit",
+        "vendor": "Blacked",
+        "product_url": "https://vixenbrand.com/products/blacked-one-piece-swimsuit-black",
+        "primary": "https://cdn.shopify.com/s/files/1/0251/8217/5331/files/blacked-one-piece-swimsuit-swimwear-blacked-214729.jpg?v=1758837438",
+        "primary_800x": "https://vixenbrand.com/cdn/shop/files/blacked-one-piece-swimsuit-swimwear-blacked-214729_800x.jpg?v=1758837438",
+        "gallery": []
+      },
+      {
+        "handle": "blacked-swim-top-black",
+        "title": "Blacked Bikini Top",
+        "vendor": "Blacked",
+        "product_url": "https://vixenbrand.com/products/blacked-swim-top-black",
+        "primary": "https://cdn.shopify.com/s/files/1/0251/8217/5331/files/blacked-bikini-top-swimwear-blacked-675879.jpg?v=1758837647",
+        "primary_800x": "https://vixenbrand.com/cdn/shop/files/blacked-bikini-top-swimwear-blacked-675879_800x.jpg?v=1758837647",
+        "gallery": []
+      },
+      {
+        "handle": "blacked-swim-bottom-black",
+        "title": "Blacked Bikini Bottom",
+        "vendor": "Blacked",
+        "product_url": "https://vixenbrand.com/products/blacked-swim-bottom-black",
+        "primary": "https://cdn.shopify.com/s/files/1/0251/8217/5331/files/blacked-bikini-bottom-swimwear-blacked-492774.jpg?v=1758837452",
+        "primary_800x": "https://vixenbrand.com/cdn/shop/files/blacked-bikini-bottom-swimwear-blacked-492774_800x.jpg?v=1758837452",
+        "gallery": []
+      },
+      {
+        "handle": "vixen-10th-anniversary-one-piece-black",
+        "title": "Vixen 10th Anniversary One Piece",
+        "vendor": "VIXEN",
+        "product_url": "https://vixenbrand.com/products/vixen-10th-anniversary-one-piece-black",
+        "primary": "https://cdn.shopify.com/s/files/1/0251/8217/5331/files/vixen-10th-anniversary-one-piece-swimwear-vixen-906854.jpg?v=1792092724",
+        "primary_800x": "https://vixenbrand.com/cdn/shop/files/vixen-10th-anniversary-one-piece-swimwear-vixen-906854_800x.jpg?v=1792092724",
+        "gallery": [
+          {
+            "position": 1,
+            "url": "https://cdn.shopify.com/s/files/1/0251/8217/5331/files/vixen-10th-anniversary-one-piece-swimwear-vixen-906854.jpg?v=1792092724",
+            "width": 1260,
+            "height": 1889
+          },
+          {
+            "position": 2,
+            "url": "https://cdn.shopify.com/s/files/1/0251/8217/5331/files/vixen-10th-anniversary-one-piece-swimwear-vixen-743534.jpg?v=1792092721",
+            "width": 1260,
+            "height": 1889
+          },
+          {
+            "position": 3,
+            "url": "https://cdn.shopify.com/s/files/1/0251/8217/5331/files/vixen-10th-anniversary-one-piece-swimwear-vixen-770631.jpg?v=1792092714",
+            "width": 1260,
+            "height": 1889
+          },
+          {
+            "position": 4,
+            "url": "https://cdn.shopify.com/s/files/1/0251/8217/5331/files/vixen-10th-anniversary-one-piece-swimwear-vixen-642492.jpg?v=1792092729",
+            "width": 1260,
+            "height": 1889
+          },
+          {
+            "position": 5,
+            "url": "https://cdn.shopify.com/s/files/1/0251/8217/5331/files/vixen-10th-anniversary-one-piece-swimwear-vixen-494227.jpg?v=1792092705",
+            "width": 1260,
+            "height": 1889
+          },
+          {
+            "position": 6,
+            "url": "https://cdn.shopify.com/s/files/1/0251/8217/5331/files/vixen-10th-anniversary-one-piece-swimwear-vixen-786261.jpg?v=1792092710",
+            "width": 1260,
+            "height": 1889
+          },
+          {
+            "position": 7,
+            "url": "https://cdn.shopify.com/s/files/1/0251/8217/5331/files/vixen-10th-anniversary-one-piece-swimwear-vixen-555351.jpg?v=1792092718",
+            "width": 1260,
+            "height": 1889
+          }
+        ]
+      }
+    ],
+    "branding": [
+      {
+        "id": "logo-primary",
+        "canonical": "https://cdn.shopify.com/s/files/1/0251/8217/5331/files/VXNLOGO.png?v=1614312654",
+        "observed": "https://vixenbrand.com/cdn/shop/files/VXNLOGO_410x.png?v=1614312654",
+        "note": "Header logo, rendered as https://vixenbrand.com/cdn/shop/files/VXNLOGO_410x.png?v=1614312654"
+      }
+    ],
+    "hero_and_banners": [
+      {
+        "id": "hero-black-vixen-set",
+        "canonical": "https://cdn.shopify.com/s/files/1/0251/8217/5331/files/lana.jpg?v=1613781425",
+        "observed": "https://vixenbrand.com/cdn/shop/files/lana_5000x.jpg?v=1613781425",
+        "links_to": "/collections/vixen-season-1"
+      },
+      {
+        "id": "hero-white-vixen-set",
+        "canonical": "https://cdn.shopify.com/s/files/1/0251/8217/5331/files/AMIAMILEY2.jpg?v=1613781428",
+        "observed": "https://vixenbrand.com/cdn/shop/files/AMIAMILEY2_5000x.jpg?v=1613781428",
+        "links_to": "/collections/vixen-season-1"
+      },
+      {
+        "id": "slider-classics-restock",
+        "canonical": "https://cdn.shopify.com/s/files/1/0251/8217/5331/files/01_VIXEN_BRAND_CLASSICS_RESTOCK_SLIDER.jpg?v=1791495558",
+        "observed": "https://vixenbrand.com/cdn/shop/files/01_VIXEN_BRAND_CLASSICS_RESTOCK_SLIDER_5000x.jpg?v=1791495558",
+        "links_to": null
+      },
+      {
+        "id": "banner-shop-blacked-square",
+        "canonical": "https://cdn.shopify.com/s/files/1/0251/8217/5331/files/VIXEN_BRAND_SQUARE_01.jpg?v=1709675746",
+        "observed": "https://vixenbrand.com/cdn/shop/files/VIXEN_BRAND_SQUARE_01_5000x.jpg?v=1709675746",
+        "links_to": "/collections/blacked"
+      },
+      {
+        "id": "collection-tile-intimates",
+        "canonical": "https://cdn.shopify.com/s/files/1/0251/8217/5331/files/INTIMATES_LIFESTYLE.jpg?v=1776798945",
+        "observed": "https://vixenbrand.com/cdn/shop/files/INTIMATES_LIFESTYLE_5000x.jpg?v=1776798945",
+        "links_to": "/collections/vixen-intimates"
+      },
+      {
+        "id": "collection-tile-swim",
+        "canonical": "https://cdn.shopify.com/s/files/1/0251/8217/5331/files/VIXEN_SWIM_LIFESTYLE.jpg?v=1776799003",
+        "observed": "https://vixenbrand.com/cdn/shop/files/VIXEN_SWIM_LIFESTYLE_5000x.jpg?v=1776799003",
+        "links_to": "/collections/vixen-swim"
+      }
+    ],
+    "historical_banners": [
+      {
+        "id": "slider-4th-july",
+        "canonical": "https://cdn.shopify.com/s/files/1/0251/8217/5331/files/01_4TH_JULY_SLIDER.jpg?v=1688007848",
+        "observed": null
+      },
+      {
+        "id": "slider-4th-of-july-apparel",
+        "canonical": "https://cdn.shopify.com/s/files/1/0251/8217/5331/files/01_4TH_OF_JULY-VIXEN_APPAREL_SLIDER.jpg?v=1782780987",
+        "observed": "https://vixenbrand.com/cdn/shop/files/01_4TH_OF_JULY-VIXEN_APPAREL_SLIDER_2000x.jpg?v=1782780987"
+      },
+      {
+        "id": "slider-ashby-winter",
+        "canonical": "https://cdn.shopify.com/s/files/1/0251/8217/5331/files/01_ASHBY_WINTER_SLIDERS.jpg?v=1737492119",
+        "observed": null
+      },
+      {
+        "id": "slider-blacked-angie-faith",
+        "canonical": "https://cdn.shopify.com/s/files/1/0251/8217/5331/files/01_BLACKED_ANGIE_FAITH_SLIDER.jpg?v=1771384103",
+        "observed": null
+      },
+      {
+        "id": "slider-blacked-hh",
+        "canonical": "https://cdn.shopify.com/s/files/1/0251/8217/5331/files/01_BLACKED_HH_SLIDER.jpg?v=1686871948",
+        "observed": null
+      },
+      {
+        "id": "slider-blacked-jason-luv",
+        "canonical": "https://cdn.shopify.com/s/files/1/0251/8217/5331/files/01_BLACKED_JASON_LUV_SLIDERS_02336a3e-069e-42ef-b761-0c7f1b9c0728.jpg?v=1682544733",
+        "observed": null
+      }
+    ],
+    "gallery_second_shots": [
+      {
+        "for_handle": "vixen-icon-bralette-white",
+        "canonical": "https://cdn.shopify.com/s/files/1/0251/8217/5331/files/vixen-icon-bralette-lingerie-vixen-643286.jpg?v=1791492925",
+        "observed": "https://vixenbrand.com/cdn/shop/files/vixen-icon-bralette-lingerie-vixen-643286_800x.jpg?v=1791492925"
+      },
+      {
+        "for_handle": "vixen-icon-thong-panty-white",
+        "canonical": "https://cdn.shopify.com/s/files/1/0251/8217/5331/files/vixen-icon-thong-panty-lingerie-vixen-376020.jpg?v=1791492950",
+        "observed": "https://vixenbrand.com/cdn/shop/files/vixen-icon-thong-panty-lingerie-vixen-376020_800x.jpg?v=1791492950"
+      },
+      {
+        "for_handle": "vixen-icon-bralette-black",
+        "canonical": "https://cdn.shopify.com/s/files/1/0251/8217/5331/files/vixen-icon-bralette-lingerie-vixen-652865.jpg?v=1791513913",
+        "observed": "https://vixenbrand.com/cdn/shop/files/vixen-icon-bralette-lingerie-vixen-652865_800x.jpg?v=1791513913"
+      },
+      {
+        "for_handle": "vixen-icon-thong-panty-black",
+        "canonical": "https://cdn.shopify.com/s/files/1/0251/8217/5331/files/vixen-icon-thong-panty-lingerie-vixen-483153.jpg?v=1791513902",
+        "observed": "https://vixenbrand.com/cdn/shop/files/vixen-icon-thong-panty-lingerie-vixen-483153_800x.jpg?v=1791513902"
+      },
+      {
+        "for_handle": "vixen-icon-bralette-noir-white",
+        "canonical": "https://cdn.shopify.com/s/files/1/0251/8217/5331/products/vixen-icon-bralette-noir-lingerie-vixen-450937.jpg?v=1625617079",
+        "observed": "https://vixenbrand.com/cdn/shop/products/vixen-icon-bralette-noir-lingerie-vixen-450937_800x.jpg?v=1625617079"
+      },
+      {
+        "for_handle": "vixen-icon-thong-panty-noir-white",
+        "canonical": "https://cdn.shopify.com/s/files/1/0251/8217/5331/products/vixen-icon-thong-panty-noir-lingerie-vixen-359058.jpg?v=1625617034",
+        "observed": "https://vixenbrand.com/cdn/shop/products/vixen-icon-thong-panty-noir-lingerie-vixen-359058_800x.jpg?v=1625617034"
+      },
+      {
+        "for_handle": "vixen-icon-bralette-red",
+        "canonical": "https://cdn.shopify.com/s/files/1/0251/8217/5331/products/vixen-icon-bralette-lingerie-vixen-728630.jpg?v=1676754671",
+        "observed": "https://vixenbrand.com/cdn/shop/products/vixen-icon-bralette-lingerie-vixen-728630_800x.jpg?v=1676754671"
+      },
+      {
+        "for_handle": "vixen-icon-thong-panty-red",
+        "canonical": "https://cdn.shopify.com/s/files/1/0251/8217/5331/products/vixen-icon-thong-panty-lingerie-vixen-989710.jpg?v=1676754688",
+        "observed": "https://vixenbrand.com/cdn/shop/products/vixen-icon-thong-panty-lingerie-vixen-989710_800x.jpg?v=1676754688"
+      },
+      {
+        "for_handle": "blacked-bralette-red",
+        "canonical": "https://cdn.shopify.com/s/files/1/0251/8217/5331/files/blacked-10th-anniversary-sports-bra-lingerie-blacked-978721.jpg?v=1715904732",
+        "observed": "https://vixenbrand.com/cdn/shop/files/blacked-10th-anniversary-sports-bra-lingerie-blacked-978721_800x.jpg?v=1715904732"
+      },
+      {
+        "for_handle": "blacked-thong-panty-red",
+        "canonical": "https://cdn.shopify.com/s/files/1/0251/8217/5331/files/blacked-10th-anniversary-thong-panty-lingerie-blacked-952464.jpg?v=1715904758",
+        "observed": "https://vixenbrand.com/cdn/shop/files/blacked-10th-anniversary-thong-panty-lingerie-blacked-952464_800x.jpg?v=1715904758"
+      },
+      {
+        "for_handle": "blacked-swim-top-black",
+        "canonical": "https://cdn.shopify.com/s/files/1/0251/8217/5331/files/blacked-bikini-top-swimwear-blacked-657438.jpg?v=1758837622",
+        "observed": "https://vixenbrand.com/cdn/shop/files/blacked-bikini-top-swimwear-blacked-657438_800x.jpg?v=1758837622"
+      },
+      {
+        "for_handle": "blacked-swim-bottom-black",
+        "canonical": "https://cdn.shopify.com/s/files/1/0251/8217/5331/files/blacked-bikini-bottom-swimwear-blacked-834083.jpg?v=1758837490",
+        "observed": "https://vixenbrand.com/cdn/shop/files/blacked-bikini-bottom-swimwear-blacked-834083_800x.jpg?v=1758837490"
+      },
+      {
+        "for_handle": "blacked-bralette-1",
+        "canonical": "https://cdn.shopify.com/s/files/1/0251/8217/5331/files/blacked-sports-bra-blacked-807708.jpg?v=1756955846",
+        "observed": "https://vixenbrand.com/cdn/shop/files/blacked-sports-bra-blacked-807708_800x.jpg?v=1756955846"
+      },
+      {
+        "for_handle": "blacked-thong-panty",
+        "canonical": "https://cdn.shopify.com/s/files/1/0251/8217/5331/files/blacked-thong-panty-blacked-121081.jpg?v=1756955883",
+        "observed": "https://vixenbrand.com/cdn/shop/files/blacked-thong-panty-blacked-121081_800x.jpg?v=1756955883"
+      }
+    ]
+  },
+  "scripts": {
+    "shopify_platform": [
+      {
+        "kind": "module",
+        "url": "https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/loader.init-shop-cart-sync.en.esm.js",
+        "purpose": "Shop cart sync loader (eagerly imported in head)"
+      },
+      {
+        "kind": "module-set",
+        "url": "https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/loader.<feature>.en.esm.js",
+        "purpose": "window.Shopify.featureAssets['shop-js'] - 22 lazy loaders: avatar, checkout-modal, init-customer-accounts-sign-up, init-customer-accounts, init-fed-cm, init-shop-cart-sync, init-shop-email-lookup-coordinator, init-shop-for-new-customer-accounts, init-shop-user-recognition, init-windoid, lead-capture, listener, pay-button, payment-terms, shop-button, shop-cart-sync, shop-cash-offers, shop-follow-button, shop-login-button, shop-login, shop-toast-manager, shop-user-recognition"
+      },
+      {
+        "kind": "script",
+        "url": "https://vixenbrand.com/cdn/shopifycloud/storefront/assets/storefront/autosizes-84416378.js",
+        "purpose": "sizes attribute polyfill, conditionally loaded for Chrome <126 / Firefox <150 / Safari <27"
+      },
+      {
+        "kind": "module",
+        "url": "https://vixenbrand.com/cdn/shopifycloud/storefront/assets/storefront/webmcp-f427de6a.js",
+        "purpose": "WebMCP adapter",
+        "integrity": "sha256-ypGF+5vIq4Psw4WG7nsVtdd/TCfsJWnrNuACdqLCElY="
+      },
+      {
+        "kind": "module",
+        "url": "https://vixenbrand.com/cdn/shopifycloud/portable-wallets/latest/portable-wallets.en.js",
+        "purpose": "Shopify PaymentButton / accelerated checkouts"
+      },
+      {
+        "kind": "script",
+        "url": "https://cdn.shopify.com/shopifycloud/storefront-forms-hcaptcha/ce_storefront_forms_captcha_hcaptcha.v1.5.3.iife.js",
+        "purpose": "hCaptcha for storefront forms",
+        "config": {
+          "sitekey": "f06e6c50-85a8-45c8-87d0-21a2b65856fe"
+        }
+      },
+      {
+        "kind": "beacon",
+        "url": "https://monorail-edge.shopifysvc.com/v1/produce",
+        "purpose": "Shopify analytics / web pixels / abandonment beacon"
+      },
+      {
+        "kind": "inline",
+        "url": "lazysizes v4.1.4 + v4.1.5 (aspectratio, bgset, riase plugins)",
+        "purpose": "Lazy image loading, inlined in head rather than served from CDN"
+      }
+    ],
+    "installed_apps": [
+      {
+        "app": "Booster: EU Cookie Bar",
+        "url": "https://cdn.shopify.com/s/files/1/0277/0019/9517/t/1/assets/booster_eu_cookie_25182175331.js?10952&shop=vixenlive.myshopify.com",
+        "host": "cdn.shopify.com"
+      },
+      {
+        "app": "Snapchat SCE pixel",
+        "url": "https://intg.snapchat.com/shopify/shopify-scevent-init.js?id=c153fc4d-6c7c-4836-b9c9-6864665d9425&shop=vixenlive.myshopify.com",
+        "host": "intg.snapchat.com"
+      },
+      {
+        "app": "Route shipping protection widget",
+        "url": "https://shopify-widget.route.com/shopify.widget.js?shop=vixenlive.myshopify.com",
+        "host": "shopify-widget.route.com"
+      },
+      {
+        "app": "Hextom Free Shipping Bar",
+        "url": "https://cdn.hextom.com/js/freeshippingbar.js?shop=vixenlive.myshopify.com",
+        "host": "cdn.hextom.com"
+      },
+      {
+        "app": "Omnisend email/SMS",
+        "url": "https://omnisnippet1.com/platforms/shopify.js?source=scriptTag&v=2025-05-15T12&shop=vixenlive.myshopify.com",
+        "host": "omnisnippet1.com"
+      },
+      {
+        "app": "Klarna On-Site Messaging",
+        "url": "https://s3.eu-west-1.amazonaws.com/production-klarna-il-shopify-osm/0b7fe7c4a98ef8166eeafee767bc667686567a25/vixenlive.myshopify.com-1764703053987.js?shop=vixenlive.myshopify.com",
+        "host": "s3.eu-west-1.amazonaws.com"
+      },
+      {
+        "app": "Pinterest tag",
+        "url": "https://s.pinimg.com/ct/core.js",
+        "host": "s.pinimg.com",
+        "config": {
+          "tag_id": "2613542739109"
+        }
+      },
+      {
+        "app": "Pinterest noscript pixel",
+        "url": "https://ct.pinterest.com/v3/?event=init&tid=2613542739109&pd[em]=<hashed_email_address>&noscript=1",
+        "host": "ct.pinterest.com"
+      }
+    ]
+  },
+  "endpoints": [
+    {
+      "kind": "agent-manifest",
+      "url": "https://vixenbrand.com/agents.md",
+      "note": "Store's own agent instructions; explicitly permits read-only browsing of public HTML and /sitemap.xml discovery."
+    },
+    {
+      "kind": "ucp-profile",
+      "url": "https://vixenbrand.com/.well-known/ucp",
+      "note": "Universal Commerce Protocol v2026-08-25 profile (also 2026-04-08 and 2026-01-23)."
+    },
+    {
+      "kind": "mcp",
+      "url": "https://vixenbrand.com/api/ucp/mcp",
+      "note": "UCP shopping MCP endpoint on vixenlive.myshopify.com."
+    },
+    {
+      "kind": "webmcp",
+      "url": "https://vixenbrand.com/api/mcp",
+      "note": "window.Shopify.MCP.mcpEndpoint; exposes search_shop_policies_and_faqs."
+    },
+    {
+      "kind": "catalog-json",
+      "url": "https://vixenbrand.com/products.json?limit=250",
+      "note": "FULL catalogue incl. every image, variant, SKU, price, inventory flag. ~63 pages of JSON - the authoritative source for all gallery images."
+    },
+    {
+      "kind": "catalog-json",
+      "url": "https://vixenbrand.com/collections.json?limit=250",
+      "note": "26 collections with product counts."
+    },
+    {
+      "kind": "catalog-json",
+      "url": "https://vixenbrand.com/collections/{handle}/products.json?limit=250",
+      "note": "Per-collection product + image listing."
+    },
+    {
+      "kind": "product-json",
+      "url": "https://vixenbrand.com/products/{handle}.js",
+      "note": "Single product, all images + variants."
+    },
+    {
+      "kind": "search",
+      "url": "https://vixenbrand.com/search/suggest.json?q={term}&resources[type]=product&resources[limit]=10",
+      "note": "Predictive search; supports resources[options][fields] to return only image fields."
+    },
+    {
+      "kind": "permalink",
+      "url": "https://vixenbrand.com/buy",
+      "note": "UCP permalink capability endpoint."
+    }
+  ],
+  "sitemaps": [
+    "https://vixenbrand.com/sitemap.xml",
+    "https://vixenbrand.com/sitemap_agentic_discovery.xml",
+    "https://vixenbrand.com/sitemap_products_1.xml?from=4485405376611&to=15400246935828",
+    "https://vixenbrand.com/sitemap_pages_1.xml?from=40366932067&to=129462927636",
+    "https://vixenbrand.com/sitemap_collections_1.xml?from=158945050723&to=544635060500",
+    "https://vixenbrand.com/sitemap_blogs_1.xml",
+    "https://vixenbrand.com/sitemap_articles_1.xml"
+  ],
+  "collections": [
+    {
+      "handle": "2023-avn-photo-tees",
+      "title": "2023 AVN Photo Tees",
+      "products_count": 10
+    },
+    {
+      "handle": "accessories",
+      "title": "Accessories",
+      "products_count": 5
+    },
+    {
+      "handle": "apparel",
+      "title": "Apparel",
+      "products_count": 24
+    },
+    {
+      "handle": "blacked",
+      "title": "Blacked",
+      "products_count": 17
+    },
+    {
+      "handle": "icon",
+      "title": "Icons",
+      "products_count": 10
+    },
+    {
+      "handle": "labor-day-sale",
+      "title": "LABOR DAY SALE 2024",
+      "products_count": 60
+    },
+    {
+      "handle": "new-arrivals",
+      "title": "New Arrivals",
+      "products_count": 16
+    },
+    {
+      "handle": "new-season",
+      "title": "NEW SEASON",
+      "products_count": 12
+    },
+    {
+      "handle": "noir",
+      "title": "NOIR",
+      "products_count": 4
+    },
+    {
+      "handle": "restock",
+      "title": "Restock",
+      "products_count": 7
+    },
+    {
+      "handle": "shop-all",
+      "title": "SHOP ALL",
+      "products_count": 82
+    },
+    {
+      "handle": "shop-all-bfcm-2025",
+      "title": "SHOP ALL BFCM 2025",
+      "products_count": 95
+    },
+    {
+      "handle": "shop-all-vixen",
+      "title": "Shop All Vixen",
+      "products_count": 46
+    },
+    {
+      "handle": "shop-violet",
+      "title": "Shop Violet",
+      "products_count": 4
+    },
+    {
+      "handle": "sunset-sorbet",
+      "title": "Sunset Sorbet",
+      "products_count": 4
+    },
+    {
+      "handle": "v-print",
+      "title": "V Print",
+      "products_count": 5
+    },
+    {
+      "handle": "valentines-day",
+      "title": "VALENTINES DAY",
+      "products_count": 5
+    },
+    {
+      "handle": "vixen-basics",
+      "title": "Vixen Basics",
+      "products_count": 10
+    },
+    {
+      "handle": "vixen-core",
+      "title": "Vixen Core",
+      "products_count": 21
+    },
+    {
+      "handle": "vixen-intimates",
+      "title": "Vixen Intimates",
+      "products_count": 10
+    },
+    {
+      "handle": "vixen-one-piece",
+      "title": "vixen one piece swimsuits",
+      "products_count": 3
+    },
+    {
+      "handle": "vixen-red-set-restock",
+      "title": "Vixen Red Set Restock",
+      "products_count": 2
+    },
+    {
+      "handle": "vixen-sport",
+      "title": "Vixen Sport",
+      "products_count": 3
+    },
+    {
+      "handle": "vixen-summer-drop-1",
+      "title": "Vixen Summer Drop 1",
+      "products_count": 15
+    },
+    {
+      "handle": "vixen-swim",
+      "title": "Vixen Swim",
+      "products_count": 19
+    },
+    {
+      "handle": "vixen-v-cut",
+      "title": "Vixen V-Cut",
+      "products_count": 4
+    }
+  ],
+  "pages": [
+    "https://vixenbrand.com/pages/contact-us",
+    "https://vixenbrand.com/pages/privacy-policy",
+    "https://vixenbrand.com/pages/shipping",
+    "https://vixenbrand.com/pages/terms-conditions",
+    "https://vixenbrand.com/pages/about-vixen",
+    "https://vixenbrand.com/pages/geazy",
+    "https://vixenbrand.com/pages/pipeda-privacy-policy",
+    "https://vixenbrand.com/pages/ccpa-privacy-policy",
+    "https://vixenbrand.com/pages/gdpr-privacy-policy",
+    "https://vixenbrand.com/pages/appi-privacy-policy",
+    "https://vixenbrand.com/pages/lgpd-privacy-policy"
+  ],
+  "cdn_image_transform_rules": {
+    "canonical_full_resolution": "https://cdn.shopify.com/s/files/1/0251/8217/5331/{path}?v={v}",
+    "storefront_variant": "https://vixenbrand.com/cdn/shop/{path}_{width}x{height}.{jpg|png|webp}?v={v}",
+    "observed_width_ladder": [
+      200,
+      400,
+      410,
+      600,
+      800,
+      1000,
+      1200,
+      1400,
+      1600,
+      1800,
+      2000,
+      2500,
+      3000,
+      3500,
+      4000,
+      4500,
+      5000
+    ],
+    "supported_params": {
+      "width": "crop/resize to a pixel width, e.g. _800x",
+      "height": "e.g. _800x1200",
+      "crop": "center | top | bottom | left | right, e.g. _800x800_crop_center",
+      "format": "jpg | png | webp | avif - append .webp to any path to force a format",
+      "quality": "1-100, e.g. &quality=75",
+      "v": "cache-busting upload timestamp (unix seconds)"
+    },
+    "important": "Shopify generates these variants on demand and caches them at the edge. The set of 'available' CDN resources is therefore effectively unbounded: any width/height/format combination of any uploaded file is a valid, live URL. The 17-width ladder above is what the Turbo theme actually requests; the underlying uploads are the canonical cdn.shopify.com URLs."
+  },
+  "url_templates": [
+    "https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/loader.<feature>.en.esm.js",
+    "https://ct.pinterest.com/v3/?event=init&tid=2613542739109&pd[em]=<hashed_email_address>&noscript=1",
+    "https://vixenbrand.com/collections/{handle}/products.json?limit=250",
+    "https://vixenbrand.com/products/{handle}.js",
+    "https://vixenbrand.com/search/suggest.json?q={term}&resources[type]=product&resources[limit]=10"
+  ]
+}

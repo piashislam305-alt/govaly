@@ -1,0 +1,12 @@
+https://cdn.hextom.com/js/freeshippingbar.js?shop=vixenlive.myshopify.com
+https://cdn.shopify.com/s/files/1/0277/0019/9517/t/1/assets/booster_eu_cookie_25182175331.js?10952&shop=vixenlive.myshopify.com
+https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/loader.init-shop-cart-sync.en.esm.js
+https://cdn.shopify.com/shopifycloud/storefront-forms-hcaptcha/ce_storefront_forms_captcha_hcaptcha.v1.5.3.iife.js
+https://intg.snapchat.com/shopify/shopify-scevent-init.js?id=c153fc4d-6c7c-4836-b9c9-6864665d9425&shop=vixenlive.myshopify.com
+https://omnisnippet1.com/platforms/shopify.js?source=scriptTag&v=2025-05-15T12&shop=vixenlive.myshopify.com
+https://s.pinimg.com/ct/core.js
+https://s3.eu-west-1.amazonaws.com/production-klarna-il-shopify-osm/0b7fe7c4a98ef8166eeafee767bc667686567a25/vixenlive.myshopify.com-1764703053987.js?shop=vixenlive.myshopify.com
+https://shopify-widget.route.com/shopify.widget.js?shop=vixenlive.myshopify.com
+https://vixenbrand.com/cdn/shopifycloud/portable-wallets/latest/portable-wallets.en.js
+https://vixenbrand.com/cdn/shopifycloud/storefront/assets/storefront/autosizes-84416378.js
+https://vixenbrand.com/cdn/shopifycloud/storefront/assets/storefront/webmcp-f427de6a.js

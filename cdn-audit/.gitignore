@@ -1,0 +1,4 @@
+# Mirrored binaries and harvest output are regenerable — keep them out of git.
+mirror/
+harvested/
+*.tmp
