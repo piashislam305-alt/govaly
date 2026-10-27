@@ -1,0 +1,136 @@
+{
+  "generated_at": "2026-10-27T10:24:44Z",
+  "sources": {
+    "opencv-samples-data": {
+      "slug": "opencv-samples-data",
+      "preserved": [
+        {
+          "file": "H1to3p.xml",
+          "stored_as": "annotations/original/opencv-samples-data/H1to3p.xml",
+          "bytes": 298,
+          "sha256": "9cd961fef3542462153a95acad164bc0da784622034a4eaf384c9beeaa19588f",
+          "origin": "https://github.com/opencv/opencv/blob/4.x/samples/data/H1to3p.xml",
+          "note": "already present and unchanged; not re-fetched"
+        },
+        {
+          "file": "alphabet_36.txt",
+          "stored_as": "annotations/original/opencv-samples-data/alphabet_36.txt",
+          "bytes": 72,
+          "sha256": "71e9aa833ec424844f3670bb5f1a2851867b9ce963f78df531e45d3a4c77dd72",
+          "origin": "https://github.com/opencv/opencv/blob/4.x/samples/data/alphabet_36.txt",
+          "note": "already present and unchanged; not re-fetched"
+        },
+        {
+          "file": "alphabet_94.txt",
+          "stored_as": "annotations/original/opencv-samples-data/alphabet_94.txt",
+          "bytes": 188,
+          "sha256": "851dfc1ebb105245410e2cde220b8610194b8a50f9d70b9e839795bbcb3587fb",
+          "origin": "https://github.com/opencv/opencv/blob/4.x/samples/data/alphabet_94.txt",
+          "note": "already present and unchanged; not re-fetched"
+        },
+        {
+          "file": "calibration.yml",
+          "stored_as": "annotations/original/opencv-samples-data/calibration.yml",
+          "bytes": 213,
+          "sha256": "0c9ef645721f31e412b20b583f766c192f32ab5225585cc61e6036383ca4fcf4",
+          "origin": "https://github.com/opencv/opencv/blob/4.x/samples/data/calibration.yml",
+          "note": "already present and unchanged; not re-fetched"
+        },
+        {
+          "file": "data01.xml",
+          "stored_as": "annotations/original/opencv-samples-data/data01.xml",
+          "bytes": 70125,
+          "sha256": "37da12e71a06668db27c507ad37cb1da468b9da1717f5983ddb2f468dcc11c80",
+          "origin": "https://github.com/opencv/opencv/blob/4.x/samples/data/data01.xml",
+          "note": "already present and unchanged; not re-fetched"
+        },
+        {
+          "file": "essential_mat_data.txt",
+          "stored_as": "annotations/original/opencv-samples-data/essential_mat_data.txt",
+          "bytes": 106,
+          "sha256": "df191b4542d038421e78a5902deff6c2465c413e41c4fc6eeeb5e757aa1f61a7",
+          "origin": "https://github.com/opencv/opencv/blob/4.x/samples/data/essential_mat_data.txt",
+          "note": "already present and unchanged; not re-fetched"
+        },
+        {
+          "file": "intrinsics.yml",
+          "stored_as": "annotations/original/opencv-samples-data/intrinsics.yml",
+          "bytes": 631,
+          "sha256": "c419615d0f1794cdd64eba97da74f5f6b15c31eb09bdd9cf7b6025d00764f92b",
+          "origin": "https://github.com/opencv/opencv/blob/4.x/samples/data/intrinsics.yml",
+          "note": "already present and unchanged; not re-fetched"
+        },
+        {
+          "file": "left_intrinsics.yml",
+          "stored_as": "annotations/original/opencv-samples-data/left_intrinsics.yml",
+          "bytes": 3187,
+          "sha256": "93a35a94eaaa63afba5128292cf2800fce3e783eba12a69e3d3731360d594684",
+          "origin": "https://github.com/opencv/opencv/blob/4.x/samples/data/left_intrinsics.yml",
+          "note": "already present and unchanged; not re-fetched"
+        },
+        {
+          "file": "letter-recognition.data",
+          "stored_as": "annotations/original/opencv-samples-data/letter-recognition.data",
+          "bytes": 712565,
+          "sha256": "2b89f3602cf768d3c8355267d2f13f2417809e101fc2b5ceee10db19a60de6e2",
+          "origin": "https://github.com/opencv/opencv/blob/4.x/samples/data/letter-recognition.data",
+          "note": "already present and unchanged; not re-fetched"
+        },
+        {
+          "file": "stereo_calib.xml",
+          "stored_as": "annotations/original/opencv-samples-data/stereo_calib.xml",
+          "bytes": 433,
+          "sha256": "585a31531d6624f34acfce2cc9ca0be4d46d30db061494c8ea189f7274b80391",
+          "origin": "https://github.com/opencv/opencv/blob/4.x/samples/data/stereo_calib.xml",
+          "note": "already present and unchanged; not re-fetched"
+        }
+      ],
+      "skipped": [
+        {
+          "file": "Megamind.avi",
+          "size": 1189270,
+          "reason": "video companion; out of scope for an image dataset (catalogued for provenance only)"
+        },
+        {
+          "file": "Megamind_bugy.avi",
+          "size": 860920,
+          "reason": "video companion; out of scope for an image dataset (catalogued for provenance only)"
+        },
+        {
+          "file": "tree.avi",
+          "size": 1250680,
+          "reason": "video companion; out of scope for an image dataset (catalogued for provenance only)"
+        },
+        {
+          "file": "vtest.avi",
+          "size": 8131690,
+          "reason": "video companion; out of scope for an image dataset (catalogued for provenance only)"
+        }
+      ],
+      "label_definitions_transcribed": 10
+    },
+    "pillow-test-images": {
+      "slug": "pillow-test-images",
+      "preserved": [
+        {
+          "file": "README.txt",
+          "stored_as": "annotations/original/pillow-test-images/README.txt",
+          "bytes": 142,
+          "sha256": "e2f0c6b16c4970fdbc5078711cf36ca3695f19db2dcd0a3ae8c9570b6f5e5375",
+          "origin": "https://github.com/python-pillow/Pillow/blob/main/Tests/images/bmp/README.txt",
+          "note": "already present and unchanged; not re-fetched"
+        },
+        {
+          "file": "readme.txt",
+          "stored_as": "annotations/original/pillow-test-images/readme.txt",
+          "bytes": 296,
+          "sha256": "e5b4d823c1123a3422d17663064d0af2f547105bc5cc8818ae46f187815fafaf",
+          "origin": "https://github.com/python-pillow/Pillow/blob/main/Tests/images/tga/common/readme.txt",
+          "note": "already present and unchanged; not re-fetched"
+        }
+      ],
+      "skipped": [],
+      "label_definitions_transcribed": 4
+    }
+  }
+}

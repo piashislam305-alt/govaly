@@ -1,0 +1,133 @@
+{
+  "slug": "opencv-samples-data",
+  "source_name": "OpenCV sample image corpus (samples/data)",
+  "source_url": "https://github.com/opencv/opencv/tree/4.x/samples/data",
+  "author": "OpenCV Contributors (OpenCV.org / OpenCV.ai)",
+  "license": "Apache-2.0",
+  "license_url": "https://github.com/opencv/opencv/blob/4.x/LICENSE",
+  "content_class": "general",
+  "access_method": "github_contents_api",
+  "estimated_image_count": 94,
+  "count_basis": "VERIFIED by enumeration: GitHub contents API listing of samples/data at ref 4.x returned 94 image files totalling 9,914,974 bytes (14 further non-image files present and ignored).",
+  "formats": [
+    "JPEG",
+    "PNG"
+  ],
+  "annotations_available": true,
+  "label_definitions": [
+    "NO classification labels ship with this corpus. Nothing below is a category label.",
+    "VERIFIED by reading the preserved files (transcribed, not inferred):",
+    "  - stereo_calib.xml: an <imagelist> pairing left01.jpg<->right01.jpg ... left14.jpg<->right04.jpg. This is ground truth establishing that the left*/right* files are STEREO PAIRS of the same calibration board, i.e. distinct samples, NOT duplicates of one another.",
+    "  - calibration.yml, intrinsics.yml, left_intrinsics.yml: camera intrinsic matrices for the calibration set.",
+    "  - H1to3p.xml: a 3x3 homography matrix (ground truth for the pic1->pic3 view correspondence).",
+    "  - essential_mat_data.txt: essential-matrix ground truth.",
+    "  - aloeGT.png: disparity ground-truth MAP for aloeL.jpg/aloeR.jpg (an image, preserved in raw_images/, not a label file).",
+    "  - letter-recognition.data: 20,000 rows, each a letter label (A-Z) plus 16 numeric features (the UCI Letter Recognition dataset). Tabular feature data - it does NOT label any image in this corpus and must not be joined to one.",
+    "  - data01.xml: OpenCV FileNode training data for the ml sample.",
+    "  - alphabet_36.txt / alphabet_94.txt: character sets for the text samples."
+  ],
+  "assessment_date": "2026-10-27T10:21:18Z",
+  "rights_review_status": "approved",
+  "blockers": [],
+  "terminal_blockers": [],
+  "resolvable_blockers": [],
+  "conditions": [],
+  "checks": [
+    {
+      "check": "content_class_not_excluded",
+      "passed": true,
+      "detail": "content_class='general'",
+      "severity": "terminal"
+    },
+    {
+      "check": "license_identified",
+      "passed": true,
+      "detail": "license=Apache-2.0",
+      "severity": "terminal"
+    },
+    {
+      "check": "license_grants_research_and_ml_training",
+      "passed": true,
+      "detail": "permissive=True research_only=False explicit_grant=True",
+      "severity": "resolvable"
+    },
+    {
+      "check": "license_url_recorded",
+      "passed": true,
+      "detail": "https://github.com/opencv/opencv/blob/4.x/LICENSE",
+      "severity": "resolvable"
+    },
+    {
+      "check": "author_identified",
+      "passed": true,
+      "detail": "OpenCV Contributors (OpenCV.org / OpenCV.ai)",
+      "severity": "resolvable"
+    },
+    {
+      "check": "redistribution_position_stated",
+      "passed": true,
+      "detail": "redistribution_permitted=True (must be true/false, not null)",
+      "severity": "resolvable"
+    },
+    {
+      "check": "derivative_works_position_stated",
+      "passed": true,
+      "detail": "derivative_works_permitted=True",
+      "severity": "resolvable"
+    },
+    {
+      "check": "access_method_lawful",
+      "passed": true,
+      "detail": "access_method='github_contents_api'",
+      "severity": "terminal"
+    },
+    {
+      "check": "access_method_self_service",
+      "passed": true,
+      "detail": "access_method='github_contents_api' requires gated approval or author correspondence that the researcher must complete personally",
+      "severity": "resolvable"
+    },
+    {
+      "check": "consent_position_stated",
+      "passed": true,
+      "detail": "Mostly not applicable (synthetic renderings, textures, calibration boards, objects, landscapes). Two files depict identifiable real people and are EXCLUDED on consent/provenance grounds - see exclusions.",
+      "severity": "resolvable"
+    }
+  ],
+  "notes": "APPROVED. Apache-2.0 licence text fetched and verified from the repository at ref 4.x. Permits reproduction, modification and redistribution with attribution, and grants an express patent licence - so academic research and ML training are both permitted. CAUTION carried as a condition: Apache-2.0 s.6 grants NO trademark licence, so the logo files (LinuxLogo.jpg, WindowsLogo.jpg, opencv-logo.png, opencv-logo-white.png) may be analysed locally but must not be used in a way that implies endorsement or be redistributed as branding assets.",
+  "environment_reachable": true,
+  "exclusions": {
+    "files": [
+      "lena.jpg",
+      "lena_tmpl.jpg",
+      "messi5.jpg"
+    ],
+    "reason": "CONSENT / PROVENANCE. lena.jpg is the 1972 Playboy centrefold crop; the depicted person (Lena Soderberg) has publicly stated she does not want the image used, and multiple venues (IEEE, Nature journals) have retired it. lena_tmpl.jpg is a crop of the same work. messi5.jpg is a press photograph of an identifiable living individual whose underlying rights are not conveyed by the repository's Apache-2.0 code licence. All three are excluded even though the surrounding corpus is permissively licensed."
+  },
+  "access_config": {
+    "repo": "opencv/opencv",
+    "path": "samples/data",
+    "ref": "4.x",
+    "image_extensions": [
+      ".jpg",
+      ".jpeg",
+      ".png",
+      ".bmp",
+      ".tif",
+      ".tiff",
+      ".webp"
+    ]
+  },
+  "annotation_config": {
+    "repo": "opencv/opencv",
+    "path": "samples/data",
+    "ref": "4.x"
+  },
+  "annotation_notes": "Directory scan of samples/data. Companion ground-truth and calibration files (homography XML, stereo calibration XML/YAML, camera intrinsics, the letter-recognition labelled dataset) are preserved verbatim; .avi video companions are catalogued but not collected into an image dataset.",
+  "redistribution_permitted": true,
+  "derivative_works_permitted": true,
+  "research_use_explicitly_granted": true,
+  "consent_position": "Mostly not applicable (synthetic renderings, textures, calibration boards, objects, landscapes). Two files depict identifiable real people and are EXCLUDED on consent/provenance grounds - see exclusions.",
+  "attribution_required": true,
+  "citation": "OpenCV Contributors, OpenCV samples/data image corpus, Apache License 2.0, https://github.com/opencv/opencv/tree/4.x/samples/data"
+}

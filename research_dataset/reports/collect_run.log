@@ -1,0 +1,54 @@
+
+==============================================================================
+STAGE 2 - RIGHTS-GATED COLLECTION
+==============================================================================
+[09:50:23] INFO  13 sources in scope; 4 carry status 'approved'
+[09:50:23] WARN    NOT COLLECTING scikit-image-data              status=awaiting_permission
+[09:50:23] WARN    NOT COLLECTING unsafebench                    status=awaiting_permission
+[09:50:23] WARN    NOT COLLECTING usd-unsafe-scene-detection     status=awaiting_permission
+[09:50:23] WARN    NOT COLLECTING lspd                           status=awaiting_permission
+[09:50:23] WARN    NOT COLLECTING deepghs-nsfw-detect            status=awaiting_permission
+[09:50:23] WARN    NOT COLLECTING cloverxion-image-moderation    status=awaiting_permission
+[09:50:23] WARN    NOT COLLECTING c4censor                       status=awaiting_permission
+[09:50:23] WARN    NOT COLLECTING ebazarov-nsfw-urls             status=rejected
+[09:50:23] WARN    NOT COLLECTING pornpics-de                    status=rejected
+[09:50:23] INFO  github api authenticated=True
+[09:50:23] INFO  [opencv-samples-data] enumerating via github_contents_api -> /home/user/govaly/research_dataset/raw_images/opencv-samples-data
+[09:50:43] INFO  [opencv-samples-data] 50 downloaded (6.4 MB)
+[09:50:43] WARN  [opencv-samples-data] excluded lena.jpg (consent/provenance)
+[09:50:43] WARN  [opencv-samples-data] excluded lena_tmpl.jpg (consent/provenance)
+[09:50:45] WARN  [opencv-samples-data] excluded messi5.jpg (consent/provenance)
+[09:50:59] INFO  [opencv-samples-data] done: discovered=94 downloaded=91 excluded=3 failed=0
+[09:50:59] INFO  [pillow-test-images] enumerating via github_tree_api -> /home/user/govaly/research_dataset/raw_images/pillow-test-images
+[09:51:20] INFO  [pillow-test-images] 50 downloaded (0.2 MB)
+[09:51:41] INFO  [pillow-test-images] 100 downloaded (0.8 MB)
+[09:52:01] INFO  [pillow-test-images] 150 downloaded (1.2 MB)
+[09:52:21] INFO  [pillow-test-images] 200 downloaded (3.2 MB)
+[09:52:41] INFO  [pillow-test-images] 250 downloaded (3.7 MB)
+[09:53:01] INFO  [pillow-test-images] 300 downloaded (5.9 MB)
+[09:53:21] INFO  [pillow-test-images] 350 downloaded (7.9 MB)
+[09:53:41] INFO  [pillow-test-images] 400 downloaded (8.0 MB)
+[09:54:02] INFO  [pillow-test-images] 450 downloaded (8.1 MB)
+[09:54:22] INFO  [pillow-test-images] 500 downloaded (9.1 MB)
+[09:54:43] INFO  [pillow-test-images] 550 downloaded (15.8 MB)
+[09:55:02] INFO  [pillow-test-images] 600 downloaded (16.5 MB)
+[09:55:24] INFO  [pillow-test-images] 650 downloaded (16.7 MB)
+[09:55:44] INFO  [pillow-test-images] 700 downloaded (20.7 MB)
+[09:55:55] INFO  [pillow-test-images] done: discovered=735 downloaded=726 excluded=0 failed=0
+[09:55:55] WARN  [open-images-v7] SKIPPED - approved but not reachable from this environment; run on your own network
+[09:55:55] WARN  [koniq-10k] SKIPPED - approved but not reachable from this environment; run on your own network
+
+==============================================================================
+COLLECTION SUMMARY
+==============================================================================
+ Sources in scope ................ 13
+ Sources with approved rights .... 4
+ Files discovered (enumerated) ... 829
+ Files downloaded ................ 817
+ Excluded by consent/provenance .. 3
+ Skipped (bytes already held) .... 9
+ Failed .......................... 0
+ Bytes written ................... 32.70 MB
+ HTTP requests issued ............ 828
+
+ Audit trail -> metadata/download_log.jsonl

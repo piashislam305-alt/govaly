@@ -1,0 +1,102 @@
+{
+  "slug": "koniq-10k",
+  "source_name": "KonIQ-10k - crowdsourced image quality assessment database",
+  "source_url": "http://database.mmsp-kn.de/koniq-10k-database.html",
+  "author": "Vlad Hosu et al., Multimedia Signal Processing Group, TU Ilmenau / LMU Munich",
+  "license": "CC-BY-4.0 (database); underlying images sourced from YFCC100M under their individual CC licences",
+  "license_url": "http://database.mmsp-kn.de/koniq-10k-database.html",
+  "content_class": "image-quality",
+  "access_method": "documented_dataset_api",
+  "estimated_image_count": 10073,
+  "count_basis": "Stated: 10,073 authentic, high-resolution images with crowdsourced quality scores (120 ratings per image on average).",
+  "formats": [
+    "JPEG"
+  ],
+  "annotations_available": true,
+  "label_definitions": [
+    "Mean opinion score (MOS) per image on a 5-point quality scale, plus the full distribution of individual ratings and image metadata (resolution, camera)."
+  ],
+  "assessment_date": "2026-10-27T10:21:18Z",
+  "rights_review_status": "approved",
+  "blockers": [],
+  "terminal_blockers": [],
+  "resolvable_blockers": [],
+  "conditions": [],
+  "checks": [
+    {
+      "check": "content_class_not_excluded",
+      "passed": true,
+      "detail": "content_class='image-quality'",
+      "severity": "terminal"
+    },
+    {
+      "check": "license_identified",
+      "passed": true,
+      "detail": "license=CC-BY-4.0 (database); underlying images sourced from YFCC100M under their individual CC licences",
+      "severity": "terminal"
+    },
+    {
+      "check": "license_grants_research_and_ml_training",
+      "passed": true,
+      "detail": "permissive=False research_only=False explicit_grant=True",
+      "severity": "resolvable"
+    },
+    {
+      "check": "license_url_recorded",
+      "passed": true,
+      "detail": "http://database.mmsp-kn.de/koniq-10k-database.html",
+      "severity": "resolvable"
+    },
+    {
+      "check": "author_identified",
+      "passed": true,
+      "detail": "Vlad Hosu et al., Multimedia Signal Processing Group, TU Ilmenau / LMU Munich",
+      "severity": "resolvable"
+    },
+    {
+      "check": "redistribution_position_stated",
+      "passed": true,
+      "detail": "redistribution_permitted=True (must be true/false, not null)",
+      "severity": "resolvable"
+    },
+    {
+      "check": "derivative_works_position_stated",
+      "passed": true,
+      "detail": "derivative_works_permitted=True",
+      "severity": "resolvable"
+    },
+    {
+      "check": "access_method_lawful",
+      "passed": true,
+      "detail": "access_method='documented_dataset_api'",
+      "severity": "terminal"
+    },
+    {
+      "check": "access_method_self_service",
+      "passed": true,
+      "detail": "access_method='documented_dataset_api' requires gated approval or author correspondence that the researcher must complete personally",
+      "severity": "resolvable"
+    },
+    {
+      "check": "consent_position_stated",
+      "passed": true,
+      "detail": "Images drawn from the YFCC100M Flickr collection under CC licences; per-image attribution is preserved in the database's metadata.",
+      "severity": "resolvable"
+    }
+  ],
+  "notes": "AWAITING PERMISSION FOR THIS RUN - BLOCKED BY SANDBOX EGRESS ONLY. This is the canonical benchmark for your 'image quality assessment' objective and it ships real human MOS labels, which is far better than relying solely on the heuristic Laplacian-variance blur score this pipeline computes. The heuristic is a triage filter, not a substitute for ground-truth IQA labels; pair the two. Fetch from database.mmsp-kn.de on your own network.",
+  "environment_reachable": false,
+  "exclusions": {
+    "files": [],
+    "reason": ""
+  },
+  "access_config": {},
+  "annotation_config": {},
+  "annotation_notes": "",
+  "redistribution_permitted": true,
+  "derivative_works_permitted": true,
+  "research_use_explicitly_granted": true,
+  "consent_position": "Images drawn from the YFCC100M Flickr collection under CC licences; per-image attribution is preserved in the database's metadata.",
+  "attribution_required": true,
+  "citation": "Hosu et al., KonIQ-10k: An ecologically valid database for deep learning of blind image quality assessment (IEEE TIP, 2020)."
+}

@@ -1,0 +1,115 @@
+{
+  "slug": "deepghs-nsfw-detect",
+  "source_name": "deepghs/nsfw_detect",
+  "source_url": "https://huggingface.co/datasets/deepghs/nsfw_detect",
+  "author": "deepghs",
+  "license": "MIT (as declared on the dataset card)",
+  "license_url": "https://choosealicense.com/licenses/mit/",
+  "content_class": "content-safety",
+  "access_method": "hf_open_dataset",
+  "estimated_image_count": null,
+  "count_basis": "Card states 10K-100K images organised into five classes following the standard NSFW-detection categorisation. Exact per-class counts must be enumerated after access.",
+  "formats": [
+    "JPEG",
+    "PNG"
+  ],
+  "annotations_available": true,
+  "label_definitions": [
+    "Five classes representing escalating levels of explicitness in artistic/illustrated content, following the popular NSFW-detection implementations."
+  ],
+  "assessment_date": "2026-10-27T10:21:18Z",
+  "rights_review_status": "awaiting_permission",
+  "blockers": [
+    "license_grants_research_and_ml_training: permissive=False research_only=False explicit_grant=None",
+    "redistribution_position_stated: redistribution_permitted=None (must be true/false, not null)",
+    "redistribution_position_stated: redistribution permission is UNCLEAR",
+    "derivative_works_position_stated: derivative_works_permitted=None",
+    "provenance_unclear: original author/rights chain cannot be established"
+  ],
+  "terminal_blockers": [],
+  "resolvable_blockers": [
+    "license_grants_research_and_ml_training: permissive=False research_only=False explicit_grant=None",
+    "redistribution_position_stated: redistribution_permitted=None (must be true/false, not null)",
+    "redistribution_position_stated: redistribution permission is UNCLEAR",
+    "derivative_works_position_stated: derivative_works_permitted=None",
+    "provenance_unclear: original author/rights chain cannot be established"
+  ],
+  "conditions": [],
+  "checks": [
+    {
+      "check": "content_class_not_excluded",
+      "passed": true,
+      "detail": "content_class='content-safety'",
+      "severity": "terminal"
+    },
+    {
+      "check": "license_identified",
+      "passed": true,
+      "detail": "license=MIT (as declared on the dataset card)",
+      "severity": "terminal"
+    },
+    {
+      "check": "license_grants_research_and_ml_training",
+      "passed": false,
+      "detail": "permissive=False research_only=False explicit_grant=None",
+      "severity": "resolvable"
+    },
+    {
+      "check": "license_url_recorded",
+      "passed": true,
+      "detail": "https://choosealicense.com/licenses/mit/",
+      "severity": "resolvable"
+    },
+    {
+      "check": "author_identified",
+      "passed": true,
+      "detail": "deepghs",
+      "severity": "resolvable"
+    },
+    {
+      "check": "redistribution_position_stated",
+      "passed": false,
+      "detail": "redistribution_permitted=None (must be true/false, not null)",
+      "severity": "resolvable"
+    },
+    {
+      "check": "derivative_works_position_stated",
+      "passed": false,
+      "detail": "derivative_works_permitted=None",
+      "severity": "resolvable"
+    },
+    {
+      "check": "access_method_lawful",
+      "passed": true,
+      "detail": "access_method='hf_open_dataset'",
+      "severity": "terminal"
+    },
+    {
+      "check": "access_method_self_service",
+      "passed": true,
+      "detail": "access_method='hf_open_dataset' requires gated approval or author correspondence that the researcher must complete personally",
+      "severity": "resolvable"
+    },
+    {
+      "check": "consent_position_stated",
+      "passed": true,
+      "detail": "UNCLEAR. A declared MIT licence on the dataset card does not establish that the uploader held rights to the underlying images, and much of this class of corpus is artwork scraped from illustration platforms.",
+      "severity": "resolvable"
+    }
+  ],
+  "notes": "AWAITING PERMISSION. Deliberately NOT auto-approved despite carrying an MIT tag. A permissive licence declared by an anonymous re-uploader is only as good as that uploader's own rights in the images, which cannot be verified from here; the card itself flags the content as Not-For-All-Audiences. Treat a self-declared licence on scraped NSFW imagery as unverified until the provenance chain is documented. If you need illustrated-content moderation, prefer a source whose curators state their collection method.",
+  "environment_reachable": false,
+  "exclusions": {
+    "files": [],
+    "reason": ""
+  },
+  "access_config": {},
+  "annotation_config": {},
+  "annotation_notes": "",
+  "redistribution_permitted": null,
+  "derivative_works_permitted": null,
+  "research_use_explicitly_granted": null,
+  "consent_position": "UNCLEAR. A declared MIT licence on the dataset card does not establish that the uploader held rights to the underlying images, and much of this class of corpus is artwork scraped from illustration platforms.",
+  "attribution_required": true,
+  "citation": ""
+}

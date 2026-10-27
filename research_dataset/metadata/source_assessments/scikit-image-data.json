@@ -1,0 +1,116 @@
+{
+  "slug": "scikit-image-data",
+  "source_name": "scikit-image sample data (skimage.data)",
+  "source_url": "https://github.com/scikit-image/scikit-image/tree/main/src/skimage/data",
+  "author": "scikit-image developers (individual per-image authors not recorded in the distributed package)",
+  "license": "BSD-3-Clause (CODE ONLY - image data licences are per-image and NOT stated in the package)",
+  "license_url": "https://github.com/scikit-image/scikit-image/blob/main/LICENSE.txt",
+  "content_class": "general",
+  "access_method": "pypi_wheel",
+  "estimated_image_count": 28,
+  "count_basis": "VERIFIED by enumeration: the scikit-image 0.26.0 wheel contains 28 image files under skimage/data/ totalling 5,477,469 bytes.",
+  "formats": [
+    "PNG",
+    "JPEG"
+  ],
+  "annotations_available": false,
+  "label_definitions": [],
+  "assessment_date": "2026-10-27T10:21:18Z",
+  "rights_review_status": "awaiting_permission",
+  "blockers": [
+    "license_grants_research_and_ml_training: permissive=False research_only=False explicit_grant=None",
+    "redistribution_position_stated: redistribution_permitted=None (must be true/false, not null)",
+    "redistribution_position_stated: redistribution permission is UNCLEAR",
+    "derivative_works_position_stated: derivative_works_permitted=None",
+    "provenance_unclear: original author/rights chain cannot be established"
+  ],
+  "terminal_blockers": [],
+  "resolvable_blockers": [
+    "license_grants_research_and_ml_training: permissive=False research_only=False explicit_grant=None",
+    "redistribution_position_stated: redistribution_permitted=None (must be true/false, not null)",
+    "redistribution_position_stated: redistribution permission is UNCLEAR",
+    "derivative_works_position_stated: derivative_works_permitted=None",
+    "provenance_unclear: original author/rights chain cannot be established"
+  ],
+  "conditions": [],
+  "checks": [
+    {
+      "check": "content_class_not_excluded",
+      "passed": true,
+      "detail": "content_class='general'",
+      "severity": "terminal"
+    },
+    {
+      "check": "license_identified",
+      "passed": true,
+      "detail": "license=BSD-3-Clause (CODE ONLY - image data licences are per-image and NOT stated in the package)",
+      "severity": "terminal"
+    },
+    {
+      "check": "license_grants_research_and_ml_training",
+      "passed": false,
+      "detail": "permissive=False research_only=False explicit_grant=None",
+      "severity": "resolvable"
+    },
+    {
+      "check": "license_url_recorded",
+      "passed": true,
+      "detail": "https://github.com/scikit-image/scikit-image/blob/main/LICENSE.txt",
+      "severity": "resolvable"
+    },
+    {
+      "check": "author_identified",
+      "passed": true,
+      "detail": "scikit-image developers (individual per-image authors not recorded in the distributed package)",
+      "severity": "resolvable"
+    },
+    {
+      "check": "redistribution_position_stated",
+      "passed": false,
+      "detail": "redistribution_permitted=None (must be true/false, not null)",
+      "severity": "resolvable"
+    },
+    {
+      "check": "derivative_works_position_stated",
+      "passed": false,
+      "detail": "derivative_works_permitted=None",
+      "severity": "resolvable"
+    },
+    {
+      "check": "access_method_lawful",
+      "passed": true,
+      "detail": "access_method='pypi_wheel'",
+      "severity": "terminal"
+    },
+    {
+      "check": "access_method_self_service",
+      "passed": true,
+      "detail": "access_method='pypi_wheel' requires gated approval or author correspondence that the researcher must complete personally",
+      "severity": "resolvable"
+    },
+    {
+      "check": "consent_position_stated",
+      "passed": true,
+      "detail": "UNCLEAR. astronaut.png depicts an identifiable person (Eileen Collins, NASA); several other images are third-party photographs whose authors are credited only in upstream web documentation.",
+      "severity": "resolvable"
+    }
+  ],
+  "notes": "AWAITING PERMISSION. The scikit-image *code* is BSD-3-Clause, but that licence does not automatically extend to the bundled *data*. The package's own skimage/data/README.txt states only that the directory holds sample data and that the full set can be fetched via download_all(); it records no per-image licence. Per-image licences and credits exist in the upstream web documentation, which is outside this sandbox's egress allowlist and therefore could not be transcribed and verified. Until each image's licence and attribution is recorded individually in this manifest, the source stays awaiting_permission and is NOT collected. This is the gate working as intended: an ambiguous rights position is never resolved by assuming the most permissive reading. ADDITIONAL ACCESS FINDING: pypi.org/robots.txt explicitly disallows '/pypi/*/json', so the pypi_wheel adapter is refused by this pipeline's robots.txt gate for that host and must not be used against PyPI. Obtain the images from the upstream repository or the documented skimage.data.download_all() fetcher instead, once per-image licences are transcribed.",
+  "environment_reachable": false,
+  "exclusions": {
+    "files": [],
+    "reason": ""
+  },
+  "access_config": {
+    "distribution": "scikit-image",
+    "path_prefix": "skimage/data/"
+  },
+  "annotation_config": {},
+  "annotation_notes": "",
+  "redistribution_permitted": null,
+  "derivative_works_permitted": null,
+  "research_use_explicitly_granted": null,
+  "consent_position": "UNCLEAR. astronaut.png depicts an identifiable person (Eileen Collins, NASA); several other images are third-party photographs whose authors are credited only in upstream web documentation.",
+  "attribution_required": true,
+  "citation": ""
+}

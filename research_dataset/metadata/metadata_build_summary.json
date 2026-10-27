@@ -1,0 +1,11 @@
+{
+  "generated_at": "2026-10-27T10:24:44Z",
+  "rows_written": 829,
+  "rows_from_qc": 817,
+  "rows_from_download_log_only": 12,
+  "manifest_entries": 829,
+  "download_log_entries": 832,
+  "download_log_distinct_files": 829,
+  "download_log_superseded_entries": 3,
+  "annotated_files_detected": 26
+}

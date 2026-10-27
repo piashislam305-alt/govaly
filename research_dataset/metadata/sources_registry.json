@@ -1,0 +1,1576 @@
+{
+  "generated_at": "2026-10-27T10:21:18Z",
+  "policy": {
+    "required_rights_status": "approved",
+    "permissive_license_ids": [
+      "Apache-2.0",
+      "BSD-2-Clause",
+      "BSD-3-Clause",
+      "CC-BY",
+      "CC-BY-4.0",
+      "CC-BY-SA",
+      "CC-BY-SA-4.0",
+      "CC0",
+      "CC0-1.0",
+      "MIT",
+      "Public Domain",
+      "Public Domain Mark 1.0",
+      "Unlicense"
+    ],
+    "research_only_license_ids": [
+      "CC-BY-NC",
+      "CC-BY-NC-4.0",
+      "CC-BY-NC-ND",
+      "CC-BY-NC-ND-4.0",
+      "CC-BY-NC-SA",
+      "CC-BY-NC-SA-4.0",
+      "CC-BY-ND",
+      "CC-BY-ND-4.0",
+      "custom-research-only",
+      "gated-DUA",
+      "research-only"
+    ],
+    "hard_excluded_content_classes": [
+      "adult-explicit-scrape",
+      "csam-risk-unvetted-source",
+      "non-consensual-intimate-imagery"
+    ]
+  },
+  "totals": {
+    "collections_discovered": 13,
+    "approved_for_research_use": 4,
+    "awaiting_permission": 7,
+    "rejected": 2,
+    "approved_and_reachable_from_this_environment": 2,
+    "approved_but_unreachable_from_this_environment": 2,
+    "awaiting_permission_reachable": 0
+  },
+  "sources": [
+    {
+      "slug": "opencv-samples-data",
+      "source_name": "OpenCV sample image corpus (samples/data)",
+      "source_url": "https://github.com/opencv/opencv/tree/4.x/samples/data",
+      "author": "OpenCV Contributors (OpenCV.org / OpenCV.ai)",
+      "license": "Apache-2.0",
+      "license_url": "https://github.com/opencv/opencv/blob/4.x/LICENSE",
+      "content_class": "general",
+      "access_method": "github_contents_api",
+      "estimated_image_count": 94,
+      "count_basis": "VERIFIED by enumeration: GitHub contents API listing of samples/data at ref 4.x returned 94 image files totalling 9,914,974 bytes (14 further non-image files present and ignored).",
+      "formats": [
+        "JPEG",
+        "PNG"
+      ],
+      "annotations_available": true,
+      "label_definitions": [
+        "NO classification labels ship with this corpus. Nothing below is a category label.",
+        "VERIFIED by reading the preserved files (transcribed, not inferred):",
+        "  - stereo_calib.xml: an <imagelist> pairing left01.jpg<->right01.jpg ... left14.jpg<->right04.jpg. This is ground truth establishing that the left*/right* files are STEREO PAIRS of the same calibration board, i.e. distinct samples, NOT duplicates of one another.",
+        "  - calibration.yml, intrinsics.yml, left_intrinsics.yml: camera intrinsic matrices for the calibration set.",
+        "  - H1to3p.xml: a 3x3 homography matrix (ground truth for the pic1->pic3 view correspondence).",
+        "  - essential_mat_data.txt: essential-matrix ground truth.",
+        "  - aloeGT.png: disparity ground-truth MAP for aloeL.jpg/aloeR.jpg (an image, preserved in raw_images/, not a label file).",
+        "  - letter-recognition.data: 20,000 rows, each a letter label (A-Z) plus 16 numeric features (the UCI Letter Recognition dataset). Tabular feature data - it does NOT label any image in this corpus and must not be joined to one.",
+        "  - data01.xml: OpenCV FileNode training data for the ml sample.",
+        "  - alphabet_36.txt / alphabet_94.txt: character sets for the text samples."
+      ],
+      "assessment_date": "2026-10-27T10:21:18Z",
+      "rights_review_status": "approved",
+      "blockers": [],
+      "terminal_blockers": [],
+      "resolvable_blockers": [],
+      "conditions": [],
+      "checks": [
+        {
+          "check": "content_class_not_excluded",
+          "passed": true,
+          "detail": "content_class='general'",
+          "severity": "terminal"
+        },
+        {
+          "check": "license_identified",
+          "passed": true,
+          "detail": "license=Apache-2.0",
+          "severity": "terminal"
+        },
+        {
+          "check": "license_grants_research_and_ml_training",
+          "passed": true,
+          "detail": "permissive=True research_only=False explicit_grant=True",
+          "severity": "resolvable"
+        },
+        {
+          "check": "license_url_recorded",
+          "passed": true,
+          "detail": "https://github.com/opencv/opencv/blob/4.x/LICENSE",
+          "severity": "resolvable"
+        },
+        {
+          "check": "author_identified",
+          "passed": true,
+          "detail": "OpenCV Contributors (OpenCV.org / OpenCV.ai)",
+          "severity": "resolvable"
+        },
+        {
+          "check": "redistribution_position_stated",
+          "passed": true,
+          "detail": "redistribution_permitted=True (must be true/false, not null)",
+          "severity": "resolvable"
+        },
+        {
+          "check": "derivative_works_position_stated",
+          "passed": true,
+          "detail": "derivative_works_permitted=True",
+          "severity": "resolvable"
+        },
+        {
+          "check": "access_method_lawful",
+          "passed": true,
+          "detail": "access_method='github_contents_api'",
+          "severity": "terminal"
+        },
+        {
+          "check": "access_method_self_service",
+          "passed": true,
+          "detail": "access_method='github_contents_api' requires gated approval or author correspondence that the researcher must complete personally",
+          "severity": "resolvable"
+        },
+        {
+          "check": "consent_position_stated",
+          "passed": true,
+          "detail": "Mostly not applicable (synthetic renderings, textures, calibration boards, objects, landscapes). Two files depict identifiable real people and are EXCLUDED on consent/provenance grounds - see exclusions.",
+          "severity": "resolvable"
+        }
+      ],
+      "notes": "APPROVED. Apache-2.0 licence text fetched and verified from the repository at ref 4.x. Permits reproduction, modification and redistribution with attribution, and grants an express patent licence - so academic research and ML training are both permitted. CAUTION carried as a condition: Apache-2.0 s.6 grants NO trademark licence, so the logo files (LinuxLogo.jpg, WindowsLogo.jpg, opencv-logo.png, opencv-logo-white.png) may be analysed locally but must not be used in a way that implies endorsement or be redistributed as branding assets.",
+      "environment_reachable": true,
+      "exclusions": {
+        "files": [
+          "lena.jpg",
+          "lena_tmpl.jpg",
+          "messi5.jpg"
+        ],
+        "reason": "CONSENT / PROVENANCE. lena.jpg is the 1972 Playboy centrefold crop; the depicted person (Lena Soderberg) has publicly stated she does not want the image used, and multiple venues (IEEE, Nature journals) have retired it. lena_tmpl.jpg is a crop of the same work. messi5.jpg is a press photograph of an identifiable living individual whose underlying rights are not conveyed by the repository's Apache-2.0 code licence. All three are excluded even though the surrounding corpus is permissively licensed."
+      },
+      "access_config": {
+        "repo": "opencv/opencv",
+        "path": "samples/data",
+        "ref": "4.x",
+        "image_extensions": [
+          ".jpg",
+          ".jpeg",
+          ".png",
+          ".bmp",
+          ".tif",
+          ".tiff",
+          ".webp"
+        ]
+      },
+      "annotation_config": {
+        "repo": "opencv/opencv",
+        "path": "samples/data",
+        "ref": "4.x"
+      },
+      "annotation_notes": "Directory scan of samples/data. Companion ground-truth and calibration files (homography XML, stereo calibration XML/YAML, camera intrinsics, the letter-recognition labelled dataset) are preserved verbatim; .avi video companions are catalogued but not collected into an image dataset.",
+      "redistribution_permitted": true,
+      "derivative_works_permitted": true,
+      "research_use_explicitly_granted": true,
+      "consent_position": "Mostly not applicable (synthetic renderings, textures, calibration boards, objects, landscapes). Two files depict identifiable real people and are EXCLUDED on consent/provenance grounds - see exclusions.",
+      "attribution_required": true,
+      "citation": "OpenCV Contributors, OpenCV samples/data image corpus, Apache License 2.0, https://github.com/opencv/opencv/tree/4.x/samples/data"
+    },
+    {
+      "slug": "pillow-test-images",
+      "source_name": "Pillow test image corpus (Tests/images)",
+      "source_url": "https://github.com/python-pillow/Pillow/tree/main/Tests/images",
+      "author": "Jeffrey 'Alex' Clark and Pillow contributors; originally Secret Labs AB / Fredrik Lundh",
+      "license": "MIT-CMU",
+      "license_url": "https://github.com/python-pillow/Pillow/blob/main/LICENSE",
+      "content_class": "general",
+      "access_method": "github_tree_api",
+      "estimated_image_count": 735,
+      "count_basis": "VERIFIED by enumeration: recursive GitHub git-trees API listing of ref main returned 735 image blobs under Tests/images/ totalling 23,172,855 bytes (tree not truncated).",
+      "formats": [
+        "PNG",
+        "JPEG",
+        "BMP",
+        "GIF",
+        "TIFF",
+        "WEBP",
+        "PPM",
+        "PCX",
+        "ICO"
+      ],
+      "annotations_available": true,
+      "label_definitions": [
+        "NO classification labels ship with this corpus. Nothing below is a category label.",
+        "VERIFIED by reading the preserved files (transcribed, not inferred):",
+        "  - Tests/images/bmp/README.txt states verbatim: 'These images are from the bmpsuite: https://github.com/jsummers/bmpsuite and are in the public domain according to the readme in the project.' THIRD-PARTY PROVENANCE: the bmp/ subset originates from Jason Summers' bmpsuite and is asserted to be public domain by that upstream project. Attribution should cite bmpsuite alongside Pillow for those files.",
+        "  - Tests/images/tga/common/readme.txt documents a STRUCTURED NAMING CONVENTION: {width}x{height}_{mode}_{origin}_{compression}.tga where mode is a PIL mode in lower case, origin is 'bl' (bottom-left) or 'tl' (top-left), and compression is 'raw' or 'rle'. Filenames in that directory are therefore parseable metadata - a real, non-invented source of attributes. Images created with GIMP."
+      ],
+      "assessment_date": "2026-10-27T10:21:18Z",
+      "rights_review_status": "approved",
+      "blockers": [],
+      "terminal_blockers": [],
+      "resolvable_blockers": [],
+      "conditions": [],
+      "checks": [
+        {
+          "check": "content_class_not_excluded",
+          "passed": true,
+          "detail": "content_class='general'",
+          "severity": "terminal"
+        },
+        {
+          "check": "license_identified",
+          "passed": true,
+          "detail": "license=MIT-CMU",
+          "severity": "terminal"
+        },
+        {
+          "check": "license_grants_research_and_ml_training",
+          "passed": true,
+          "detail": "permissive=False research_only=False explicit_grant=True",
+          "severity": "resolvable"
+        },
+        {
+          "check": "license_url_recorded",
+          "passed": true,
+          "detail": "https://github.com/python-pillow/Pillow/blob/main/LICENSE",
+          "severity": "resolvable"
+        },
+        {
+          "check": "author_identified",
+          "passed": true,
+          "detail": "Jeffrey 'Alex' Clark and Pillow contributors; originally Secret Labs AB / Fredrik Lundh",
+          "severity": "resolvable"
+        },
+        {
+          "check": "redistribution_position_stated",
+          "passed": true,
+          "detail": "redistribution_permitted=True (must be true/false, not null)",
+          "severity": "resolvable"
+        },
+        {
+          "check": "derivative_works_position_stated",
+          "passed": true,
+          "detail": "derivative_works_permitted=True",
+          "severity": "resolvable"
+        },
+        {
+          "check": "access_method_lawful",
+          "passed": true,
+          "detail": "access_method='github_tree_api'",
+          "severity": "terminal"
+        },
+        {
+          "check": "access_method_self_service",
+          "passed": true,
+          "detail": "access_method='github_tree_api' requires gated approval or author correspondence that the researcher must complete personally",
+          "severity": "resolvable"
+        }
+      ],
+      "notes": "APPROVED. MIT-CMU licence text fetched and verified. Permissive: use, copy, modify, merge, publish, distribute, sublicense and sell all permitted with the copyright notice retained. This corpus is deliberately included as the image-quality-assessment stress test: it contains a large number of genuinely malformed, truncated and out-of-specification files produced by real-world encoders, which exercises the corruption and unsupported-format detectors against authentic failures rather than synthetic ones. Files that Pillow itself cannot decode are expected to land in rejected_images/corrupt/ - that is a correct result, not a pipeline fault.",
+      "environment_reachable": true,
+      "exclusions": {
+        "files": [],
+        "reason": ""
+      },
+      "access_config": {
+        "repo": "python-pillow/Pillow",
+        "path_prefix": "Tests/images/",
+        "ref": "main",
+        "image_extensions": [
+          ".png",
+          ".jpg",
+          ".jpeg",
+          ".bmp",
+          ".gif",
+          ".tif",
+          ".tiff",
+          ".webp",
+          ".ppm",
+          ".pcx",
+          ".ico"
+        ],
+        "max_files": 750
+      },
+      "annotation_config": {
+        "repo": "python-pillow/Pillow",
+        "ref": "main",
+        "files": [
+          "Tests/images/bmp/README.txt",
+          "Tests/images/tga/common/readme.txt"
+        ]
+      },
+      "annotation_notes": "Explicit file allow-list, NOT a directory scan. This corpus ships no labels; the only provenance documentation it contains is these two README files. Scanning the repository root previously pulled in CI configuration (codecov.yml, readthedocs.yml) which is build metadata, not annotation, and has been removed.",
+      "redistribution_permitted": true,
+      "derivative_works_permitted": true,
+      "research_use_explicitly_granted": true,
+      "consent_position": "Corpus is synthetic/technical test imagery (gradients, patterns, format edge cases, encoder fixtures). Scanned for person/sensitive filename tokens; no matches.",
+      "attribution_required": true,
+      "citation": "Pillow contributors, Pillow test image corpus, MIT-CMU License, https://github.com/python-pillow/Pillow/tree/main/Tests/images"
+    },
+    {
+      "slug": "scikit-image-data",
+      "source_name": "scikit-image sample data (skimage.data)",
+      "source_url": "https://github.com/scikit-image/scikit-image/tree/main/src/skimage/data",
+      "author": "scikit-image developers (individual per-image authors not recorded in the distributed package)",
+      "license": "BSD-3-Clause (CODE ONLY - image data licences are per-image and NOT stated in the package)",
+      "license_url": "https://github.com/scikit-image/scikit-image/blob/main/LICENSE.txt",
+      "content_class": "general",
+      "access_method": "pypi_wheel",
+      "estimated_image_count": 28,
+      "count_basis": "VERIFIED by enumeration: the scikit-image 0.26.0 wheel contains 28 image files under skimage/data/ totalling 5,477,469 bytes.",
+      "formats": [
+        "PNG",
+        "JPEG"
+      ],
+      "annotations_available": false,
+      "label_definitions": [],
+      "assessment_date": "2026-10-27T10:21:18Z",
+      "rights_review_status": "awaiting_permission",
+      "blockers": [
+        "license_grants_research_and_ml_training: permissive=False research_only=False explicit_grant=None",
+        "redistribution_position_stated: redistribution_permitted=None (must be true/false, not null)",
+        "redistribution_position_stated: redistribution permission is UNCLEAR",
+        "derivative_works_position_stated: derivative_works_permitted=None",
+        "provenance_unclear: original author/rights chain cannot be established"
+      ],
+      "terminal_blockers": [],
+      "resolvable_blockers": [
+        "license_grants_research_and_ml_training: permissive=False research_only=False explicit_grant=None",
+        "redistribution_position_stated: redistribution_permitted=None (must be true/false, not null)",
+        "redistribution_position_stated: redistribution permission is UNCLEAR",
+        "derivative_works_position_stated: derivative_works_permitted=None",
+        "provenance_unclear: original author/rights chain cannot be established"
+      ],
+      "conditions": [],
+      "checks": [
+        {
+          "check": "content_class_not_excluded",
+          "passed": true,
+          "detail": "content_class='general'",
+          "severity": "terminal"
+        },
+        {
+          "check": "license_identified",
+          "passed": true,
+          "detail": "license=BSD-3-Clause (CODE ONLY - image data licences are per-image and NOT stated in the package)",
+          "severity": "terminal"
+        },
+        {
+          "check": "license_grants_research_and_ml_training",
+          "passed": false,
+          "detail": "permissive=False research_only=False explicit_grant=None",
+          "severity": "resolvable"
+        },
+        {
+          "check": "license_url_recorded",
+          "passed": true,
+          "detail": "https://github.com/scikit-image/scikit-image/blob/main/LICENSE.txt",
+          "severity": "resolvable"
+        },
+        {
+          "check": "author_identified",
+          "passed": true,
+          "detail": "scikit-image developers (individual per-image authors not recorded in the distributed package)",
+          "severity": "resolvable"
+        },
+        {
+          "check": "redistribution_position_stated",
+          "passed": false,
+          "detail": "redistribution_permitted=None (must be true/false, not null)",
+          "severity": "resolvable"
+        },
+        {
+          "check": "derivative_works_position_stated",
+          "passed": false,
+          "detail": "derivative_works_permitted=None",
+          "severity": "resolvable"
+        },
+        {
+          "check": "access_method_lawful",
+          "passed": true,
+          "detail": "access_method='pypi_wheel'",
+          "severity": "terminal"
+        },
+        {
+          "check": "access_method_self_service",
+          "passed": true,
+          "detail": "access_method='pypi_wheel' requires gated approval or author correspondence that the researcher must complete personally",
+          "severity": "resolvable"
+        },
+        {
+          "check": "consent_position_stated",
+          "passed": true,
+          "detail": "UNCLEAR. astronaut.png depicts an identifiable person (Eileen Collins, NASA); several other images are third-party photographs whose authors are credited only in upstream web documentation.",
+          "severity": "resolvable"
+        }
+      ],
+      "notes": "AWAITING PERMISSION. The scikit-image *code* is BSD-3-Clause, but that licence does not automatically extend to the bundled *data*. The package's own skimage/data/README.txt states only that the directory holds sample data and that the full set can be fetched via download_all(); it records no per-image licence. Per-image licences and credits exist in the upstream web documentation, which is outside this sandbox's egress allowlist and therefore could not be transcribed and verified. Until each image's licence and attribution is recorded individually in this manifest, the source stays awaiting_permission and is NOT collected. This is the gate working as intended: an ambiguous rights position is never resolved by assuming the most permissive reading. ADDITIONAL ACCESS FINDING: pypi.org/robots.txt explicitly disallows '/pypi/*/json', so the pypi_wheel adapter is refused by this pipeline's robots.txt gate for that host and must not be used against PyPI. Obtain the images from the upstream repository or the documented skimage.data.download_all() fetcher instead, once per-image licences are transcribed.",
+      "environment_reachable": false,
+      "exclusions": {
+        "files": [],
+        "reason": ""
+      },
+      "access_config": {
+        "distribution": "scikit-image",
+        "path_prefix": "skimage/data/"
+      },
+      "annotation_config": {},
+      "annotation_notes": "",
+      "redistribution_permitted": null,
+      "derivative_works_permitted": null,
+      "research_use_explicitly_granted": null,
+      "consent_position": "UNCLEAR. astronaut.png depicts an identifiable person (Eileen Collins, NASA); several other images are third-party photographs whose authors are credited only in upstream web documentation.",
+      "attribution_required": true,
+      "citation": ""
+    },
+    {
+      "slug": "unsafebench",
+      "source_name": "UnsafeBench - benchmarking image safety classifiers",
+      "source_url": "https://huggingface.co/datasets/yiting/UnsafeBench",
+      "author": "Yiting Dong et al. (UnsafeBench project, unsafebench.github.io)",
+      "license": "custom Data Use Agreement (gated)",
+      "license_url": "https://unsafebench.github.io/",
+      "content_class": "content-safety",
+      "access_method": "hf_gated_dataset",
+      "estimated_image_count": 10146,
+      "count_basis": "Stated by the publishers: 10,146 human-annotated images covering 11 unsafe categories, drawn from LAION-5B (real-world) and Lexica (AI-generated).",
+      "formats": [
+        "JPEG",
+        "PNG"
+      ],
+      "annotations_available": true,
+      "label_definitions": [
+        "safe / unsafe, plus 11 unsafe categories (sexual, violent, hateful, etc.) as defined on the project page and in the accompanying paper.",
+        "Two provenance axes: real-world vs AI-generated."
+      ],
+      "assessment_date": "2026-10-27T10:21:18Z",
+      "rights_review_status": "awaiting_permission",
+      "blockers": [
+        "derivative_works_position_stated: derivative_works_permitted=None",
+        "access_method_self_service: access_method='hf_gated_dataset' requires gated approval or author correspondence that the researcher must complete personally",
+        "requires_registration: registration/DUA not completed - the researcher must accept the terms personally; this pipeline will never do so on their behalf"
+      ],
+      "terminal_blockers": [],
+      "resolvable_blockers": [
+        "derivative_works_position_stated: derivative_works_permitted=None",
+        "access_method_self_service: access_method='hf_gated_dataset' requires gated approval or author correspondence that the researcher must complete personally",
+        "requires_registration: registration/DUA not completed - the researcher must accept the terms personally; this pipeline will never do so on their behalf"
+      ],
+      "conditions": [
+        "MUST NOT be redistributed, mirrored or published; local research use only.",
+        "Data Use Agreement must be accepted by the researcher before download."
+      ],
+      "checks": [
+        {
+          "check": "content_class_not_excluded",
+          "passed": true,
+          "detail": "content_class='content-safety'",
+          "severity": "terminal"
+        },
+        {
+          "check": "license_identified",
+          "passed": true,
+          "detail": "license=custom Data Use Agreement (gated)",
+          "severity": "terminal"
+        },
+        {
+          "check": "license_grants_research_and_ml_training",
+          "passed": true,
+          "detail": "permissive=False research_only=False explicit_grant=True",
+          "severity": "resolvable"
+        },
+        {
+          "check": "license_url_recorded",
+          "passed": true,
+          "detail": "https://unsafebench.github.io/",
+          "severity": "resolvable"
+        },
+        {
+          "check": "author_identified",
+          "passed": true,
+          "detail": "Yiting Dong et al. (UnsafeBench project, unsafebench.github.io)",
+          "severity": "resolvable"
+        },
+        {
+          "check": "redistribution_position_stated",
+          "passed": true,
+          "detail": "redistribution_permitted=False (must be true/false, not null)",
+          "severity": "resolvable"
+        },
+        {
+          "check": "derivative_works_position_stated",
+          "passed": false,
+          "detail": "derivative_works_permitted=None",
+          "severity": "resolvable"
+        },
+        {
+          "check": "access_method_lawful",
+          "passed": true,
+          "detail": "access_method='hf_gated_dataset'",
+          "severity": "terminal"
+        },
+        {
+          "check": "access_method_self_service",
+          "passed": false,
+          "detail": "access_method='hf_gated_dataset' requires gated approval or author correspondence that the researcher must complete personally",
+          "severity": "resolvable"
+        },
+        {
+          "check": "consent_position_stated",
+          "passed": true,
+          "detail": "Publishers performed human annotation and gate access behind a DUA; the DUA restricts use to research/education and prohibits misuse.",
+          "severity": "resolvable"
+        }
+      ],
+      "notes": "AWAITING PERMISSION - RECOMMENDED PRIMARY SOURCE for the content-safety arm of the project. Legitimately curated, human-annotated, purpose-built for exactly this research question, and released by an academic group under a DUA. Requires the researcher to (a) hold a Hugging Face account, (b) read and accept the DUA, and (c) obtain institutional ethics sign-off. Not reachable from this sandbox (huggingface.co is outside the egress allowlist), and this pipeline will never accept DUA terms on the researcher's behalf. Run scripts/collect.py against this manifest on your own network after your DUA is accepted.",
+      "environment_reachable": false,
+      "exclusions": {
+        "files": [],
+        "reason": ""
+      },
+      "access_config": {},
+      "annotation_config": {},
+      "annotation_notes": "",
+      "redistribution_permitted": false,
+      "derivative_works_permitted": null,
+      "research_use_explicitly_granted": true,
+      "consent_position": "Publishers performed human annotation and gate access behind a DUA; the DUA restricts use to research/education and prohibits misuse.",
+      "attribution_required": true,
+      "citation": "Dong et al., UnsafeBench: Benchmarking Image Safety Classifiers on Real-World and AI-Generated Images."
+    },
+    {
+      "slug": "usd-unsafe-scene-detection",
+      "source_name": "USD - NSFW content detection for text-to-image models via scene graph",
+      "source_url": "https://huggingface.co/datasets/yuwan0/UnsafeSceneDetection",
+      "author": "yuwan0 et al. (official dataset of the USD paper)",
+      "license": "Community License Agreement, access granted case-by-case (gated)",
+      "license_url": "https://huggingface.co/datasets/yuwan0/UnsafeSceneDetection",
+      "content_class": "content-safety",
+      "access_method": "hf_gated_dataset",
+      "estimated_image_count": null,
+      "count_basis": "Not stated in the accessible card summary; scene-graph annotations over unsafe/safe image sets. Must be enumerated after access is granted.",
+      "formats": [
+        "PNG",
+        "JPEG"
+      ],
+      "annotations_available": true,
+      "label_definitions": [
+        "Scene-graph annotations supporting NSFW content detection for text-to-image model outputs."
+      ],
+      "assessment_date": "2026-10-27T10:21:18Z",
+      "rights_review_status": "awaiting_permission",
+      "blockers": [
+        "access_method_self_service: access_method='hf_gated_dataset' requires gated approval or author correspondence that the researcher must complete personally",
+        "requires_registration: registration/DUA not completed - the researcher must accept the terms personally; this pipeline will never do so on their behalf"
+      ],
+      "terminal_blockers": [],
+      "resolvable_blockers": [
+        "access_method_self_service: access_method='hf_gated_dataset' requires gated approval or author correspondence that the researcher must complete personally",
+        "requires_registration: registration/DUA not completed - the researcher must accept the terms personally; this pipeline will never do so on their behalf"
+      ],
+      "conditions": [
+        "MUST NOT be redistributed, mirrored or published; local research use only.",
+        "No derivative works: originals may be analysed but not transformed for release.",
+        "Data Use Agreement must be accepted by the researcher before download."
+      ],
+      "checks": [
+        {
+          "check": "content_class_not_excluded",
+          "passed": true,
+          "detail": "content_class='content-safety'",
+          "severity": "terminal"
+        },
+        {
+          "check": "license_identified",
+          "passed": true,
+          "detail": "license=Community License Agreement, access granted case-by-case (gated)",
+          "severity": "terminal"
+        },
+        {
+          "check": "license_grants_research_and_ml_training",
+          "passed": true,
+          "detail": "permissive=False research_only=False explicit_grant=True",
+          "severity": "resolvable"
+        },
+        {
+          "check": "license_url_recorded",
+          "passed": true,
+          "detail": "https://huggingface.co/datasets/yuwan0/UnsafeSceneDetection",
+          "severity": "resolvable"
+        },
+        {
+          "check": "author_identified",
+          "passed": true,
+          "detail": "yuwan0 et al. (official dataset of the USD paper)",
+          "severity": "resolvable"
+        },
+        {
+          "check": "redistribution_position_stated",
+          "passed": true,
+          "detail": "redistribution_permitted=False (must be true/false, not null)",
+          "severity": "resolvable"
+        },
+        {
+          "check": "derivative_works_position_stated",
+          "passed": true,
+          "detail": "derivative_works_permitted=False",
+          "severity": "resolvable"
+        },
+        {
+          "check": "access_method_lawful",
+          "passed": true,
+          "detail": "access_method='hf_gated_dataset'",
+          "severity": "terminal"
+        },
+        {
+          "check": "access_method_self_service",
+          "passed": false,
+          "detail": "access_method='hf_gated_dataset' requires gated approval or author correspondence that the researcher must complete personally",
+          "severity": "resolvable"
+        },
+        {
+          "check": "consent_position_stated",
+          "passed": true,
+          "detail": "Publisher states content is provided strictly for research and education, access is granted case-by-case on a signed acknowledgement, redistribution and mirroring (including derived samples that reveal NSFW content) are prohibited, and secure storage with access limited to authorised personnel is required.",
+          "severity": "resolvable"
+        }
+      ],
+      "notes": "AWAITING PERMISSION. Strong fit for content-safety classification with explainable scene-graph labels. Binding conditions: non-commercial research/education only, NO redistribution or mirroring, secure storage, access revocable on suspected misuse. Your project's dataset-analysis/benchmarking outputs must therefore report metrics and statistics only - never republish images.",
+      "environment_reachable": false,
+      "exclusions": {
+        "files": [],
+        "reason": ""
+      },
+      "access_config": {},
+      "annotation_config": {},
+      "annotation_notes": "",
+      "redistribution_permitted": false,
+      "derivative_works_permitted": false,
+      "research_use_explicitly_granted": true,
+      "consent_position": "Publisher states content is provided strictly for research and education, access is granted case-by-case on a signed acknowledgement, redistribution and mirroring (including derived samples that reveal NSFW content) are prohibited, and secure storage with access limited to authorised personnel is required.",
+      "attribution_required": true,
+      "citation": ""
+    },
+    {
+      "slug": "lspd",
+      "source_name": "LSPD - Large-Scale Pornographic Dataset for detection and classification",
+      "source_url": "https://www.researchgate.net/publication/358734386",
+      "author": "LSPD authors (see publication); distribution is by request to the authors",
+      "license": "custom research licence, granted by the authors on request ('to ensure fair use')",
+      "license_url": "",
+      "content_class": "content-safety",
+      "access_method": "author_request",
+      "estimated_image_count": 500000,
+      "count_basis": "Stated by the authors: 500,000 images and 4,000 videos, of which more than 50,000 images carry annotation (93,810 labelled instances).",
+      "formats": [
+        "JPEG",
+        "video"
+      ],
+      "annotations_available": true,
+      "label_definitions": [
+        "Image/video classification: porn, normal, sexy, hentai, drawings.",
+        "Instance segmentation: polygon masks for four private sexual object classes (breasts, male genital, female genital, anus)."
+      ],
+      "assessment_date": "2026-10-27T10:21:18Z",
+      "rights_review_status": "awaiting_permission",
+      "blockers": [
+        "license_url_recorded: <missing>",
+        "derivative_works_position_stated: derivative_works_permitted=None",
+        "access_method_self_service: access_method='author_request' requires gated approval or author correspondence that the researcher must complete personally",
+        "requires_registration: registration/DUA not completed - the researcher must accept the terms personally; this pipeline will never do so on their behalf",
+        "provenance_unclear: original author/rights chain cannot be established"
+      ],
+      "terminal_blockers": [],
+      "resolvable_blockers": [
+        "license_url_recorded: <missing>",
+        "derivative_works_position_stated: derivative_works_permitted=None",
+        "access_method_self_service: access_method='author_request' requires gated approval or author correspondence that the researcher must complete personally",
+        "requires_registration: registration/DUA not completed - the researcher must accept the terms personally; this pipeline will never do so on their behalf",
+        "provenance_unclear: original author/rights chain cannot be established"
+      ],
+      "conditions": [
+        "MUST NOT be redistributed, mirrored or published; local research use only.",
+        "Data Use Agreement must be accepted by the researcher before download."
+      ],
+      "checks": [
+        {
+          "check": "content_class_not_excluded",
+          "passed": true,
+          "detail": "content_class='content-safety'",
+          "severity": "terminal"
+        },
+        {
+          "check": "license_identified",
+          "passed": true,
+          "detail": "license=custom research licence, granted by the authors on request ('to ensure fair use')",
+          "severity": "terminal"
+        },
+        {
+          "check": "license_grants_research_and_ml_training",
+          "passed": true,
+          "detail": "permissive=False research_only=False explicit_grant=True",
+          "severity": "resolvable"
+        },
+        {
+          "check": "license_url_recorded",
+          "passed": false,
+          "detail": "<missing>",
+          "severity": "resolvable"
+        },
+        {
+          "check": "author_identified",
+          "passed": true,
+          "detail": "LSPD authors (see publication); distribution is by request to the authors",
+          "severity": "resolvable"
+        },
+        {
+          "check": "redistribution_position_stated",
+          "passed": true,
+          "detail": "redistribution_permitted=False (must be true/false, not null)",
+          "severity": "resolvable"
+        },
+        {
+          "check": "derivative_works_position_stated",
+          "passed": false,
+          "detail": "derivative_works_permitted=None",
+          "severity": "resolvable"
+        },
+        {
+          "check": "access_method_lawful",
+          "passed": true,
+          "detail": "access_method='author_request'",
+          "severity": "terminal"
+        },
+        {
+          "check": "access_method_self_service",
+          "passed": false,
+          "detail": "access_method='author_request' requires gated approval or author correspondence that the researcher must complete personally",
+          "severity": "resolvable"
+        },
+        {
+          "check": "consent_position_stated",
+          "passed": true,
+          "detail": "Authors state pornographic images were sourced from adult websites; per-image consent and age-verification records are not conveyed to downstream researchers.",
+          "severity": "resolvable"
+        }
+      ],
+      "notes": "AWAITING PERMISSION, WITH A CAVEAT YOU SHOULD WEIGH. This is the standard academic benchmark for this task and is cited widely, but its underlying images are themselves scraped from adult websites, so the consent chain that a *direct* scrape lacks is only partly repaired by routing through the authors. If you use it: request access formally, record the authors' written terms in this manifest, keep the data on controlled institutional storage, publish metrics only, and get ethics-board sign-off. Do not mirror it.",
+      "environment_reachable": false,
+      "exclusions": {
+        "files": [],
+        "reason": ""
+      },
+      "access_config": {},
+      "annotation_config": {},
+      "annotation_notes": "",
+      "redistribution_permitted": false,
+      "derivative_works_permitted": null,
+      "research_use_explicitly_granted": true,
+      "consent_position": "Authors state pornographic images were sourced from adult websites; per-image consent and age-verification records are not conveyed to downstream researchers.",
+      "attribution_required": true,
+      "citation": "LSPD: A Large-Scale Pornographic Dataset for Detection and Classification (2022)."
+    },
+    {
+      "slug": "deepghs-nsfw-detect",
+      "source_name": "deepghs/nsfw_detect",
+      "source_url": "https://huggingface.co/datasets/deepghs/nsfw_detect",
+      "author": "deepghs",
+      "license": "MIT (as declared on the dataset card)",
+      "license_url": "https://choosealicense.com/licenses/mit/",
+      "content_class": "content-safety",
+      "access_method": "hf_open_dataset",
+      "estimated_image_count": null,
+      "count_basis": "Card states 10K-100K images organised into five classes following the standard NSFW-detection categorisation. Exact per-class counts must be enumerated after access.",
+      "formats": [
+        "JPEG",
+        "PNG"
+      ],
+      "annotations_available": true,
+      "label_definitions": [
+        "Five classes representing escalating levels of explicitness in artistic/illustrated content, following the popular NSFW-detection implementations."
+      ],
+      "assessment_date": "2026-10-27T10:21:18Z",
+      "rights_review_status": "awaiting_permission",
+      "blockers": [
+        "license_grants_research_and_ml_training: permissive=False research_only=False explicit_grant=None",
+        "redistribution_position_stated: redistribution_permitted=None (must be true/false, not null)",
+        "redistribution_position_stated: redistribution permission is UNCLEAR",
+        "derivative_works_position_stated: derivative_works_permitted=None",
+        "provenance_unclear: original author/rights chain cannot be established"
+      ],
+      "terminal_blockers": [],
+      "resolvable_blockers": [
+        "license_grants_research_and_ml_training: permissive=False research_only=False explicit_grant=None",
+        "redistribution_position_stated: redistribution_permitted=None (must be true/false, not null)",
+        "redistribution_position_stated: redistribution permission is UNCLEAR",
+        "derivative_works_position_stated: derivative_works_permitted=None",
+        "provenance_unclear: original author/rights chain cannot be established"
+      ],
+      "conditions": [],
+      "checks": [
+        {
+          "check": "content_class_not_excluded",
+          "passed": true,
+          "detail": "content_class='content-safety'",
+          "severity": "terminal"
+        },
+        {
+          "check": "license_identified",
+          "passed": true,
+          "detail": "license=MIT (as declared on the dataset card)",
+          "severity": "terminal"
+        },
+        {
+          "check": "license_grants_research_and_ml_training",
+          "passed": false,
+          "detail": "permissive=False research_only=False explicit_grant=None",
+          "severity": "resolvable"
+        },
+        {
+          "check": "license_url_recorded",
+          "passed": true,
+          "detail": "https://choosealicense.com/licenses/mit/",
+          "severity": "resolvable"
+        },
+        {
+          "check": "author_identified",
+          "passed": true,
+          "detail": "deepghs",
+          "severity": "resolvable"
+        },
+        {
+          "check": "redistribution_position_stated",
+          "passed": false,
+          "detail": "redistribution_permitted=None (must be true/false, not null)",
+          "severity": "resolvable"
+        },
+        {
+          "check": "derivative_works_position_stated",
+          "passed": false,
+          "detail": "derivative_works_permitted=None",
+          "severity": "resolvable"
+        },
+        {
+          "check": "access_method_lawful",
+          "passed": true,
+          "detail": "access_method='hf_open_dataset'",
+          "severity": "terminal"
+        },
+        {
+          "check": "access_method_self_service",
+          "passed": true,
+          "detail": "access_method='hf_open_dataset' requires gated approval or author correspondence that the researcher must complete personally",
+          "severity": "resolvable"
+        },
+        {
+          "check": "consent_position_stated",
+          "passed": true,
+          "detail": "UNCLEAR. A declared MIT licence on the dataset card does not establish that the uploader held rights to the underlying images, and much of this class of corpus is artwork scraped from illustration platforms.",
+          "severity": "resolvable"
+        }
+      ],
+      "notes": "AWAITING PERMISSION. Deliberately NOT auto-approved despite carrying an MIT tag. A permissive licence declared by an anonymous re-uploader is only as good as that uploader's own rights in the images, which cannot be verified from here; the card itself flags the content as Not-For-All-Audiences. Treat a self-declared licence on scraped NSFW imagery as unverified until the provenance chain is documented. If you need illustrated-content moderation, prefer a source whose curators state their collection method.",
+      "environment_reachable": false,
+      "exclusions": {
+        "files": [],
+        "reason": ""
+      },
+      "access_config": {},
+      "annotation_config": {},
+      "annotation_notes": "",
+      "redistribution_permitted": null,
+      "derivative_works_permitted": null,
+      "research_use_explicitly_granted": null,
+      "consent_position": "UNCLEAR. A declared MIT licence on the dataset card does not establish that the uploader held rights to the underlying images, and much of this class of corpus is artwork scraped from illustration platforms.",
+      "attribution_required": true,
+      "citation": ""
+    },
+    {
+      "slug": "cloverxion-image-moderation",
+      "source_name": "cloverxion/image-moderation-dataset (+ image-moderation-specialist)",
+      "source_url": "https://huggingface.co/datasets/cloverxion/image-moderation-dataset",
+      "author": "cloverxion",
+      "license": "other (academic-research-only; no SPDX identifier)",
+      "license_url": "https://choosealicense.com/licenses/other/",
+      "content_class": "content-safety",
+      "access_method": "hf_open_dataset",
+      "estimated_image_count": null,
+      "count_basis": "Not stated. Binary safe/unsafe split in the main repo; unsafe-only classes (nudity, explicit adult content, gore, weaponry) in the specialist repo.",
+      "formats": [
+        "JPEG",
+        "PNG"
+      ],
+      "annotations_available": true,
+      "label_definitions": [
+        "safe vs unsafe (main); unsafe sub-classes including nudity, explicit adult content, gore and weaponry (specialist)."
+      ],
+      "assessment_date": "2026-10-27T10:21:18Z",
+      "rights_review_status": "awaiting_permission",
+      "blockers": [
+        "derivative_works_position_stated: derivative_works_permitted=None",
+        "provenance_unclear: original author/rights chain cannot be established"
+      ],
+      "terminal_blockers": [],
+      "resolvable_blockers": [
+        "derivative_works_position_stated: derivative_works_permitted=None",
+        "provenance_unclear: original author/rights chain cannot be established"
+      ],
+      "conditions": [
+        "MUST NOT be redistributed, mirrored or published; local research use only."
+      ],
+      "checks": [
+        {
+          "check": "content_class_not_excluded",
+          "passed": true,
+          "detail": "content_class='content-safety'",
+          "severity": "terminal"
+        },
+        {
+          "check": "license_identified",
+          "passed": true,
+          "detail": "license=other (academic-research-only; no SPDX identifier)",
+          "severity": "terminal"
+        },
+        {
+          "check": "license_grants_research_and_ml_training",
+          "passed": true,
+          "detail": "permissive=False research_only=False explicit_grant=True",
+          "severity": "resolvable"
+        },
+        {
+          "check": "license_url_recorded",
+          "passed": true,
+          "detail": "https://choosealicense.com/licenses/other/",
+          "severity": "resolvable"
+        },
+        {
+          "check": "author_identified",
+          "passed": true,
+          "detail": "cloverxion",
+          "severity": "resolvable"
+        },
+        {
+          "check": "redistribution_position_stated",
+          "passed": true,
+          "detail": "redistribution_permitted=False (must be true/false, not null)",
+          "severity": "resolvable"
+        },
+        {
+          "check": "derivative_works_position_stated",
+          "passed": false,
+          "detail": "derivative_works_permitted=None",
+          "severity": "resolvable"
+        },
+        {
+          "check": "access_method_lawful",
+          "passed": true,
+          "detail": "access_method='hf_open_dataset'",
+          "severity": "terminal"
+        },
+        {
+          "check": "access_method_self_service",
+          "passed": true,
+          "detail": "access_method='hf_open_dataset' requires gated approval or author correspondence that the researcher must complete personally",
+          "severity": "resolvable"
+        },
+        {
+          "check": "consent_position_stated",
+          "passed": true,
+          "detail": "UNCLEAR. Card states the unsafe class contains raw, completely uncensored human nudity and explicit adult content, restricted to institutional academic research and AI-safety engineering. No consent or age-verification chain is documented for individual images.",
+          "severity": "resolvable"
+        }
+      ],
+      "notes": "AWAITING PERMISSION. Research-only intent is stated explicitly, which is the closest any of these come to a usable grant, but the licence is unidentifiable ('other'), the content is uncensored real-person explicit imagery, and no per-image consent chain exists. Requires institutional ethics approval and a written record of the uploader's terms before use. Redistribution is not permitted, so it cannot underpin a published benchmark.",
+      "environment_reachable": false,
+      "exclusions": {
+        "files": [],
+        "reason": ""
+      },
+      "access_config": {},
+      "annotation_config": {},
+      "annotation_notes": "",
+      "redistribution_permitted": false,
+      "derivative_works_permitted": null,
+      "research_use_explicitly_granted": true,
+      "consent_position": "UNCLEAR. Card states the unsafe class contains raw, completely uncensored human nudity and explicit adult content, restricted to institutional academic research and AI-safety engineering. No consent or age-verification chain is documented for individual images.",
+      "attribution_required": true,
+      "citation": ""
+    },
+    {
+      "slug": "c4censor",
+      "source_name": "C4Censor - lightweight benchmark for inappropriate content detection",
+      "source_url": "https://link.springer.com/article/10.1007/s42001-026-00462-7",
+      "author": "C4Censor authors (Journal of Information Security and Applications / Springer)",
+      "license": "not stated in the accessible abstract - must be obtained from the authors or publisher",
+      "license_url": "",
+      "content_class": "content-safety",
+      "access_method": "author_request",
+      "estimated_image_count": null,
+      "count_basis": "Described as lightweight: 4 coarse classes (Blood & Gore, Pornography, Terrorism, Neutral) subdivided into 12 fine-grained subclasses, manually annotated at both levels.",
+      "formats": [
+        "JPEG",
+        "PNG"
+      ],
+      "annotations_available": true,
+      "label_definitions": [
+        "Coarse (4-way): Blood & Gore, Pornography, Terrorism, Neutral.",
+        "Fine (12-way): subclasses such as Hentai vs photographic, per the paper."
+      ],
+      "assessment_date": "2026-10-27T10:21:18Z",
+      "rights_review_status": "awaiting_permission",
+      "blockers": [
+        "license_grants_research_and_ml_training: permissive=False research_only=False explicit_grant=None",
+        "license_url_recorded: <missing>",
+        "redistribution_position_stated: redistribution_permitted=None (must be true/false, not null)",
+        "redistribution_position_stated: redistribution permission is UNCLEAR",
+        "derivative_works_position_stated: derivative_works_permitted=None",
+        "access_method_self_service: access_method='author_request' requires gated approval or author correspondence that the researcher must complete personally",
+        "requires_registration: registration/DUA not completed - the researcher must accept the terms personally; this pipeline will never do so on their behalf",
+        "provenance_unclear: original author/rights chain cannot be established"
+      ],
+      "terminal_blockers": [],
+      "resolvable_blockers": [
+        "license_grants_research_and_ml_training: permissive=False research_only=False explicit_grant=None",
+        "license_url_recorded: <missing>",
+        "redistribution_position_stated: redistribution_permitted=None (must be true/false, not null)",
+        "redistribution_position_stated: redistribution permission is UNCLEAR",
+        "derivative_works_position_stated: derivative_works_permitted=None",
+        "access_method_self_service: access_method='author_request' requires gated approval or author correspondence that the researcher must complete personally",
+        "requires_registration: registration/DUA not completed - the researcher must accept the terms personally; this pipeline will never do so on their behalf",
+        "provenance_unclear: original author/rights chain cannot be established"
+      ],
+      "conditions": [
+        "Data Use Agreement must be accepted by the researcher before download."
+      ],
+      "checks": [
+        {
+          "check": "content_class_not_excluded",
+          "passed": true,
+          "detail": "content_class='content-safety'",
+          "severity": "terminal"
+        },
+        {
+          "check": "license_identified",
+          "passed": true,
+          "detail": "license=not stated in the accessible abstract - must be obtained from the authors or publisher",
+          "severity": "terminal"
+        },
+        {
+          "check": "license_grants_research_and_ml_training",
+          "passed": false,
+          "detail": "permissive=False research_only=False explicit_grant=None",
+          "severity": "resolvable"
+        },
+        {
+          "check": "license_url_recorded",
+          "passed": false,
+          "detail": "<missing>",
+          "severity": "resolvable"
+        },
+        {
+          "check": "author_identified",
+          "passed": true,
+          "detail": "C4Censor authors (Journal of Information Security and Applications / Springer)",
+          "severity": "resolvable"
+        },
+        {
+          "check": "redistribution_position_stated",
+          "passed": false,
+          "detail": "redistribution_permitted=None (must be true/false, not null)",
+          "severity": "resolvable"
+        },
+        {
+          "check": "derivative_works_position_stated",
+          "passed": false,
+          "detail": "derivative_works_permitted=None",
+          "severity": "resolvable"
+        },
+        {
+          "check": "access_method_lawful",
+          "passed": true,
+          "detail": "access_method='author_request'",
+          "severity": "terminal"
+        },
+        {
+          "check": "access_method_self_service",
+          "passed": false,
+          "detail": "access_method='author_request' requires gated approval or author correspondence that the researcher must complete personally",
+          "severity": "resolvable"
+        },
+        {
+          "check": "consent_position_stated",
+          "passed": true,
+          "detail": "Authors state all visuals were scraped from publicly accessible sources (YouTube/Twitch gaming streams, medical-procedure archives, specialty NSFW collections, X and Telegram extremist-tracking channels) and manually annotated. Scraped provenance means per-subject consent is not established.",
+          "severity": "resolvable"
+        }
+      ],
+      "notes": "AWAITING PERMISSION. Methodologically attractive because its multi-class fine-grained labels go beyond the usual binary porn-vs-neutral framing, which suits your 'visual content classification' and 'general visual-category recognition' objectives. Licence terms are not published in the accessible record, so contact the authors.",
+      "environment_reachable": false,
+      "exclusions": {
+        "files": [],
+        "reason": ""
+      },
+      "access_config": {},
+      "annotation_config": {},
+      "annotation_notes": "",
+      "redistribution_permitted": null,
+      "derivative_works_permitted": null,
+      "research_use_explicitly_granted": null,
+      "consent_position": "Authors state all visuals were scraped from publicly accessible sources (YouTube/Twitch gaming streams, medical-procedure archives, specialty NSFW collections, X and Telegram extremist-tracking channels) and manually annotated. Scraped provenance means per-subject consent is not established.",
+      "attribution_required": true,
+      "citation": ""
+    },
+    {
+      "slug": "ebazarov-nsfw-urls",
+      "source_name": "EBazarov/nsfw_data_source_urls (+ alex000kim/nsfw_data_scraper)",
+      "source_url": "https://github.com/EBazarov/nsfw_data_source_urls",
+      "author": "EBazarov; alex000kim",
+      "license": "repository licence covers the URL lists only, NOT the images they point at",
+      "license_url": "https://github.com/EBazarov/nsfw_data_source_urls",
+      "content_class": "adult-explicit-scrape",
+      "access_method": "http_file_list",
+      "estimated_image_count": 1589331,
+      "count_basis": "Stated: 1,589,331 NSFW image URLs across 159 categories; the companion neutral list holds 36,837 URLs. These are LINKS, not images.",
+      "formats": [
+        "URL lists"
+      ],
+      "annotations_available": true,
+      "label_definitions": [
+        "Category label per URL, derived from the originating subreddit/channel."
+      ],
+      "assessment_date": "2026-10-27T10:21:18Z",
+      "rights_review_status": "rejected",
+      "blockers": [
+        "content_class_not_excluded: content_class='adult-explicit-scrape'",
+        "license_grants_research_and_ml_training: permissive=False research_only=False explicit_grant=False",
+        "derivative_works_position_stated: derivative_works_permitted=None",
+        "terms_of_service_prohibit_scraping: site ToS forbids automated collection",
+        "age_verification: source provides no verifiable age/consent records (no 18 U.S.C. 2257-equivalent custodian of records). Collection refused.",
+        "provenance_unclear: original author/rights chain cannot be established"
+      ],
+      "terminal_blockers": [
+        "content_class_not_excluded: content_class='adult-explicit-scrape'",
+        "terms_of_service_prohibit_scraping: site ToS forbids automated collection",
+        "age_verification: source provides no verifiable age/consent records (no 18 U.S.C. 2257-equivalent custodian of records). Collection refused."
+      ],
+      "resolvable_blockers": [
+        "license_grants_research_and_ml_training: permissive=False research_only=False explicit_grant=False",
+        "derivative_works_position_stated: derivative_works_permitted=None",
+        "provenance_unclear: original author/rights chain cannot be established"
+      ],
+      "conditions": [
+        "MUST NOT be redistributed, mirrored or published; local research use only."
+      ],
+      "checks": [
+        {
+          "check": "content_class_not_excluded",
+          "passed": false,
+          "detail": "content_class='adult-explicit-scrape'",
+          "severity": "terminal"
+        },
+        {
+          "check": "license_identified",
+          "passed": true,
+          "detail": "license=repository licence covers the URL lists only, NOT the images they point at",
+          "severity": "terminal"
+        },
+        {
+          "check": "license_grants_research_and_ml_training",
+          "passed": false,
+          "detail": "permissive=False research_only=False explicit_grant=False",
+          "severity": "resolvable"
+        },
+        {
+          "check": "license_url_recorded",
+          "passed": true,
+          "detail": "https://github.com/EBazarov/nsfw_data_source_urls",
+          "severity": "resolvable"
+        },
+        {
+          "check": "author_identified",
+          "passed": true,
+          "detail": "EBazarov; alex000kim",
+          "severity": "resolvable"
+        },
+        {
+          "check": "redistribution_position_stated",
+          "passed": true,
+          "detail": "redistribution_permitted=False (must be true/false, not null)",
+          "severity": "resolvable"
+        },
+        {
+          "check": "derivative_works_position_stated",
+          "passed": false,
+          "detail": "derivative_works_permitted=None",
+          "severity": "resolvable"
+        },
+        {
+          "check": "access_method_lawful",
+          "passed": true,
+          "detail": "access_method='http_file_list'",
+          "severity": "terminal"
+        },
+        {
+          "check": "access_method_self_service",
+          "passed": true,
+          "detail": "access_method='http_file_list' requires gated approval or author correspondence that the researcher must complete personally",
+          "severity": "resolvable"
+        },
+        {
+          "check": "consent_position_stated",
+          "passed": true,
+          "detail": "NONE. The target URLs point at third-party hosts (Reddit CDNs, image hosts, adult sites). Resolving them means scraping third-party websites and extracting embedded media without authorisation from the hosts or the depicted subjects.",
+          "severity": "resolvable"
+        }
+      ],
+      "notes": "REJECTED - do not use this route even though the URL lists themselves are open. This is the mechanism by which a great deal of NSFW research data has been built, and it is precisely what your own protocol forbids: 'Do not scrape third-party websites or extract embedded media without authorization.' The repository is explicitly marked historical and no longer maintained, so a large fraction of URLs are dead, and the remainder resolve to hosts whose robots.txt and terms forbid automated collection. The age-verification and consent position of the destinations is unverifiable at corpus scale. Use a curated, DUA-gated corpus (UnsafeBench, USD) instead.",
+      "environment_reachable": false,
+      "exclusions": {
+        "files": [],
+        "reason": ""
+      },
+      "access_config": {},
+      "annotation_config": {},
+      "annotation_notes": "",
+      "redistribution_permitted": false,
+      "derivative_works_permitted": null,
+      "research_use_explicitly_granted": false,
+      "consent_position": "NONE. The target URLs point at third-party hosts (Reddit CDNs, image hosts, adult sites). Resolving them means scraping third-party websites and extracting embedded media without authorisation from the hosts or the depicted subjects.",
+      "attribution_required": false,
+      "citation": ""
+    },
+    {
+      "slug": "open-images-v7",
+      "source_name": "Open Images V7",
+      "source_url": "https://storage.googleapis.com/openimages/web/index.html",
+      "author": "Google Inc.",
+      "license": "CC-BY-4.0 (images) / CC-BY-4.0 (annotations); individual images retain their Flickr licences",
+      "license_url": "https://storage.googleapis.com/openimages/web/license.html",
+      "content_class": "general",
+      "access_method": "documented_dataset_api",
+      "estimated_image_count": 1900000,
+      "count_basis": "Stated: ~1.9M images, 16M bounding boxes, 600 image-level classes, 350k segmentation masks.",
+      "formats": [
+        "JPEG"
+      ],
+      "annotations_available": true,
+      "label_definitions": [
+        "600 image-level class labels; 600 box classes; point labels; segmentation masks; visual relationships; captions."
+      ],
+      "assessment_date": "2026-10-27T10:21:18Z",
+      "rights_review_status": "approved",
+      "blockers": [],
+      "terminal_blockers": [],
+      "resolvable_blockers": [],
+      "conditions": [],
+      "checks": [
+        {
+          "check": "content_class_not_excluded",
+          "passed": true,
+          "detail": "content_class='general'",
+          "severity": "terminal"
+        },
+        {
+          "check": "license_identified",
+          "passed": true,
+          "detail": "license=CC-BY-4.0 (images) / CC-BY-4.0 (annotations); individual images retain their Flickr licences",
+          "severity": "terminal"
+        },
+        {
+          "check": "license_grants_research_and_ml_training",
+          "passed": true,
+          "detail": "permissive=False research_only=False explicit_grant=True",
+          "severity": "resolvable"
+        },
+        {
+          "check": "license_url_recorded",
+          "passed": true,
+          "detail": "https://storage.googleapis.com/openimages/web/license.html",
+          "severity": "resolvable"
+        },
+        {
+          "check": "author_identified",
+          "passed": true,
+          "detail": "Google Inc.",
+          "severity": "resolvable"
+        },
+        {
+          "check": "redistribution_position_stated",
+          "passed": true,
+          "detail": "redistribution_permitted=True (must be true/false, not null)",
+          "severity": "resolvable"
+        },
+        {
+          "check": "derivative_works_position_stated",
+          "passed": true,
+          "detail": "derivative_works_permitted=True",
+          "severity": "resolvable"
+        },
+        {
+          "check": "access_method_lawful",
+          "passed": true,
+          "detail": "access_method='documented_dataset_api'",
+          "severity": "terminal"
+        },
+        {
+          "check": "access_method_self_service",
+          "passed": true,
+          "detail": "access_method='documented_dataset_api' requires gated approval or author correspondence that the researcher must complete personally",
+          "severity": "resolvable"
+        },
+        {
+          "check": "consent_position_stated",
+          "passed": true,
+          "detail": "Google distributes image URLs plus metadata; images are sourced from Flickr under their individual CC licences. Google explicitly notes that some images may be inappropriate and provides NSFW/machine-generated flags.",
+          "severity": "resolvable"
+        }
+      ],
+      "notes": "AWAITING PERMISSION FOR THIS RUN - BLOCKED BY SANDBOX EGRESS ONLY, not by rights. This is your best fit for 'general visual-category recognition' and it is properly licensed. It cannot be fetched from this sandbox because storage.googleapis.com is outside the egress allowlist (only github.com, api.github.com, codeload.github.com, registry.npmjs.org, pypi.org and files.pythonhosted.org are reachable). Run scripts/collect.py against this manifest on your own network. Note it distributes URLs + metadata, so collection resolves to per-image HTTP GETs against Flickr CDNs - respect those hosts' robots.txt (the collector does) and budget for a large crawl.",
+      "environment_reachable": false,
+      "exclusions": {
+        "files": [],
+        "reason": ""
+      },
+      "access_config": {},
+      "annotation_config": {},
+      "annotation_notes": "",
+      "redistribution_permitted": true,
+      "derivative_works_permitted": true,
+      "research_use_explicitly_granted": true,
+      "consent_position": "Google distributes image URLs plus metadata; images are sourced from Flickr under their individual CC licences. Google explicitly notes that some images may be inappropriate and provides NSFW/machine-generated flags.",
+      "attribution_required": true,
+      "citation": ""
+    },
+    {
+      "slug": "koniq-10k",
+      "source_name": "KonIQ-10k - crowdsourced image quality assessment database",
+      "source_url": "http://database.mmsp-kn.de/koniq-10k-database.html",
+      "author": "Vlad Hosu et al., Multimedia Signal Processing Group, TU Ilmenau / LMU Munich",
+      "license": "CC-BY-4.0 (database); underlying images sourced from YFCC100M under their individual CC licences",
+      "license_url": "http://database.mmsp-kn.de/koniq-10k-database.html",
+      "content_class": "image-quality",
+      "access_method": "documented_dataset_api",
+      "estimated_image_count": 10073,
+      "count_basis": "Stated: 10,073 authentic, high-resolution images with crowdsourced quality scores (120 ratings per image on average).",
+      "formats": [
+        "JPEG"
+      ],
+      "annotations_available": true,
+      "label_definitions": [
+        "Mean opinion score (MOS) per image on a 5-point quality scale, plus the full distribution of individual ratings and image metadata (resolution, camera)."
+      ],
+      "assessment_date": "2026-10-27T10:21:18Z",
+      "rights_review_status": "approved",
+      "blockers": [],
+      "terminal_blockers": [],
+      "resolvable_blockers": [],
+      "conditions": [],
+      "checks": [
+        {
+          "check": "content_class_not_excluded",
+          "passed": true,
+          "detail": "content_class='image-quality'",
+          "severity": "terminal"
+        },
+        {
+          "check": "license_identified",
+          "passed": true,
+          "detail": "license=CC-BY-4.0 (database); underlying images sourced from YFCC100M under their individual CC licences",
+          "severity": "terminal"
+        },
+        {
+          "check": "license_grants_research_and_ml_training",
+          "passed": true,
+          "detail": "permissive=False research_only=False explicit_grant=True",
+          "severity": "resolvable"
+        },
+        {
+          "check": "license_url_recorded",
+          "passed": true,
+          "detail": "http://database.mmsp-kn.de/koniq-10k-database.html",
+          "severity": "resolvable"
+        },
+        {
+          "check": "author_identified",
+          "passed": true,
+          "detail": "Vlad Hosu et al., Multimedia Signal Processing Group, TU Ilmenau / LMU Munich",
+          "severity": "resolvable"
+        },
+        {
+          "check": "redistribution_position_stated",
+          "passed": true,
+          "detail": "redistribution_permitted=True (must be true/false, not null)",
+          "severity": "resolvable"
+        },
+        {
+          "check": "derivative_works_position_stated",
+          "passed": true,
+          "detail": "derivative_works_permitted=True",
+          "severity": "resolvable"
+        },
+        {
+          "check": "access_method_lawful",
+          "passed": true,
+          "detail": "access_method='documented_dataset_api'",
+          "severity": "terminal"
+        },
+        {
+          "check": "access_method_self_service",
+          "passed": true,
+          "detail": "access_method='documented_dataset_api' requires gated approval or author correspondence that the researcher must complete personally",
+          "severity": "resolvable"
+        },
+        {
+          "check": "consent_position_stated",
+          "passed": true,
+          "detail": "Images drawn from the YFCC100M Flickr collection under CC licences; per-image attribution is preserved in the database's metadata.",
+          "severity": "resolvable"
+        }
+      ],
+      "notes": "AWAITING PERMISSION FOR THIS RUN - BLOCKED BY SANDBOX EGRESS ONLY. This is the canonical benchmark for your 'image quality assessment' objective and it ships real human MOS labels, which is far better than relying solely on the heuristic Laplacian-variance blur score this pipeline computes. The heuristic is a triage filter, not a substitute for ground-truth IQA labels; pair the two. Fetch from database.mmsp-kn.de on your own network.",
+      "environment_reachable": false,
+      "exclusions": {
+        "files": [],
+        "reason": ""
+      },
+      "access_config": {},
+      "annotation_config": {},
+      "annotation_notes": "",
+      "redistribution_permitted": true,
+      "derivative_works_permitted": true,
+      "research_use_explicitly_granted": true,
+      "consent_position": "Images drawn from the YFCC100M Flickr collection under CC licences; per-image attribution is preserved in the database's metadata.",
+      "attribution_required": true,
+      "citation": "Hosu et al., KonIQ-10k: An ecologically valid database for deep learning of blind image quality assessment (IEEE TIP, 2020)."
+    },
+    {
+      "slug": "pornpics-de",
+      "source_name": "pornpics.de (supplied URL)",
+      "source_url": "https://www.pornpics.de/",
+      "author": "UNKNOWN - no rights holder identifiable; galleries are aggregator pages hosting third-party producer content",
+      "license": "",
+      "license_url": "",
+      "content_class": "adult-explicit-scrape",
+      "access_method": "scrape_against_tos",
+      "estimated_image_count": null,
+      "count_basis": "Not determined. Enumeration was deliberately NOT performed: enumerating and fetching this source was refused at the rights-assessment gate before any network request was made.",
+      "formats": [
+        "JPEG (observed on similar commercial gallery sites)"
+      ],
+      "annotations_available": false,
+      "label_definitions": [],
+      "assessment_date": "2026-10-27T10:21:18Z",
+      "rights_review_status": "rejected",
+      "blockers": [
+        "content_class_not_excluded: content_class='adult-explicit-scrape'",
+        "license_identified: license=<missing>",
+        "license_grants_research_and_ml_training: permissive=False research_only=False explicit_grant=False",
+        "license_url_recorded: <missing>",
+        "redistribution_position_stated: redistribution_permitted=None (must be true/false, not null)",
+        "redistribution_position_stated: redistribution permission is UNCLEAR",
+        "derivative_works_position_stated: derivative_works_permitted=None",
+        "access_method_lawful: access_method='scrape_against_tos'",
+        "terms_of_service_prohibit_scraping: site ToS forbids automated collection",
+        "age_verification: source provides no verifiable age/consent records (no 18 U.S.C. 2257-equivalent custodian of records). Collection refused.",
+        "provenance_unclear: original author/rights chain cannot be established"
+      ],
+      "terminal_blockers": [
+        "content_class_not_excluded: content_class='adult-explicit-scrape'",
+        "license_identified: license=<missing>",
+        "access_method_lawful: access_method='scrape_against_tos'",
+        "terms_of_service_prohibit_scraping: site ToS forbids automated collection",
+        "age_verification: source provides no verifiable age/consent records (no 18 U.S.C. 2257-equivalent custodian of records). Collection refused."
+      ],
+      "resolvable_blockers": [
+        "license_grants_research_and_ml_training: permissive=False research_only=False explicit_grant=False",
+        "license_url_recorded: <missing>",
+        "redistribution_position_stated: redistribution_permitted=None (must be true/false, not null)",
+        "redistribution_position_stated: redistribution permission is UNCLEAR",
+        "derivative_works_position_stated: derivative_works_permitted=None",
+        "provenance_unclear: original author/rights chain cannot be established"
+      ],
+      "conditions": [],
+      "checks": [
+        {
+          "check": "content_class_not_excluded",
+          "passed": false,
+          "detail": "content_class='adult-explicit-scrape'",
+          "severity": "terminal"
+        },
+        {
+          "check": "license_identified",
+          "passed": false,
+          "detail": "license=<missing>",
+          "severity": "terminal"
+        },
+        {
+          "check": "license_grants_research_and_ml_training",
+          "passed": false,
+          "detail": "permissive=False research_only=False explicit_grant=False",
+          "severity": "resolvable"
+        },
+        {
+          "check": "license_url_recorded",
+          "passed": false,
+          "detail": "<missing>",
+          "severity": "resolvable"
+        },
+        {
+          "check": "author_identified",
+          "passed": true,
+          "detail": "UNKNOWN - no rights holder identifiable; galleries are aggregator pages hosting third-party producer content",
+          "severity": "resolvable"
+        },
+        {
+          "check": "redistribution_position_stated",
+          "passed": false,
+          "detail": "redistribution_permitted=None (must be true/false, not null)",
+          "severity": "resolvable"
+        },
+        {
+          "check": "derivative_works_position_stated",
+          "passed": false,
+          "detail": "derivative_works_permitted=None",
+          "severity": "resolvable"
+        },
+        {
+          "check": "access_method_lawful",
+          "passed": false,
+          "detail": "access_method='scrape_against_tos'",
+          "severity": "terminal"
+        },
+        {
+          "check": "access_method_self_service",
+          "passed": true,
+          "detail": "access_method='scrape_against_tos' requires gated approval or author correspondence that the researcher must complete personally",
+          "severity": "resolvable"
+        },
+        {
+          "check": "consent_position_stated",
+          "passed": true,
+          "detail": "UNVERIFIABLE. The site is an aggregator gallery. There is no way to confirm, for any individual image, that every depicted person consented to (a) the original production, (b) hosting on this aggregator, or (c) onward copying into a third-party research corpus.",
+          "severity": "resolvable"
+        }
+      ],
+      "notes": "REJECTED. Supplied by the requester as the collection target. This is a commercial adult-image gallery, not a research data portal: it publishes no dataset, no licence, no bulk-download endpoint, no documented API and no research-use grant. Images are third-party copyright works offered for on-site viewing only. Collecting them would (1) reproduce copyrighted works without authorisation, (2) violate the site's terms of service and standard robots.txt restrictions, (3) create a corpus whose consent and age-verification chain cannot be established for any single image - which exposes the researcher to liability for non-consensual intimate imagery and, in the worst case, for unlawful material, regardless of stated research intent, and (4) be redistributable nowhere, making the resulting dataset unusable for benchmarking or publication. Note also that 'publicly viewable' is not a licence: the requester's own protocol states that public accessibility must never be interpreted as permission for unrestricted reuse, and that collections whose required permissions are missing or unclear must be excluded. This source fails that test on every limb. It was refused at the assessment gate; zero requests were issued to it and zero files were collected. Legally clean substitutes for content-safety research are listed in awaiting_nsfw_research_datasets.json.",
+      "environment_reachable": false,
+      "exclusions": {
+        "files": [],
+        "reason": ""
+      },
+      "access_config": {},
+      "annotation_config": {},
+      "annotation_notes": "",
+      "redistribution_permitted": null,
+      "derivative_works_permitted": null,
+      "research_use_explicitly_granted": false,
+      "consent_position": "UNVERIFIABLE. The site is an aggregator gallery. There is no way to confirm, for any individual image, that every depicted person consented to (a) the original production, (b) hosting on this aggregator, or (c) onward copying into a third-party research corpus.",
+      "attribution_required": false,
+      "citation": ""
+    }
+  ]
+}

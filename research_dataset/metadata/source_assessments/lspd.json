@@ -1,0 +1,119 @@
+{
+  "slug": "lspd",
+  "source_name": "LSPD - Large-Scale Pornographic Dataset for detection and classification",
+  "source_url": "https://www.researchgate.net/publication/358734386",
+  "author": "LSPD authors (see publication); distribution is by request to the authors",
+  "license": "custom research licence, granted by the authors on request ('to ensure fair use')",
+  "license_url": "",
+  "content_class": "content-safety",
+  "access_method": "author_request",
+  "estimated_image_count": 500000,
+  "count_basis": "Stated by the authors: 500,000 images and 4,000 videos, of which more than 50,000 images carry annotation (93,810 labelled instances).",
+  "formats": [
+    "JPEG",
+    "video"
+  ],
+  "annotations_available": true,
+  "label_definitions": [
+    "Image/video classification: porn, normal, sexy, hentai, drawings.",
+    "Instance segmentation: polygon masks for four private sexual object classes (breasts, male genital, female genital, anus)."
+  ],
+  "assessment_date": "2026-10-27T10:21:18Z",
+  "rights_review_status": "awaiting_permission",
+  "blockers": [
+    "license_url_recorded: <missing>",
+    "derivative_works_position_stated: derivative_works_permitted=None",
+    "access_method_self_service: access_method='author_request' requires gated approval or author correspondence that the researcher must complete personally",
+    "requires_registration: registration/DUA not completed - the researcher must accept the terms personally; this pipeline will never do so on their behalf",
+    "provenance_unclear: original author/rights chain cannot be established"
+  ],
+  "terminal_blockers": [],
+  "resolvable_blockers": [
+    "license_url_recorded: <missing>",
+    "derivative_works_position_stated: derivative_works_permitted=None",
+    "access_method_self_service: access_method='author_request' requires gated approval or author correspondence that the researcher must complete personally",
+    "requires_registration: registration/DUA not completed - the researcher must accept the terms personally; this pipeline will never do so on their behalf",
+    "provenance_unclear: original author/rights chain cannot be established"
+  ],
+  "conditions": [
+    "MUST NOT be redistributed, mirrored or published; local research use only.",
+    "Data Use Agreement must be accepted by the researcher before download."
+  ],
+  "checks": [
+    {
+      "check": "content_class_not_excluded",
+      "passed": true,
+      "detail": "content_class='content-safety'",
+      "severity": "terminal"
+    },
+    {
+      "check": "license_identified",
+      "passed": true,
+      "detail": "license=custom research licence, granted by the authors on request ('to ensure fair use')",
+      "severity": "terminal"
+    },
+    {
+      "check": "license_grants_research_and_ml_training",
+      "passed": true,
+      "detail": "permissive=False research_only=False explicit_grant=True",
+      "severity": "resolvable"
+    },
+    {
+      "check": "license_url_recorded",
+      "passed": false,
+      "detail": "<missing>",
+      "severity": "resolvable"
+    },
+    {
+      "check": "author_identified",
+      "passed": true,
+      "detail": "LSPD authors (see publication); distribution is by request to the authors",
+      "severity": "resolvable"
+    },
+    {
+      "check": "redistribution_position_stated",
+      "passed": true,
+      "detail": "redistribution_permitted=False (must be true/false, not null)",
+      "severity": "resolvable"
+    },
+    {
+      "check": "derivative_works_position_stated",
+      "passed": false,
+      "detail": "derivative_works_permitted=None",
+      "severity": "resolvable"
+    },
+    {
+      "check": "access_method_lawful",
+      "passed": true,
+      "detail": "access_method='author_request'",
+      "severity": "terminal"
+    },
+    {
+      "check": "access_method_self_service",
+      "passed": false,
+      "detail": "access_method='author_request' requires gated approval or author correspondence that the researcher must complete personally",
+      "severity": "resolvable"
+    },
+    {
+      "check": "consent_position_stated",
+      "passed": true,
+      "detail": "Authors state pornographic images were sourced from adult websites; per-image consent and age-verification records are not conveyed to downstream researchers.",
+      "severity": "resolvable"
+    }
+  ],
+  "notes": "AWAITING PERMISSION, WITH A CAVEAT YOU SHOULD WEIGH. This is the standard academic benchmark for this task and is cited widely, but its underlying images are themselves scraped from adult websites, so the consent chain that a *direct* scrape lacks is only partly repaired by routing through the authors. If you use it: request access formally, record the authors' written terms in this manifest, keep the data on controlled institutional storage, publish metrics only, and get ethics-board sign-off. Do not mirror it.",
+  "environment_reachable": false,
+  "exclusions": {
+    "files": [],
+    "reason": ""
+  },
+  "access_config": {},
+  "annotation_config": {},
+  "annotation_notes": "",
+  "redistribution_permitted": false,
+  "derivative_works_permitted": null,
+  "research_use_explicitly_granted": true,
+  "consent_position": "Authors state pornographic images were sourced from adult websites; per-image consent and age-verification records are not conveyed to downstream researchers.",
+  "attribution_required": true,
+  "citation": "LSPD: A Large-Scale Pornographic Dataset for Detection and Classification (2022)."
+}

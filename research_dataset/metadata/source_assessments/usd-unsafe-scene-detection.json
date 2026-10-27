@@ -1,0 +1,113 @@
+{
+  "slug": "usd-unsafe-scene-detection",
+  "source_name": "USD - NSFW content detection for text-to-image models via scene graph",
+  "source_url": "https://huggingface.co/datasets/yuwan0/UnsafeSceneDetection",
+  "author": "yuwan0 et al. (official dataset of the USD paper)",
+  "license": "Community License Agreement, access granted case-by-case (gated)",
+  "license_url": "https://huggingface.co/datasets/yuwan0/UnsafeSceneDetection",
+  "content_class": "content-safety",
+  "access_method": "hf_gated_dataset",
+  "estimated_image_count": null,
+  "count_basis": "Not stated in the accessible card summary; scene-graph annotations over unsafe/safe image sets. Must be enumerated after access is granted.",
+  "formats": [
+    "PNG",
+    "JPEG"
+  ],
+  "annotations_available": true,
+  "label_definitions": [
+    "Scene-graph annotations supporting NSFW content detection for text-to-image model outputs."
+  ],
+  "assessment_date": "2026-10-27T10:21:18Z",
+  "rights_review_status": "awaiting_permission",
+  "blockers": [
+    "access_method_self_service: access_method='hf_gated_dataset' requires gated approval or author correspondence that the researcher must complete personally",
+    "requires_registration: registration/DUA not completed - the researcher must accept the terms personally; this pipeline will never do so on their behalf"
+  ],
+  "terminal_blockers": [],
+  "resolvable_blockers": [
+    "access_method_self_service: access_method='hf_gated_dataset' requires gated approval or author correspondence that the researcher must complete personally",
+    "requires_registration: registration/DUA not completed - the researcher must accept the terms personally; this pipeline will never do so on their behalf"
+  ],
+  "conditions": [
+    "MUST NOT be redistributed, mirrored or published; local research use only.",
+    "No derivative works: originals may be analysed but not transformed for release.",
+    "Data Use Agreement must be accepted by the researcher before download."
+  ],
+  "checks": [
+    {
+      "check": "content_class_not_excluded",
+      "passed": true,
+      "detail": "content_class='content-safety'",
+      "severity": "terminal"
+    },
+    {
+      "check": "license_identified",
+      "passed": true,
+      "detail": "license=Community License Agreement, access granted case-by-case (gated)",
+      "severity": "terminal"
+    },
+    {
+      "check": "license_grants_research_and_ml_training",
+      "passed": true,
+      "detail": "permissive=False research_only=False explicit_grant=True",
+      "severity": "resolvable"
+    },
+    {
+      "check": "license_url_recorded",
+      "passed": true,
+      "detail": "https://huggingface.co/datasets/yuwan0/UnsafeSceneDetection",
+      "severity": "resolvable"
+    },
+    {
+      "check": "author_identified",
+      "passed": true,
+      "detail": "yuwan0 et al. (official dataset of the USD paper)",
+      "severity": "resolvable"
+    },
+    {
+      "check": "redistribution_position_stated",
+      "passed": true,
+      "detail": "redistribution_permitted=False (must be true/false, not null)",
+      "severity": "resolvable"
+    },
+    {
+      "check": "derivative_works_position_stated",
+      "passed": true,
+      "detail": "derivative_works_permitted=False",
+      "severity": "resolvable"
+    },
+    {
+      "check": "access_method_lawful",
+      "passed": true,
+      "detail": "access_method='hf_gated_dataset'",
+      "severity": "terminal"
+    },
+    {
+      "check": "access_method_self_service",
+      "passed": false,
+      "detail": "access_method='hf_gated_dataset' requires gated approval or author correspondence that the researcher must complete personally",
+      "severity": "resolvable"
+    },
+    {
+      "check": "consent_position_stated",
+      "passed": true,
+      "detail": "Publisher states content is provided strictly for research and education, access is granted case-by-case on a signed acknowledgement, redistribution and mirroring (including derived samples that reveal NSFW content) are prohibited, and secure storage with access limited to authorised personnel is required.",
+      "severity": "resolvable"
+    }
+  ],
+  "notes": "AWAITING PERMISSION. Strong fit for content-safety classification with explainable scene-graph labels. Binding conditions: non-commercial research/education only, NO redistribution or mirroring, secure storage, access revocable on suspected misuse. Your project's dataset-analysis/benchmarking outputs must therefore report metrics and statistics only - never republish images.",
+  "environment_reachable": false,
+  "exclusions": {
+    "files": [],
+    "reason": ""
+  },
+  "access_config": {},
+  "annotation_config": {},
+  "annotation_notes": "",
+  "redistribution_permitted": false,
+  "derivative_works_permitted": false,
+  "research_use_explicitly_granted": true,
+  "consent_position": "Publisher states content is provided strictly for research and education, access is granted case-by-case on a signed acknowledgement, redistribution and mirroring (including derived samples that reveal NSFW content) are prohibited, and secure storage with access limited to authorised personnel is required.",
+  "attribution_required": true,
+  "citation": ""
+}

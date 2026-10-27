@@ -1,0 +1,102 @@
+{
+  "slug": "open-images-v7",
+  "source_name": "Open Images V7",
+  "source_url": "https://storage.googleapis.com/openimages/web/index.html",
+  "author": "Google Inc.",
+  "license": "CC-BY-4.0 (images) / CC-BY-4.0 (annotations); individual images retain their Flickr licences",
+  "license_url": "https://storage.googleapis.com/openimages/web/license.html",
+  "content_class": "general",
+  "access_method": "documented_dataset_api",
+  "estimated_image_count": 1900000,
+  "count_basis": "Stated: ~1.9M images, 16M bounding boxes, 600 image-level classes, 350k segmentation masks.",
+  "formats": [
+    "JPEG"
+  ],
+  "annotations_available": true,
+  "label_definitions": [
+    "600 image-level class labels; 600 box classes; point labels; segmentation masks; visual relationships; captions."
+  ],
+  "assessment_date": "2026-10-27T10:21:18Z",
+  "rights_review_status": "approved",
+  "blockers": [],
+  "terminal_blockers": [],
+  "resolvable_blockers": [],
+  "conditions": [],
+  "checks": [
+    {
+      "check": "content_class_not_excluded",
+      "passed": true,
+      "detail": "content_class='general'",
+      "severity": "terminal"
+    },
+    {
+      "check": "license_identified",
+      "passed": true,
+      "detail": "license=CC-BY-4.0 (images) / CC-BY-4.0 (annotations); individual images retain their Flickr licences",
+      "severity": "terminal"
+    },
+    {
+      "check": "license_grants_research_and_ml_training",
+      "passed": true,
+      "detail": "permissive=False research_only=False explicit_grant=True",
+      "severity": "resolvable"
+    },
+    {
+      "check": "license_url_recorded",
+      "passed": true,
+      "detail": "https://storage.googleapis.com/openimages/web/license.html",
+      "severity": "resolvable"
+    },
+    {
+      "check": "author_identified",
+      "passed": true,
+      "detail": "Google Inc.",
+      "severity": "resolvable"
+    },
+    {
+      "check": "redistribution_position_stated",
+      "passed": true,
+      "detail": "redistribution_permitted=True (must be true/false, not null)",
+      "severity": "resolvable"
+    },
+    {
+      "check": "derivative_works_position_stated",
+      "passed": true,
+      "detail": "derivative_works_permitted=True",
+      "severity": "resolvable"
+    },
+    {
+      "check": "access_method_lawful",
+      "passed": true,
+      "detail": "access_method='documented_dataset_api'",
+      "severity": "terminal"
+    },
+    {
+      "check": "access_method_self_service",
+      "passed": true,
+      "detail": "access_method='documented_dataset_api' requires gated approval or author correspondence that the researcher must complete personally",
+      "severity": "resolvable"
+    },
+    {
+      "check": "consent_position_stated",
+      "passed": true,
+      "detail": "Google distributes image URLs plus metadata; images are sourced from Flickr under their individual CC licences. Google explicitly notes that some images may be inappropriate and provides NSFW/machine-generated flags.",
+      "severity": "resolvable"
+    }
+  ],
+  "notes": "AWAITING PERMISSION FOR THIS RUN - BLOCKED BY SANDBOX EGRESS ONLY, not by rights. This is your best fit for 'general visual-category recognition' and it is properly licensed. It cannot be fetched from this sandbox because storage.googleapis.com is outside the egress allowlist (only github.com, api.github.com, codeload.github.com, registry.npmjs.org, pypi.org and files.pythonhosted.org are reachable). Run scripts/collect.py against this manifest on your own network. Note it distributes URLs + metadata, so collection resolves to per-image HTTP GETs against Flickr CDNs - respect those hosts' robots.txt (the collector does) and budget for a large crawl.",
+  "environment_reachable": false,
+  "exclusions": {
+    "files": [],
+    "reason": ""
+  },
+  "access_config": {},
+  "annotation_config": {},
+  "annotation_notes": "",
+  "redistribution_permitted": true,
+  "derivative_works_permitted": true,
+  "research_use_explicitly_granted": true,
+  "consent_position": "Google distributes image URLs plus metadata; images are sourced from Flickr under their individual CC licences. Google explicitly notes that some images may be inappropriate and provides NSFW/machine-generated flags.",
+  "attribution_required": true,
+  "citation": ""
+}

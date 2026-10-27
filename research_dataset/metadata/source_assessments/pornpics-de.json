@@ -1,0 +1,125 @@
+{
+  "slug": "pornpics-de",
+  "source_name": "pornpics.de (supplied URL)",
+  "source_url": "https://www.pornpics.de/",
+  "author": "UNKNOWN - no rights holder identifiable; galleries are aggregator pages hosting third-party producer content",
+  "license": "",
+  "license_url": "",
+  "content_class": "adult-explicit-scrape",
+  "access_method": "scrape_against_tos",
+  "estimated_image_count": null,
+  "count_basis": "Not determined. Enumeration was deliberately NOT performed: enumerating and fetching this source was refused at the rights-assessment gate before any network request was made.",
+  "formats": [
+    "JPEG (observed on similar commercial gallery sites)"
+  ],
+  "annotations_available": false,
+  "label_definitions": [],
+  "assessment_date": "2026-10-27T10:21:18Z",
+  "rights_review_status": "rejected",
+  "blockers": [
+    "content_class_not_excluded: content_class='adult-explicit-scrape'",
+    "license_identified: license=<missing>",
+    "license_grants_research_and_ml_training: permissive=False research_only=False explicit_grant=False",
+    "license_url_recorded: <missing>",
+    "redistribution_position_stated: redistribution_permitted=None (must be true/false, not null)",
+    "redistribution_position_stated: redistribution permission is UNCLEAR",
+    "derivative_works_position_stated: derivative_works_permitted=None",
+    "access_method_lawful: access_method='scrape_against_tos'",
+    "terms_of_service_prohibit_scraping: site ToS forbids automated collection",
+    "age_verification: source provides no verifiable age/consent records (no 18 U.S.C. 2257-equivalent custodian of records). Collection refused.",
+    "provenance_unclear: original author/rights chain cannot be established"
+  ],
+  "terminal_blockers": [
+    "content_class_not_excluded: content_class='adult-explicit-scrape'",
+    "license_identified: license=<missing>",
+    "access_method_lawful: access_method='scrape_against_tos'",
+    "terms_of_service_prohibit_scraping: site ToS forbids automated collection",
+    "age_verification: source provides no verifiable age/consent records (no 18 U.S.C. 2257-equivalent custodian of records). Collection refused."
+  ],
+  "resolvable_blockers": [
+    "license_grants_research_and_ml_training: permissive=False research_only=False explicit_grant=False",
+    "license_url_recorded: <missing>",
+    "redistribution_position_stated: redistribution_permitted=None (must be true/false, not null)",
+    "redistribution_position_stated: redistribution permission is UNCLEAR",
+    "derivative_works_position_stated: derivative_works_permitted=None",
+    "provenance_unclear: original author/rights chain cannot be established"
+  ],
+  "conditions": [],
+  "checks": [
+    {
+      "check": "content_class_not_excluded",
+      "passed": false,
+      "detail": "content_class='adult-explicit-scrape'",
+      "severity": "terminal"
+    },
+    {
+      "check": "license_identified",
+      "passed": false,
+      "detail": "license=<missing>",
+      "severity": "terminal"
+    },
+    {
+      "check": "license_grants_research_and_ml_training",
+      "passed": false,
+      "detail": "permissive=False research_only=False explicit_grant=False",
+      "severity": "resolvable"
+    },
+    {
+      "check": "license_url_recorded",
+      "passed": false,
+      "detail": "<missing>",
+      "severity": "resolvable"
+    },
+    {
+      "check": "author_identified",
+      "passed": true,
+      "detail": "UNKNOWN - no rights holder identifiable; galleries are aggregator pages hosting third-party producer content",
+      "severity": "resolvable"
+    },
+    {
+      "check": "redistribution_position_stated",
+      "passed": false,
+      "detail": "redistribution_permitted=None (must be true/false, not null)",
+      "severity": "resolvable"
+    },
+    {
+      "check": "derivative_works_position_stated",
+      "passed": false,
+      "detail": "derivative_works_permitted=None",
+      "severity": "resolvable"
+    },
+    {
+      "check": "access_method_lawful",
+      "passed": false,
+      "detail": "access_method='scrape_against_tos'",
+      "severity": "terminal"
+    },
+    {
+      "check": "access_method_self_service",
+      "passed": true,
+      "detail": "access_method='scrape_against_tos' requires gated approval or author correspondence that the researcher must complete personally",
+      "severity": "resolvable"
+    },
+    {
+      "check": "consent_position_stated",
+      "passed": true,
+      "detail": "UNVERIFIABLE. The site is an aggregator gallery. There is no way to confirm, for any individual image, that every depicted person consented to (a) the original production, (b) hosting on this aggregator, or (c) onward copying into a third-party research corpus.",
+      "severity": "resolvable"
+    }
+  ],
+  "notes": "REJECTED. Supplied by the requester as the collection target. This is a commercial adult-image gallery, not a research data portal: it publishes no dataset, no licence, no bulk-download endpoint, no documented API and no research-use grant. Images are third-party copyright works offered for on-site viewing only. Collecting them would (1) reproduce copyrighted works without authorisation, (2) violate the site's terms of service and standard robots.txt restrictions, (3) create a corpus whose consent and age-verification chain cannot be established for any single image - which exposes the researcher to liability for non-consensual intimate imagery and, in the worst case, for unlawful material, regardless of stated research intent, and (4) be redistributable nowhere, making the resulting dataset unusable for benchmarking or publication. Note also that 'publicly viewable' is not a licence: the requester's own protocol states that public accessibility must never be interpreted as permission for unrestricted reuse, and that collections whose required permissions are missing or unclear must be excluded. This source fails that test on every limb. It was refused at the assessment gate; zero requests were issued to it and zero files were collected. Legally clean substitutes for content-safety research are listed in awaiting_nsfw_research_datasets.json.",
+  "environment_reachable": false,
+  "exclusions": {
+    "files": [],
+    "reason": ""
+  },
+  "access_config": {},
+  "annotation_config": {},
+  "annotation_notes": "",
+  "redistribution_permitted": null,
+  "derivative_works_permitted": null,
+  "research_use_explicitly_granted": false,
+  "consent_position": "UNVERIFIABLE. The site is an aggregator gallery. There is no way to confirm, for any individual image, that every depicted person consented to (a) the original production, (b) hosting on this aggregator, or (c) onward copying into a third-party research corpus.",
+  "attribution_required": false,
+  "citation": ""
+}

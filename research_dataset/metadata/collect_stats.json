@@ -1,0 +1,70 @@
+{
+  "generated_at": "2026-10-27T09:55:55Z",
+  "dry_run": false,
+  "authenticated_github_api": true,
+  "http_requests_issued": 828,
+  "bytes_downloaded": 0,
+  "sources": [
+    {
+      "slug": "opencv-samples-data",
+      "rights_review_status": "approved",
+      "discovered": 94,
+      "excluded_by_rights": 0,
+      "excluded_by_manifest": 3,
+      "downloaded": 91,
+      "skipped_already_present": 0,
+      "failed": 0,
+      "bytes": 9670756,
+      "formats": {
+        "JPEG": 59,
+        "PNG": 32
+      }
+    },
+    {
+      "slug": "pillow-test-images",
+      "rights_review_status": "approved",
+      "discovered": 735,
+      "excluded_by_rights": 0,
+      "excluded_by_manifest": 0,
+      "downloaded": 726,
+      "skipped_already_present": 9,
+      "failed": 0,
+      "bytes": 23030552,
+      "formats": {
+        "UNKNOWN": 9,
+        "TIFF": 113,
+        "PNG": 411,
+        "WEBP": 14,
+        "JPEG": 55,
+        "GIF": 39,
+        "ICO": 9,
+        "BMP": 71,
+        "PPM": 5
+      }
+    },
+    {
+      "slug": "open-images-v7",
+      "rights_review_status": "approved",
+      "discovered": 0,
+      "excluded_by_rights": 1,
+      "excluded_by_manifest": 0,
+      "downloaded": 0,
+      "skipped_already_present": 0,
+      "failed": 0,
+      "bytes": 0,
+      "formats": {}
+    },
+    {
+      "slug": "koniq-10k",
+      "rights_review_status": "approved",
+      "discovered": 0,
+      "excluded_by_rights": 1,
+      "excluded_by_manifest": 0,
+      "downloaded": 0,
+      "skipped_already_present": 0,
+      "failed": 0,
+      "bytes": 0,
+      "formats": {}
+    }
+  ]
+}

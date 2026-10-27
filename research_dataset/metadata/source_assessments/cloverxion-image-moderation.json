@@ -1,0 +1,111 @@
+{
+  "slug": "cloverxion-image-moderation",
+  "source_name": "cloverxion/image-moderation-dataset (+ image-moderation-specialist)",
+  "source_url": "https://huggingface.co/datasets/cloverxion/image-moderation-dataset",
+  "author": "cloverxion",
+  "license": "other (academic-research-only; no SPDX identifier)",
+  "license_url": "https://choosealicense.com/licenses/other/",
+  "content_class": "content-safety",
+  "access_method": "hf_open_dataset",
+  "estimated_image_count": null,
+  "count_basis": "Not stated. Binary safe/unsafe split in the main repo; unsafe-only classes (nudity, explicit adult content, gore, weaponry) in the specialist repo.",
+  "formats": [
+    "JPEG",
+    "PNG"
+  ],
+  "annotations_available": true,
+  "label_definitions": [
+    "safe vs unsafe (main); unsafe sub-classes including nudity, explicit adult content, gore and weaponry (specialist)."
+  ],
+  "assessment_date": "2026-10-27T10:21:18Z",
+  "rights_review_status": "awaiting_permission",
+  "blockers": [
+    "derivative_works_position_stated: derivative_works_permitted=None",
+    "provenance_unclear: original author/rights chain cannot be established"
+  ],
+  "terminal_blockers": [],
+  "resolvable_blockers": [
+    "derivative_works_position_stated: derivative_works_permitted=None",
+    "provenance_unclear: original author/rights chain cannot be established"
+  ],
+  "conditions": [
+    "MUST NOT be redistributed, mirrored or published; local research use only."
+  ],
+  "checks": [
+    {
+      "check": "content_class_not_excluded",
+      "passed": true,
+      "detail": "content_class='content-safety'",
+      "severity": "terminal"
+    },
+    {
+      "check": "license_identified",
+      "passed": true,
+      "detail": "license=other (academic-research-only; no SPDX identifier)",
+      "severity": "terminal"
+    },
+    {
+      "check": "license_grants_research_and_ml_training",
+      "passed": true,
+      "detail": "permissive=False research_only=False explicit_grant=True",
+      "severity": "resolvable"
+    },
+    {
+      "check": "license_url_recorded",
+      "passed": true,
+      "detail": "https://choosealicense.com/licenses/other/",
+      "severity": "resolvable"
+    },
+    {
+      "check": "author_identified",
+      "passed": true,
+      "detail": "cloverxion",
+      "severity": "resolvable"
+    },
+    {
+      "check": "redistribution_position_stated",
+      "passed": true,
+      "detail": "redistribution_permitted=False (must be true/false, not null)",
+      "severity": "resolvable"
+    },
+    {
+      "check": "derivative_works_position_stated",
+      "passed": false,
+      "detail": "derivative_works_permitted=None",
+      "severity": "resolvable"
+    },
+    {
+      "check": "access_method_lawful",
+      "passed": true,
+      "detail": "access_method='hf_open_dataset'",
+      "severity": "terminal"
+    },
+    {
+      "check": "access_method_self_service",
+      "passed": true,
+      "detail": "access_method='hf_open_dataset' requires gated approval or author correspondence that the researcher must complete personally",
+      "severity": "resolvable"
+    },
+    {
+      "check": "consent_position_stated",
+      "passed": true,
+      "detail": "UNCLEAR. Card states the unsafe class contains raw, completely uncensored human nudity and explicit adult content, restricted to institutional academic research and AI-safety engineering. No consent or age-verification chain is documented for individual images.",
+      "severity": "resolvable"
+    }
+  ],
+  "notes": "AWAITING PERMISSION. Research-only intent is stated explicitly, which is the closest any of these come to a usable grant, but the licence is unidentifiable ('other'), the content is uncensored real-person explicit imagery, and no per-image consent chain exists. Requires institutional ethics approval and a written record of the uploader's terms before use. Redistribution is not permitted, so it cannot underpin a published benchmark.",
+  "environment_reachable": false,
+  "exclusions": {
+    "files": [],
+    "reason": ""
+  },
+  "access_config": {},
+  "annotation_config": {},
+  "annotation_notes": "",
+  "redistribution_permitted": false,
+  "derivative_works_permitted": null,
+  "research_use_explicitly_granted": true,
+  "consent_position": "UNCLEAR. Card states the unsafe class contains raw, completely uncensored human nudity and explicit adult content, restricted to institutional academic research and AI-safety engineering. No consent or age-verification chain is documented for individual images.",
+  "attribution_required": true,
+  "citation": ""
+}

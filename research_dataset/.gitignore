@@ -1,0 +1,45 @@
+# ---------------------------------------------------------------------------
+# research_dataset/.gitignore
+#
+# The image payloads below are BULK, DERIVED and fully REGENERABLE by the
+# collection pipeline from rights-approved sources. They are kept out of Git so
+# the repository stays reviewable; the artefacts that record provenance, rights
+# determinations and measurements are kept IN Git because those cannot be
+# regenerated once the upstream sources change.
+#
+# To rebuild everything ignored here, from research_dataset/scripts/:
+#     ./run_pipeline.sh
+# ---------------------------------------------------------------------------
+
+# Byte-exact originals (regenerate: python3 collect.py)
+raw_images/
+
+# Normalised working copies (regenerate: python3 qc.py)
+processed_images/
+
+# Copies routed out by QC, with reasons (regenerate: python3 qc.py)
+rejected_images/
+
+# Copies of exact duplicates (regenerate: python3 qc.py)
+duplicate_images/
+
+# Generated test fixtures - synthetic, must never enter the corpus
+scripts/tests/fixtures/
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Local caches / partial runs
+*.tmp
+.cache/
+
+# ---------------------------------------------------------------------------
+# Deliberately TRACKED (do not add these to the ignore list):
+#   metadata/            images.csv, sources_registry.*, download_log.jsonl,
+#                        qc_records.jsonl, rejected_manifest.csv, sha256_index.json
+#   reports/             every generated report
+#   annotations/         preserved original annotation files + derived review queue
+#   scripts/             the reproducible pipeline itself
+#   README.md
+# ---------------------------------------------------------------------------

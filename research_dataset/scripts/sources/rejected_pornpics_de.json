@@ -1,0 +1,33 @@
+{
+  "slug": "pornpics-de",
+  "source_name": "pornpics.de (supplied URL)",
+  "source_url": "https://www.pornpics.de/",
+  "author": "UNKNOWN - no rights holder identifiable; galleries are aggregator pages hosting third-party producer content",
+  "license": "",
+  "license_url": "",
+  "content_class": "adult-explicit-scrape",
+  "access_method": "scrape_against_tos",
+  "estimated_image_count": null,
+  "count_basis": "Not determined. Enumeration was deliberately NOT performed: enumerating and fetching this source was refused at the rights-assessment gate before any network request was made.",
+  "formats": [
+    "JPEG (observed on similar commercial gallery sites)"
+  ],
+  "annotations_available": false,
+  "label_definitions": [],
+  "requires_registration": false,
+  "registration_completed": false,
+  "terms_of_service_prohibit_scraping": true,
+  "contains_identifiable_people": true,
+  "consent_position": "UNVERIFIABLE. The site is an aggregator gallery. There is no way to confirm, for any individual image, that every depicted person consented to (a) the original production, (b) hosting on this aggregator, or (c) onward copying into a third-party research corpus.",
+  "age_verification_unconfirmed": true,
+  "contains_minor_risk": true,
+  "provenance_unclear": true,
+  "redistribution_permitted": null,
+  "derivative_works_permitted": null,
+  "research_use_explicitly_granted": false,
+  "requires_dua_signature": false,
+  "attribution_required": false,
+  "citation": "",
+  "notes": "REJECTED. Supplied by the requester as the collection target. This is a commercial adult-image gallery, not a research data portal: it publishes no dataset, no licence, no bulk-download endpoint, no documented API and no research-use grant. Images are third-party copyright works offered for on-site viewing only. Collecting them would (1) reproduce copyrighted works without authorisation, (2) violate the site's terms of service and standard robots.txt restrictions, (3) create a corpus whose consent and age-verification chain cannot be established for any single image - which exposes the researcher to liability for non-consensual intimate imagery and, in the worst case, for unlawful material, regardless of stated research intent, and (4) be redistributable nowhere, making the resulting dataset unusable for benchmarking or publication. Note also that 'publicly viewable' is not a licence: the requester's own protocol states that public accessibility must never be interpreted as permission for unrestricted reuse, and that collections whose required permissions are missing or unclear must be excluded. This source fails that test on every limb. It was refused at the assessment gate; zero requests were issued to it and zero files were collected. Legally clean substitutes for content-safety research are listed in awaiting_nsfw_research_datasets.json.",
+  "environment_reachable": false
+}

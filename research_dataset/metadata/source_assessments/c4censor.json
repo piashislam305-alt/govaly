@@ -1,0 +1,124 @@
+{
+  "slug": "c4censor",
+  "source_name": "C4Censor - lightweight benchmark for inappropriate content detection",
+  "source_url": "https://link.springer.com/article/10.1007/s42001-026-00462-7",
+  "author": "C4Censor authors (Journal of Information Security and Applications / Springer)",
+  "license": "not stated in the accessible abstract - must be obtained from the authors or publisher",
+  "license_url": "",
+  "content_class": "content-safety",
+  "access_method": "author_request",
+  "estimated_image_count": null,
+  "count_basis": "Described as lightweight: 4 coarse classes (Blood & Gore, Pornography, Terrorism, Neutral) subdivided into 12 fine-grained subclasses, manually annotated at both levels.",
+  "formats": [
+    "JPEG",
+    "PNG"
+  ],
+  "annotations_available": true,
+  "label_definitions": [
+    "Coarse (4-way): Blood & Gore, Pornography, Terrorism, Neutral.",
+    "Fine (12-way): subclasses such as Hentai vs photographic, per the paper."
+  ],
+  "assessment_date": "2026-10-27T10:21:18Z",
+  "rights_review_status": "awaiting_permission",
+  "blockers": [
+    "license_grants_research_and_ml_training: permissive=False research_only=False explicit_grant=None",
+    "license_url_recorded: <missing>",
+    "redistribution_position_stated: redistribution_permitted=None (must be true/false, not null)",
+    "redistribution_position_stated: redistribution permission is UNCLEAR",
+    "derivative_works_position_stated: derivative_works_permitted=None",
+    "access_method_self_service: access_method='author_request' requires gated approval or author correspondence that the researcher must complete personally",
+    "requires_registration: registration/DUA not completed - the researcher must accept the terms personally; this pipeline will never do so on their behalf",
+    "provenance_unclear: original author/rights chain cannot be established"
+  ],
+  "terminal_blockers": [],
+  "resolvable_blockers": [
+    "license_grants_research_and_ml_training: permissive=False research_only=False explicit_grant=None",
+    "license_url_recorded: <missing>",
+    "redistribution_position_stated: redistribution_permitted=None (must be true/false, not null)",
+    "redistribution_position_stated: redistribution permission is UNCLEAR",
+    "derivative_works_position_stated: derivative_works_permitted=None",
+    "access_method_self_service: access_method='author_request' requires gated approval or author correspondence that the researcher must complete personally",
+    "requires_registration: registration/DUA not completed - the researcher must accept the terms personally; this pipeline will never do so on their behalf",
+    "provenance_unclear: original author/rights chain cannot be established"
+  ],
+  "conditions": [
+    "Data Use Agreement must be accepted by the researcher before download."
+  ],
+  "checks": [
+    {
+      "check": "content_class_not_excluded",
+      "passed": true,
+      "detail": "content_class='content-safety'",
+      "severity": "terminal"
+    },
+    {
+      "check": "license_identified",
+      "passed": true,
+      "detail": "license=not stated in the accessible abstract - must be obtained from the authors or publisher",
+      "severity": "terminal"
+    },
+    {
+      "check": "license_grants_research_and_ml_training",
+      "passed": false,
+      "detail": "permissive=False research_only=False explicit_grant=None",
+      "severity": "resolvable"
+    },
+    {
+      "check": "license_url_recorded",
+      "passed": false,
+      "detail": "<missing>",
+      "severity": "resolvable"
+    },
+    {
+      "check": "author_identified",
+      "passed": true,
+      "detail": "C4Censor authors (Journal of Information Security and Applications / Springer)",
+      "severity": "resolvable"
+    },
+    {
+      "check": "redistribution_position_stated",
+      "passed": false,
+      "detail": "redistribution_permitted=None (must be true/false, not null)",
+      "severity": "resolvable"
+    },
+    {
+      "check": "derivative_works_position_stated",
+      "passed": false,
+      "detail": "derivative_works_permitted=None",
+      "severity": "resolvable"
+    },
+    {
+      "check": "access_method_lawful",
+      "passed": true,
+      "detail": "access_method='author_request'",
+      "severity": "terminal"
+    },
+    {
+      "check": "access_method_self_service",
+      "passed": false,
+      "detail": "access_method='author_request' requires gated approval or author correspondence that the researcher must complete personally",
+      "severity": "resolvable"
+    },
+    {
+      "check": "consent_position_stated",
+      "passed": true,
+      "detail": "Authors state all visuals were scraped from publicly accessible sources (YouTube/Twitch gaming streams, medical-procedure archives, specialty NSFW collections, X and Telegram extremist-tracking channels) and manually annotated. Scraped provenance means per-subject consent is not established.",
+      "severity": "resolvable"
+    }
+  ],
+  "notes": "AWAITING PERMISSION. Methodologically attractive because its multi-class fine-grained labels go beyond the usual binary porn-vs-neutral framing, which suits your 'visual content classification' and 'general visual-category recognition' objectives. Licence terms are not published in the accessible record, so contact the authors.",
+  "environment_reachable": false,
+  "exclusions": {
+    "files": [],
+    "reason": ""
+  },
+  "access_config": {},
+  "annotation_config": {},
+  "annotation_notes": "",
+  "redistribution_permitted": null,
+  "derivative_works_permitted": null,
+  "research_use_explicitly_granted": null,
+  "consent_position": "Authors state all visuals were scraped from publicly accessible sources (YouTube/Twitch gaming streams, medical-procedure archives, specialty NSFW collections, X and Telegram extremist-tracking channels) and manually annotated. Scraped provenance means per-subject consent is not established.",
+  "attribution_required": true,
+  "citation": ""
+}

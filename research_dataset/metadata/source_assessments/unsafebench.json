@@ -1,0 +1,115 @@
+{
+  "slug": "unsafebench",
+  "source_name": "UnsafeBench - benchmarking image safety classifiers",
+  "source_url": "https://huggingface.co/datasets/yiting/UnsafeBench",
+  "author": "Yiting Dong et al. (UnsafeBench project, unsafebench.github.io)",
+  "license": "custom Data Use Agreement (gated)",
+  "license_url": "https://unsafebench.github.io/",
+  "content_class": "content-safety",
+  "access_method": "hf_gated_dataset",
+  "estimated_image_count": 10146,
+  "count_basis": "Stated by the publishers: 10,146 human-annotated images covering 11 unsafe categories, drawn from LAION-5B (real-world) and Lexica (AI-generated).",
+  "formats": [
+    "JPEG",
+    "PNG"
+  ],
+  "annotations_available": true,
+  "label_definitions": [
+    "safe / unsafe, plus 11 unsafe categories (sexual, violent, hateful, etc.) as defined on the project page and in the accompanying paper.",
+    "Two provenance axes: real-world vs AI-generated."
+  ],
+  "assessment_date": "2026-10-27T10:21:18Z",
+  "rights_review_status": "awaiting_permission",
+  "blockers": [
+    "derivative_works_position_stated: derivative_works_permitted=None",
+    "access_method_self_service: access_method='hf_gated_dataset' requires gated approval or author correspondence that the researcher must complete personally",
+    "requires_registration: registration/DUA not completed - the researcher must accept the terms personally; this pipeline will never do so on their behalf"
+  ],
+  "terminal_blockers": [],
+  "resolvable_blockers": [
+    "derivative_works_position_stated: derivative_works_permitted=None",
+    "access_method_self_service: access_method='hf_gated_dataset' requires gated approval or author correspondence that the researcher must complete personally",
+    "requires_registration: registration/DUA not completed - the researcher must accept the terms personally; this pipeline will never do so on their behalf"
+  ],
+  "conditions": [
+    "MUST NOT be redistributed, mirrored or published; local research use only.",
+    "Data Use Agreement must be accepted by the researcher before download."
+  ],
+  "checks": [
+    {
+      "check": "content_class_not_excluded",
+      "passed": true,
+      "detail": "content_class='content-safety'",
+      "severity": "terminal"
+    },
+    {
+      "check": "license_identified",
+      "passed": true,
+      "detail": "license=custom Data Use Agreement (gated)",
+      "severity": "terminal"
+    },
+    {
+      "check": "license_grants_research_and_ml_training",
+      "passed": true,
+      "detail": "permissive=False research_only=False explicit_grant=True",
+      "severity": "resolvable"
+    },
+    {
+      "check": "license_url_recorded",
+      "passed": true,
+      "detail": "https://unsafebench.github.io/",
+      "severity": "resolvable"
+    },
+    {
+      "check": "author_identified",
+      "passed": true,
+      "detail": "Yiting Dong et al. (UnsafeBench project, unsafebench.github.io)",
+      "severity": "resolvable"
+    },
+    {
+      "check": "redistribution_position_stated",
+      "passed": true,
+      "detail": "redistribution_permitted=False (must be true/false, not null)",
+      "severity": "resolvable"
+    },
+    {
+      "check": "derivative_works_position_stated",
+      "passed": false,
+      "detail": "derivative_works_permitted=None",
+      "severity": "resolvable"
+    },
+    {
+      "check": "access_method_lawful",
+      "passed": true,
+      "detail": "access_method='hf_gated_dataset'",
+      "severity": "terminal"
+    },
+    {
+      "check": "access_method_self_service",
+      "passed": false,
+      "detail": "access_method='hf_gated_dataset' requires gated approval or author correspondence that the researcher must complete personally",
+      "severity": "resolvable"
+    },
+    {
+      "check": "consent_position_stated",
+      "passed": true,
+      "detail": "Publishers performed human annotation and gate access behind a DUA; the DUA restricts use to research/education and prohibits misuse.",
+      "severity": "resolvable"
+    }
+  ],
+  "notes": "AWAITING PERMISSION - RECOMMENDED PRIMARY SOURCE for the content-safety arm of the project. Legitimately curated, human-annotated, purpose-built for exactly this research question, and released by an academic group under a DUA. Requires the researcher to (a) hold a Hugging Face account, (b) read and accept the DUA, and (c) obtain institutional ethics sign-off. Not reachable from this sandbox (huggingface.co is outside the egress allowlist), and this pipeline will never accept DUA terms on the researcher's behalf. Run scripts/collect.py against this manifest on your own network after your DUA is accepted.",
+  "environment_reachable": false,
+  "exclusions": {
+    "files": [],
+    "reason": ""
+  },
+  "access_config": {},
+  "annotation_config": {},
+  "annotation_notes": "",
+  "redistribution_permitted": false,
+  "derivative_works_permitted": null,
+  "research_use_explicitly_granted": true,
+  "consent_position": "Publishers performed human annotation and gate access behind a DUA; the DUA restricts use to research/education and prohibits misuse.",
+  "attribution_required": true,
+  "citation": "Dong et al., UnsafeBench: Benchmarking Image Safety Classifiers on Real-World and AI-Generated Images."
+}

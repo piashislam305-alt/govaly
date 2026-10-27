@@ -1,0 +1,134 @@
+{
+  "generated_at": "2026-10-27T10:24:00Z",
+  "thresholds": {
+    "MIN_WIDTH": 64,
+    "MIN_HEIGHT": 64,
+    "MIN_FILE_BYTES": 1024,
+    "BLUR_LAPVAR_THRESHOLD": 40.0,
+    "PHASH_NEAR_DUP_DISTANCE": 6,
+    "ACCEPTED_FORMATS": [
+      "BMP",
+      "GIF",
+      "JPEG",
+      "PNG",
+      "TIFF",
+      "WEBP"
+    ],
+    "MAX_IMAGE_PIXELS": 89478485
+  },
+  "counts": {
+    "passed": 229,
+    "phash_unreliable": 461,
+    "rejected": 524,
+    "flagged": 64
+  },
+  "phash_reliability": {
+    "reliable": 305,
+    "unreliable_excluded_from_near_dup": 461,
+    "thresholds": {
+      "min_grey_std": 2.0,
+      "min_grey_entropy_bits": 2.5
+    }
+  },
+  "files_inspected": 817,
+  "per_source": {
+    "opencv-samples-data": {
+      "inspected": 91,
+      "pass": 76,
+      "rejected": 11,
+      "duplicate": 0,
+      "reject_reasons": {
+        "blurry": 11
+      }
+    },
+    "pillow-test-images": {
+      "inspected": 726,
+      "pass": 153,
+      "rejected": 513,
+      "duplicate": 0,
+      "reject_reasons": {
+        "corrupt": 46,
+        "blurry": 151,
+        "low_resolution": 53,
+        "too_small_file": 242,
+        "unsupported_format": 16,
+        "excessive_pixels": 5
+      }
+    }
+  },
+  "reject_reason_breakdown": {
+    "blurry": 162,
+    "corrupt": 46,
+    "low_resolution": 53,
+    "too_small_file": 242,
+    "unsupported_format": 16,
+    "excessive_pixels": 5
+  },
+  "format_breakdown": {
+    "JPEG": 112,
+    "PNG": 435,
+    "TIFF": 98,
+    "WEBP": 14,
+    "GIF": 37,
+    "ICO": 8,
+    "BMP": 54,
+    "PPM": 5,
+    "PCX": 3
+  },
+  "dimension_stats": {
+    "width": {
+      "count": 766,
+      "min": 1,
+      "max": 4160,
+      "mean": 276.1,
+      "median": 128.0,
+      "p05": 10,
+      "p95": 640
+    },
+    "height": {
+      "count": 766,
+      "min": 1,
+      "max": 4677,
+      "mean": 208.28,
+      "median": 100.0,
+      "p05": 10,
+      "p95": 512
+    },
+    "file_size_bytes": {
+      "count": 817,
+      "min": 16,
+      "max": 4147841,
+      "mean": 40026.08,
+      "median": 3686,
+      "p05": 168,
+      "p95": 178480
+    },
+    "blur_laplacian_variance": {
+      "count": 766,
+      "min": 0.0,
+      "max": 36235.34839394316,
+      "mean": 572.32,
+      "median": 23.29,
+      "p05": 0.0,
+      "p95": 2286.746544445528
+    }
+  },
+  "aspect_ratios": {
+    "count": 766,
+    "min": 0.2,
+    "max": 25.6,
+    "mean": 1.66,
+    "median": 1.0,
+    "p05": 0.9316546762589928,
+    "p95": 4.5
+  },
+  "megapixel_distribution": {
+    "0-0.1 MP": 576,
+    "0.1-0.5 MP": 167,
+    "0.5-1 MP": 9,
+    "1-2 MP": 3,
+    "10-50 MP": 1,
+    "2-5 MP": 9,
+    "5-10 MP": 1
+  }
+}

@@ -1,0 +1,10 @@
+# Core runtime
+requests>=2.31
+pillow>=10.0
+numpy>=1.24
+imagehash>=4.3
+opencv-python-headless>=4.8
+
+# Optional: the test suite runs without pytest (python3 tests/test_qc.py),
+# but pytest gives nicer output if you prefer it.
+# pytest>=7.0

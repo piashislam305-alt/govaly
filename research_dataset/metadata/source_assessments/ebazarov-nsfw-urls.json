@@ -1,0 +1,119 @@
+{
+  "slug": "ebazarov-nsfw-urls",
+  "source_name": "EBazarov/nsfw_data_source_urls (+ alex000kim/nsfw_data_scraper)",
+  "source_url": "https://github.com/EBazarov/nsfw_data_source_urls",
+  "author": "EBazarov; alex000kim",
+  "license": "repository licence covers the URL lists only, NOT the images they point at",
+  "license_url": "https://github.com/EBazarov/nsfw_data_source_urls",
+  "content_class": "adult-explicit-scrape",
+  "access_method": "http_file_list",
+  "estimated_image_count": 1589331,
+  "count_basis": "Stated: 1,589,331 NSFW image URLs across 159 categories; the companion neutral list holds 36,837 URLs. These are LINKS, not images.",
+  "formats": [
+    "URL lists"
+  ],
+  "annotations_available": true,
+  "label_definitions": [
+    "Category label per URL, derived from the originating subreddit/channel."
+  ],
+  "assessment_date": "2026-10-27T10:21:18Z",
+  "rights_review_status": "rejected",
+  "blockers": [
+    "content_class_not_excluded: content_class='adult-explicit-scrape'",
+    "license_grants_research_and_ml_training: permissive=False research_only=False explicit_grant=False",
+    "derivative_works_position_stated: derivative_works_permitted=None",
+    "terms_of_service_prohibit_scraping: site ToS forbids automated collection",
+    "age_verification: source provides no verifiable age/consent records (no 18 U.S.C. 2257-equivalent custodian of records). Collection refused.",
+    "provenance_unclear: original author/rights chain cannot be established"
+  ],
+  "terminal_blockers": [
+    "content_class_not_excluded: content_class='adult-explicit-scrape'",
+    "terms_of_service_prohibit_scraping: site ToS forbids automated collection",
+    "age_verification: source provides no verifiable age/consent records (no 18 U.S.C. 2257-equivalent custodian of records). Collection refused."
+  ],
+  "resolvable_blockers": [
+    "license_grants_research_and_ml_training: permissive=False research_only=False explicit_grant=False",
+    "derivative_works_position_stated: derivative_works_permitted=None",
+    "provenance_unclear: original author/rights chain cannot be established"
+  ],
+  "conditions": [
+    "MUST NOT be redistributed, mirrored or published; local research use only."
+  ],
+  "checks": [
+    {
+      "check": "content_class_not_excluded",
+      "passed": false,
+      "detail": "content_class='adult-explicit-scrape'",
+      "severity": "terminal"
+    },
+    {
+      "check": "license_identified",
+      "passed": true,
+      "detail": "license=repository licence covers the URL lists only, NOT the images they point at",
+      "severity": "terminal"
+    },
+    {
+      "check": "license_grants_research_and_ml_training",
+      "passed": false,
+      "detail": "permissive=False research_only=False explicit_grant=False",
+      "severity": "resolvable"
+    },
+    {
+      "check": "license_url_recorded",
+      "passed": true,
+      "detail": "https://github.com/EBazarov/nsfw_data_source_urls",
+      "severity": "resolvable"
+    },
+    {
+      "check": "author_identified",
+      "passed": true,
+      "detail": "EBazarov; alex000kim",
+      "severity": "resolvable"
+    },
+    {
+      "check": "redistribution_position_stated",
+      "passed": true,
+      "detail": "redistribution_permitted=False (must be true/false, not null)",
+      "severity": "resolvable"
+    },
+    {
+      "check": "derivative_works_position_stated",
+      "passed": false,
+      "detail": "derivative_works_permitted=None",
+      "severity": "resolvable"
+    },
+    {
+      "check": "access_method_lawful",
+      "passed": true,
+      "detail": "access_method='http_file_list'",
+      "severity": "terminal"
+    },
+    {
+      "check": "access_method_self_service",
+      "passed": true,
+      "detail": "access_method='http_file_list' requires gated approval or author correspondence that the researcher must complete personally",
+      "severity": "resolvable"
+    },
+    {
+      "check": "consent_position_stated",
+      "passed": true,
+      "detail": "NONE. The target URLs point at third-party hosts (Reddit CDNs, image hosts, adult sites). Resolving them means scraping third-party websites and extracting embedded media without authorisation from the hosts or the depicted subjects.",
+      "severity": "resolvable"
+    }
+  ],
+  "notes": "REJECTED - do not use this route even though the URL lists themselves are open. This is the mechanism by which a great deal of NSFW research data has been built, and it is precisely what your own protocol forbids: 'Do not scrape third-party websites or extract embedded media without authorization.' The repository is explicitly marked historical and no longer maintained, so a large fraction of URLs are dead, and the remainder resolve to hosts whose robots.txt and terms forbid automated collection. The age-verification and consent position of the destinations is unverifiable at corpus scale. Use a curated, DUA-gated corpus (UnsafeBench, USD) instead.",
+  "environment_reachable": false,
+  "exclusions": {
+    "files": [],
+    "reason": ""
+  },
+  "access_config": {},
+  "annotation_config": {},
+  "annotation_notes": "",
+  "redistribution_permitted": false,
+  "derivative_works_permitted": null,
+  "research_use_explicitly_granted": false,
+  "consent_position": "NONE. The target URLs point at third-party hosts (Reddit CDNs, image hosts, adult sites). Resolving them means scraping third-party websites and extracting embedded media without authorisation from the hosts or the depicted subjects.",
+  "attribution_required": false,
+  "citation": ""
+}

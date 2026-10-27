@@ -1,0 +1,132 @@
+{
+  "slug": "pillow-test-images",
+  "source_name": "Pillow test image corpus (Tests/images)",
+  "source_url": "https://github.com/python-pillow/Pillow/tree/main/Tests/images",
+  "author": "Jeffrey 'Alex' Clark and Pillow contributors; originally Secret Labs AB / Fredrik Lundh",
+  "license": "MIT-CMU",
+  "license_url": "https://github.com/python-pillow/Pillow/blob/main/LICENSE",
+  "content_class": "general",
+  "access_method": "github_tree_api",
+  "estimated_image_count": 735,
+  "count_basis": "VERIFIED by enumeration: recursive GitHub git-trees API listing of ref main returned 735 image blobs under Tests/images/ totalling 23,172,855 bytes (tree not truncated).",
+  "formats": [
+    "PNG",
+    "JPEG",
+    "BMP",
+    "GIF",
+    "TIFF",
+    "WEBP",
+    "PPM",
+    "PCX",
+    "ICO"
+  ],
+  "annotations_available": true,
+  "label_definitions": [
+    "NO classification labels ship with this corpus. Nothing below is a category label.",
+    "VERIFIED by reading the preserved files (transcribed, not inferred):",
+    "  - Tests/images/bmp/README.txt states verbatim: 'These images are from the bmpsuite: https://github.com/jsummers/bmpsuite and are in the public domain according to the readme in the project.' THIRD-PARTY PROVENANCE: the bmp/ subset originates from Jason Summers' bmpsuite and is asserted to be public domain by that upstream project. Attribution should cite bmpsuite alongside Pillow for those files.",
+    "  - Tests/images/tga/common/readme.txt documents a STRUCTURED NAMING CONVENTION: {width}x{height}_{mode}_{origin}_{compression}.tga where mode is a PIL mode in lower case, origin is 'bl' (bottom-left) or 'tl' (top-left), and compression is 'raw' or 'rle'. Filenames in that directory are therefore parseable metadata - a real, non-invented source of attributes. Images created with GIMP."
+  ],
+  "assessment_date": "2026-10-27T10:21:18Z",
+  "rights_review_status": "approved",
+  "blockers": [],
+  "terminal_blockers": [],
+  "resolvable_blockers": [],
+  "conditions": [],
+  "checks": [
+    {
+      "check": "content_class_not_excluded",
+      "passed": true,
+      "detail": "content_class='general'",
+      "severity": "terminal"
+    },
+    {
+      "check": "license_identified",
+      "passed": true,
+      "detail": "license=MIT-CMU",
+      "severity": "terminal"
+    },
+    {
+      "check": "license_grants_research_and_ml_training",
+      "passed": true,
+      "detail": "permissive=False research_only=False explicit_grant=True",
+      "severity": "resolvable"
+    },
+    {
+      "check": "license_url_recorded",
+      "passed": true,
+      "detail": "https://github.com/python-pillow/Pillow/blob/main/LICENSE",
+      "severity": "resolvable"
+    },
+    {
+      "check": "author_identified",
+      "passed": true,
+      "detail": "Jeffrey 'Alex' Clark and Pillow contributors; originally Secret Labs AB / Fredrik Lundh",
+      "severity": "resolvable"
+    },
+    {
+      "check": "redistribution_position_stated",
+      "passed": true,
+      "detail": "redistribution_permitted=True (must be true/false, not null)",
+      "severity": "resolvable"
+    },
+    {
+      "check": "derivative_works_position_stated",
+      "passed": true,
+      "detail": "derivative_works_permitted=True",
+      "severity": "resolvable"
+    },
+    {
+      "check": "access_method_lawful",
+      "passed": true,
+      "detail": "access_method='github_tree_api'",
+      "severity": "terminal"
+    },
+    {
+      "check": "access_method_self_service",
+      "passed": true,
+      "detail": "access_method='github_tree_api' requires gated approval or author correspondence that the researcher must complete personally",
+      "severity": "resolvable"
+    }
+  ],
+  "notes": "APPROVED. MIT-CMU licence text fetched and verified. Permissive: use, copy, modify, merge, publish, distribute, sublicense and sell all permitted with the copyright notice retained. This corpus is deliberately included as the image-quality-assessment stress test: it contains a large number of genuinely malformed, truncated and out-of-specification files produced by real-world encoders, which exercises the corruption and unsupported-format detectors against authentic failures rather than synthetic ones. Files that Pillow itself cannot decode are expected to land in rejected_images/corrupt/ - that is a correct result, not a pipeline fault.",
+  "environment_reachable": true,
+  "exclusions": {
+    "files": [],
+    "reason": ""
+  },
+  "access_config": {
+    "repo": "python-pillow/Pillow",
+    "path_prefix": "Tests/images/",
+    "ref": "main",
+    "image_extensions": [
+      ".png",
+      ".jpg",
+      ".jpeg",
+      ".bmp",
+      ".gif",
+      ".tif",
+      ".tiff",
+      ".webp",
+      ".ppm",
+      ".pcx",
+      ".ico"
+    ],
+    "max_files": 750
+  },
+  "annotation_config": {
+    "repo": "python-pillow/Pillow",
+    "ref": "main",
+    "files": [
+      "Tests/images/bmp/README.txt",
+      "Tests/images/tga/common/readme.txt"
+    ]
+  },
+  "annotation_notes": "Explicit file allow-list, NOT a directory scan. This corpus ships no labels; the only provenance documentation it contains is these two README files. Scanning the repository root previously pulled in CI configuration (codecov.yml, readthedocs.yml) which is build metadata, not annotation, and has been removed.",
+  "redistribution_permitted": true,
+  "derivative_works_permitted": true,
+  "research_use_explicitly_granted": true,
+  "consent_position": "Corpus is synthetic/technical test imagery (gradients, patterns, format edge cases, encoder fixtures). Scanned for person/sensitive filename tokens; no matches.",
+  "attribution_required": true,
+  "citation": "Pillow contributors, Pillow test image corpus, MIT-CMU License, https://github.com/python-pillow/Pillow/tree/main/Tests/images"
+}
